@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Choose Your Premium Plan</title>
+    <style>body{font-family:ui-sans-serif,system-ui,Arial;margin:0;padding:32px;background:#f9fafb}
+    .wrap{max-width:900px;margin:0 auto}.note{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:16px;margin-bottom:16px}</style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Choose Your Premium Plan</h1>
+      <div class="note">
+        <p><strong>Heads up:</strong> This page is a fallback. The Upgrade button in the app will redirect to <code>NEXT_PUBLIC_STRIPE_PRICING_TABLE_URL</code> if set.</p>
+        <ol>
+          <li>In Stripe Dashboard, create a <em>Pricing Table</em> with your subscription products.</li>
+          <li>Copy the <em>shareable link</em> for that pricing table and set it as <code>NEXT_PUBLIC_STRIPE_PRICING_TABLE_URL</code> in Vercel.</li>
+          <li>Or paste your publishable key and pricing table id below and refresh.</li>
+        </ol>
+      </div>
+      <label>Publishable key: <input id="pk" placeholder="pk_live_..." style="width:320px"></label>
+      <label style="margin-left:12px">Pricing table id: <input id="ptid" placeholder="prctbl_..." style="width:220px"></label>
+      <button id="mount" style="margin-left:8px">Show Table</button>
+      <div id="embed" style="margin-top:16px"></div>
+    </div>
+    <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+    <script>
+      document.getElementById('mount').onclick = function(){
+        const pk = document.getElementById('pk').value.trim();
+        const ptid = document.getElementById('ptid').value.trim();
+        if(!pk || !ptid){ alert('Enter publishable key and pricing table id'); return; }
+        const el = document.getElementById('embed');
+        el.innerHTML = `<stripe-pricing-table pricing-table-id="${ptid}" publishable-key="${pk}"></stripe-pricing-table>`;
+      };
+    </script>
+  </body>
+</html>
