@@ -235,6 +235,8 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-blue-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
                   </div>
+                  <p className="text-xs text-gray-600">{yearlyForecast.longRange}</p>
+                </div>
 
                 {/* Pluto */}
                 <div className="text-center group">
@@ -248,6 +250,8 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-red-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
                   </div>
+                  <p className="text-xs text-gray-600">{yearlyForecast.pluto}</p>
+                </div>
 
                 {/* Result */}
                 <div className="text-center group">
@@ -276,6 +280,8 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-yellow-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
                   </div>
+                  <p className="text-xs text-gray-600">{yearlyForecast.support}</p>
+                </div>
 
                 {/* Development */}
                 <div className="text-center group">
@@ -289,6 +295,9 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-indigo-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
                   </div>
+                  <p className="text-xs text-gray-600">{yearlyForecast.development}</p>
+                </div>
+              </div>
             )}
           </CardContent>
         </Card>

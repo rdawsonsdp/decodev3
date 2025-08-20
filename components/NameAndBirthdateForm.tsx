@@ -27,9 +27,34 @@ export default function NameAndBirthdateForm({
     }
   }, [])
 
-  
+  const saveProfile = () => {
+    if (!name || !birthdate) {
+      alert('Please enter both name and birthdate')
+      return
+    }
 
-  
+    const newProfile = { name, birthdate }
+    const updatedProfiles = [...savedProfiles, newProfile]
+    setSavedProfiles(updatedProfiles)
+    localStorage.setItem('savedReadings', JSON.stringify(updatedProfiles))
+    alert('Profile saved!')
+  }
+
+  const deleteProfile = () => {
+    if (!name || !birthdate) {
+      alert('Please select a profile to delete')
+      return
+    }
+
+    const updatedProfiles = savedProfiles.filter(
+      (p) => !(p.name === name && p.birthdate === birthdate)
+    )
+    setSavedProfiles(updatedProfiles)
+    localStorage.setItem('savedReadings', JSON.stringify(updatedProfiles))
+    setName('')
+    setBirthdate('')
+    alert('Profile deleted!')
+  }
 
   const handleSelectSaved = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const [savedName, savedDate] = e.target.value.split('||')
