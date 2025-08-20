@@ -14,50 +14,68 @@ import CardModal from './CardModal'
 import GPTChat from './GPTChat'
 
 interface CorrectedBirthCardSpreadProps {
-  childData: { name: string; name: string
-    birthdate: string
-  onBack?: () => void
+  childData: {
+    name: string;
+    birthdate: string;
+  };
+  onBack?: () => void;
+}
 
-export default function CorrectedBirthCardSpread({ childData, onBack }: CorrectedBirthCardSpreadProps) const [currentAge, setCurrentAge] = useState(0)
-  const [isEditingAge, setIsEditingAge] = useState(false)
-  const [selectedCard, setSelectedCard] = useState<{ card: string; type: string } | null>(null)
-  const [birthCard, setBirthCard] = useState('')
-  const [yearlyForecast, setYearlyForecast] = useState<any>(null)
-  const [planetaryPeriods, setPlanetaryPeriods] = useState<any[]>([])
-  const [currentPlanetaryPeriod, setCurrentPlanetaryPeriod] = useState<string>('')
+export default function CorrectedBirthCardSpread({ childData, onBack }: CorrectedBirthCardSpreadProps) {
+  const [currentAge, setCurrentAge] = useState(0);
+  const [isEditingAge, setIsEditingAge] = useState(false);
+  const [selectedCard, setSelectedCard] = useState<{ card: string; type: string } | null>(null);
+  const [birthCard, setBirthCard] = useState('');
+  const [yearlyForecast, setYearlyForecast] = useState<any>(null);
+  const [planetaryPeriods, setPlanetaryPeriods] = useState<any[]>([]);
+  const [currentPlanetaryPeriod, setCurrentPlanetaryPeriod] = useState<string>('');
 
-  useEffect(() => // Calculate initial age
-    const today = new Date()
-    const birthDate = new Date(childData.birthdate)
-    const age = Math.floor((today.getTime() - birthDate.getTime()) / (365.25 * 24 * 60 * 60 * 1000))
-    setCurrentAge(age)
+  useEffect(() => {
+    // Calculate initial age
+    const today = new Date();
+    const birthDate = new Date(childData.birthdate);
+    const age = Math.floor((today.getTime() - birthDate.getTime()) / (365.25 * 24 * 60 * 60 * 1000));
+    setCurrentAge(age);
 
     // Get birth card
-    const card = getBirthCardFromDate(childData.birthdate)
-    setBirthCard(card), [childData.birthdate])
+    const card = getBirthCardFromDate(childData.birthdate);
+    setBirthCard(card);
+  }, [childData.birthdate]);
 
-  useEffect(() => if (birthCard && currentAge >= 0) // Get yearly forecast
-      const forecast = getYearlyForecast(birthCard, currentAge)
-      setYearlyForecast(forecast)
+  useEffect(() => {
+    if (birthCard && currentAge >= 0) {
+      // Get yearly forecast
+      const forecast = getYearlyForecast(birthCard, currentAge);
+      setYearlyForecast(forecast);
 
       // Get planetary periods
-      const periods = getPlanetaryPeriods(birthCard, currentAge, childData.birthdate)
-      setPlanetaryPeriods(periods)
+      const periods = getPlanetaryPeriods(birthCard, currentAge, childData.birthdate);
+      setPlanetaryPeriods(periods);
 
       // Determine current planetary period
-      const today = new Date()
-      const currentPeriod = periods.find(period => const startDate = new Date(period.startDate)
-        const endDate = new Date(period.endDate)
-        return today >= startDate && today <= endDate)
-      setCurrentPlanetaryPeriod(currentPeriod?.planet || ''), [birthCard, currentAge, childData.birthdate])
+      const today = new Date();
+      const currentPeriod = periods.find(period => {
+        const startDate = new Date(period.startDate);
+        const endDate = new Date(period.endDate);
+        return today >= startDate && today <= endDate;
+      });
+      setCurrentPlanetaryPeriod(currentPeriod?.planet || '');
+    }
+  }, [birthCard, currentAge, childData.birthdate]);
 
-  const handleCardClick = (card: string, type: string) => setSelectedCard({ card, type })
+  const handleCardClick = (card: string, type: string) => {
+    setSelectedCard({ card, type });
+  };
 
-  const handleAgeSubmit = (e: React.FormEvent) => e.preventDefault()
-    setIsEditingAge(false)
+  const handleAgeSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsEditingAge(false);
+  };
 
-  const formatDate = (dateStr: string) => const date = new Date(dateStr)
-    return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
+  const formatDate = (dateStr: string) => {
+    const date = new Date(dateStr);
+    return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
@@ -91,9 +109,11 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                 <div>
                   <Label className="text-sm text-gray-600">Date of Birth</Label>
                   <p className="font-semibold text-lg text-gray-800">
-                    {new Date(childData.birthdate).toLocaleDateString('en-US', year: 'numeric', 
-                      month: 'long', 
-                      day: 'numeric' )}
+                    {new Date(childData.birthdate).toLocaleDateString('en-US', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric',
+                    })}
                   </p>
                 </div>
               </div>
@@ -112,7 +132,9 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                         min="0"
                         max="100"
                       />
-                      <Button type="submit" size="sm" className="h-8">Save</Button>
+                      <Button type="submit" size="sm" className="h-8">
+                        Save
+                      </Button>
                     </form>
                   ) : (
                     <div className="flex items-center gap-2">
@@ -150,7 +172,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                 <div className="text-center group">
                   <div className="relative">
                     <img
-                      src={getCardImage(birthCard) || "/placeholder.svg"}
+                      src={getCardImage(birthCard) || '/placeholder.svg'}
                       alt={birthCard}
                       className="w-full max-w-24 mx-auto mb-2 rounded-lg shadow-md cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl group-hover:shadow-purple-200"
                       onClick={() => handleCardClick(birthCard, 'birth')}
@@ -165,7 +187,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                 <div className="text-center group">
                   <div className="relative">
                     <img
-                      src={getCardImage(yearlyForecast.longRange) || "/placeholder.svg"}
+                      src={getCardImage(yearlyForecast.longRange) || '/placeholder.svg'}
                       alt={yearlyForecast.longRange}
                       className="w-full max-w-24 mx-auto mb-2 rounded-lg shadow-md cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl group-hover:shadow-blue-200"
                       onClick={() => handleCardClick(yearlyForecast.longRange, 'forecast')}
@@ -180,7 +202,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                 <div className="text-center group">
                   <div className="relative">
                     <img
-                      src={getCardImage(yearlyForecast.pluto) || "/placeholder.svg"}
+                      src={getCardImage(yearlyForecast.pluto) || '/placeholder.svg'}
                       alt={yearlyForecast.pluto}
                       className="w-full max-w-24 mx-auto mb-2 rounded-lg shadow-md cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl group-hover:shadow-red-200"
                       onClick={() => handleCardClick(yearlyForecast.pluto, 'forecast')}
@@ -195,7 +217,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                 <div className="text-center group">
                   <div className="relative">
                     <img
-                      src={getCardImage(yearlyForecast.result) || "/placeholder.svg"}
+                      src={getCardImage(yearlyForecast.result) || '/placeholder.svg'}
                       alt={yearlyForecast.result}
                       className="w-full max-w-24 mx-auto mb-2 rounded-lg shadow-md cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl group-hover:shadow-green-200"
                       onClick={() => handleCardClick(yearlyForecast.result, 'forecast')}
@@ -210,7 +232,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                 <div className="text-center group">
                   <div className="relative">
                     <img
-                      src={getCardImage(yearlyForecast.support) || "/placeholder.svg"}
+                      src={getCardImage(yearlyForecast.support) || '/placeholder.svg'}
                       alt={yearlyForecast.support}
                       className="w-full max-w-24 mx-auto mb-2 rounded-lg shadow-md cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl group-hover:shadow-yellow-200"
                       onClick={() => handleCardClick(yearlyForecast.support, 'forecast')}
@@ -225,7 +247,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                 <div className="text-center group">
                   <div className="relative">
                     <img
-                      src={getCardImage(yearlyForecast.development) || "/placeholder.svg"}
+                      src={getCardImage(yearlyForecast.development) || '/placeholder.svg'}
                       alt={yearlyForecast.development}
                       className="w-full max-w-24 mx-auto mb-2 rounded-lg shadow-md cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl group-hover:shadow-indigo-200"
                       onClick={() => handleCardClick(yearlyForecast.development, 'forecast')}
@@ -253,11 +275,13 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
           <CardContent>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-4">
               {planetaryPeriods.map((period, index) => (
-                <div 
-                  key={period.planet} 
-                  className={`text-center group $period.planet === currentPlanetaryPeriod 
-                      ? 'ring-2 ring-purple-500 ring-offset-2 rounded-lg p-2' 
-                      : ''`}
+                <div
+                  key={period.planet}
+                  className={`text-center group ${
+                    period.planet === currentPlanetaryPeriod
+                      ? 'ring-2 ring-purple-500 ring-offset-2 rounded-lg p-2'
+                      : ''
+                  }`}
                 >
                   <div className="mb-2">
                     <p className="text-xs font-medium text-gray-600 mb-1">
@@ -269,11 +293,13 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                   </div>
                   <div className="relative">
                     <img
-                      src={getCardImage(period.card) || "/placeholder.svg"}
+                      src={getCardImage(period.card) || '/placeholder.svg'}
                       alt={period.card}
-                      className={`w-full max-w-20 mx-auto mb-2 rounded-lg shadow-md cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl $period.planet === currentPlanetaryPeriod 
-                          ? 'ring-2 ring-purple-400 shadow-purple-200' 
-                          : ''`}
+                      className={`w-full max-w-20 mx-auto mb-2 rounded-lg shadow-md cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl ${
+                        period.planet === currentPlanetaryPeriod
+                          ? 'ring-2 ring-purple-400 shadow-purple-200'
+                          : ''
+                      }`}
                       onClick={() => handleCardClick(period.card, 'planetary')}
                     />
                     {period.planet === currentPlanetaryPeriod && (
@@ -290,7 +316,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
         </Card>
 
         {/* GPT Chat */}
-        <GPTChat 
+        <GPTChat
           childName={childData.name}
           birthCard={birthCard}
           currentAge={currentAge}
@@ -309,6 +335,5 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
         )}
       </div>
     </div>
-  )
-
+  );
 }

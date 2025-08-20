@@ -3,26 +3,46 @@
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import { ChevronLeft, ChevronRight, Sparkles, Heart, Star, Brain } from 'lucide-react'
+import {
+  ChevronLeft,
+  ChevronRight,
+  Sparkles,
+  Heart,
+  Star,
+  Brain,
+} from 'lucide-react'
 
-interface OnboardingCarouselProps onComplete: () => void
+interface OnboardingCarouselProps {
+  onComplete: () => void
+}
 
 const slides = [
-  title: 'Decode Your Kid',
+  {
+    title: 'Decode Your Kid',
     body: 'A gentle, emotionally-attuned guide powered by Cardology.',
     icon: Sparkles,
-  title: 'Understand Their Blueprint',
+  },
+  {
+    title: 'Understand Their Blueprint',
     body: 'Birth card, yearly outlook, and planetary periods—translated into plain parenting language.',
     icon: Heart,
-  title: 'Real-World Support',
+  },
+  {
+    title: 'Real-World Support',
     body: 'Practical suggestions for soothing, celebrating, and guiding your child day-to-day.',
     icon: Brain,
-  title: 'Let’s Start',
+  },
+  {
+    title: 'Let’s Start',
     body: 'Tell us your child’s name and birthdate to reveal their reading.',
     icon: Star,
+  },
 ]
 
-export default function OnboardingCarousel({ onComplete }: OnboardingCarouselProps) const [current, setCurrent] = useState(0)
+export default function OnboardingCarousel({
+  onComplete,
+}: OnboardingCarouselProps) {
+  const [current, setCurrent] = useState(0)
   const Icon = slides[current].icon
 
   return (
@@ -32,7 +52,9 @@ export default function OnboardingCarousel({ onComplete }: OnboardingCarouselPro
           <CardContent className="p-8">
             <div className="flex items-center gap-3 mb-4">
               <Icon className="w-6 h-6 text-purple-600" />
-              <h2 className="text-2xl font-bold text-gray-900">{slides[current].title}</h2>
+              <h2 className="text-2xl font-bold text-gray-900">
+                {slides[current].title}
+              </h2>
             </div>
             <p className="text-gray-700 mb-8">{slides[current].body}</p>
 
@@ -49,15 +71,22 @@ export default function OnboardingCarousel({ onComplete }: OnboardingCarouselPro
                 {slides.map((_, i) => (
                   <span
                     key={i}
-                    className='inline-block h-2 w-2 rounded-full transition-all ' +
+                    className={
+                      'inline-block h-2 w-2 rounded-full transition-all ' +
                       (i === current ? 'bg-purple-600 w-6' : 'bg-gray-300')
+                    }
                   />
                 ))}
               </div>
 
               <Button
-                onClick={() => if (current === slides.length - 1) onComplete()
-                  else setCurrent((c) => c + 1)}
+                onClick={() => {
+                  if (current === slides.length - 1) {
+                    onComplete()
+                  } else {
+                    setCurrent((c) => c + 1)
+                  }
+                }}
                 className="flex items-center gap-1"
               >
                 {current === slides.length - 1 ? 'Get Started' : 'Next'}{' '}
@@ -80,3 +109,4 @@ export default function OnboardingCarousel({ onComplete }: OnboardingCarouselPro
       </div>
     </div>
   )
+}
