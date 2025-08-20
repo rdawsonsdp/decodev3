@@ -29,11 +29,20 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
   const [yearlyForecast, setYearlyForecast] = useState<any>(null);
   const [planetaryPeriods, setPlanetaryPeriods] = useState<any[]>([]);
   const [currentPlanetaryPeriod, setCurrentPlanetaryPeriod] = useState<string>('');
+  const [savedProfiles, setSavedProfiles] = useState<{ name: string; birthdate: string }[]>([]);
+
+  useEffect(() => {
+    const stored = localStorage.getItem('savedReadings');
+    if (stored) {
+      setSavedProfiles(JSON.parse(stored));
+    }
+  }, []);
 
   useEffect(() => {
     // Calculate initial age
     const today = new Date();
-    const birthDate = new Date(childData.birthdate);
+    const [year, month, day] = childData.birthdate.split('-').map(Number);
+    const birthDate = new Date(year, month - 1, day);
     const age = Math.floor((today.getTime() - birthDate.getTime()) / (365.25 * 24 * 60 * 60 * 1000));
     setCurrentAge(age);
 
@@ -70,6 +79,21 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
   const handleAgeSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsEditingAge(false);
+  };
+
+  const saveProfile = () => {
+    const newProfile = { name: childData.name, birthdate: childData.birthdate };
+    const updated = [...savedProfiles, newProfile];
+    setSavedProfiles(updated);
+    localStorage.setItem('savedReadings', JSON.stringify(updated));
+  };
+
+  const deleteProfile = () => {
+    const updated = savedProfiles.filter(
+      (p) => !(p.name === childData.name && p.birthdate === childData.birthdate)
+    );
+    setSavedProfiles(updated);
+    localStorage.setItem('savedReadings', JSON.stringify(updated));
   };
 
   const formatDate = (dateStr: string) => {
@@ -147,6 +171,22 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                       >
                         Edit
                       </Button>
+                      <Button
+                        type="button"
+                        variant="secondary"
+                        onClick={saveProfile}
+                        className="h-6 px-2 text-xs"
+                      >
+                        Save
+                      </Button>
+                      <Button
+                        type="button"
+                        variant="destructive"
+                        onClick={deleteProfile}
+                        className="h-6 px-2 text-xs"
+                      >
+                        Delete
+                      </Button>
                     </div>
                   )}
                 </div>
@@ -170,6 +210,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
                 {/* Birth Card */}
                 <div className="text-center group">
+                  <h4 className="font-semibold text-purple-800 text-sm">Birth Card</h4>
                   <div className="relative">
                     <img
                       src={getCardImage(birthCard) || '/placeholder.svg'}
@@ -179,12 +220,12 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-purple-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
                   </div>
-                  <h4 className="font-semibold text-purple-800 text-sm">Birth Card</h4>
                   <p className="text-xs text-gray-600">{birthCard}</p>
                 </div>
 
                 {/* Long Range */}
                 <div className="text-center group">
+                  <h4 className="font-semibold text-blue-800 text-sm">Long Range</h4>
                   <div className="relative">
                     <img
                       src={getCardImage(yearlyForecast.longRange) || '/placeholder.svg'}
@@ -194,12 +235,10 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-blue-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
                   </div>
-                  <h4 className="font-semibold text-blue-800 text-sm">Long Range</h4>
-                  <p className="text-xs text-gray-600">{yearlyForecast.longRange}</p>
-                </div>
 
                 {/* Pluto */}
                 <div className="text-center group">
+                  <h4 className="font-semibold text-red-800 text-sm">Pluto</h4>
                   <div className="relative">
                     <img
                       src={getCardImage(yearlyForecast.pluto) || '/placeholder.svg'}
@@ -209,12 +248,10 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-red-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
                   </div>
-                  <h4 className="font-semibold text-red-800 text-sm">Pluto</h4>
-                  <p className="text-xs text-gray-600">{yearlyForecast.pluto}</p>
-                </div>
 
                 {/* Result */}
                 <div className="text-center group">
+                  <h4 className="font-semibold text-green-800 text-sm">Result</h4>
                   <div className="relative">
                     <img
                       src={getCardImage(yearlyForecast.result) || '/placeholder.svg'}
@@ -224,12 +261,12 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-green-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
                   </div>
-                  <h4 className="font-semibold text-green-800 text-sm">Result</h4>
                   <p className="text-xs text-gray-600">{yearlyForecast.result}</p>
                 </div>
 
                 {/* Support */}
                 <div className="text-center group">
+                  <h4 className="font-semibold text-yellow-800 text-sm">Support</h4>
                   <div className="relative">
                     <img
                       src={getCardImage(yearlyForecast.support) || '/placeholder.svg'}
@@ -239,12 +276,10 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-yellow-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
                   </div>
-                  <h4 className="font-semibold text-yellow-800 text-sm">Support</h4>
-                  <p className="text-xs text-gray-600">{yearlyForecast.support}</p>
-                </div>
 
                 {/* Development */}
                 <div className="text-center group">
+                  <h4 className="font-semibold text-indigo-800 text-sm">Development</h4>
                   <div className="relative">
                     <img
                       src={getCardImage(yearlyForecast.development) || '/placeholder.svg'}
@@ -254,10 +289,6 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-indigo-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
                   </div>
-                  <h4 className="font-semibold text-indigo-800 text-sm">Development</h4>
-                  <p className="text-xs text-gray-600">{yearlyForecast.development}</p>
-                </div>
-              </div>
             )}
           </CardContent>
         </Card>
@@ -308,7 +339,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                       </div>
                     )}
                   </div>
-                  <p className="text-xs text-gray-600">{period.card}</p>
+                  
                 </div>
               ))}
             </div>

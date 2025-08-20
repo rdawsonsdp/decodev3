@@ -63,6 +63,28 @@ body {
   transform: rotateY(180deg);
 }
 
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 0.5rem; /* rounded-lg */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-xl */
+  transition: all 0.3s ease-in-out;
+}
+
+.card-face-front {
+  transform: rotateY(0deg);
+}
+
+.card-face-back {
+  transform: rotateY(180deg);
+}
+
+.card-container:hover .card-face-front {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* shadow-2xl */
+}
+
 .card-flipped .card-inner {
   transform: rotateY(180deg);
 }

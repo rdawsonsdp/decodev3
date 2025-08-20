@@ -33,7 +33,12 @@ export default function CardModal({ card, type, isOpen, onClose }: CardModalProp
             const p = profileData[cleanCard]
             setProfile(p)
             setCardText(
-              [p.description, p.genius, p.encourage, p.soothe]
+              [
+                p.description,
+                p.genius,
+                p.encourage,
+                p.soothe,
+              ]
                 .filter(Boolean)
                 .join('\n\n')
             )
@@ -71,33 +76,30 @@ export default function CardModal({ card, type, isOpen, onClose }: CardModalProp
       onClick={onClose}
     >
       <div
-        className="relative w-[260px] h-[360px] sm:w-[320px] sm:h-[440px] card-container"
+        className="relative w-[260px] h-[360px] sm:w-[320px] sm:h-[440px] perspective-1000"
         onClick={(e) => e.stopPropagation()}
       >
         <div
-          className={`card-inner ${isFlipped ? 'is-flipped' : ''}`}
+          className={`relative w-full h-full transition-all duration-700 transform-style-preserve-3d ${isFlipped ? 'rotate-y-180' : ''}`}
           onClick={handleFlip}
         >
           {/* Front Side */}
-          <div className="card-face card-face-front">
+          <div className="absolute w-full h-full backface-hidden rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300">
             <img
               src={cardImageSrc}
               alt="Card"
-              className="w-full h-full object-contain"
+              className="w-full h-full object-contain rounded-lg"
             />
           </div>
 
           {/* Back Side */}
-          <div className="card-face card-face-back p-4 bg-white rounded-lg shadow-lg">
+          <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-white rounded-lg shadow-xl p-4 overflow-hidden flex flex-col">
+            <h2 className="font-semibold text-lg mb-2 text-gray-800">{profile?.title}</h2>
             <div
-              style={{
-                overflowY: 'auto',
-                maxHeight: '90%',
-                paddingRight: '8px',
-              }}
+              className="flex-1 overflow-y-auto pr-2"
+              style={{ maxHeight: 'calc(100% - 2.5rem)' }} // Adjust max-height based on title height
             >
-              <h2 className="font-semibold text-lg mb-2">{profile?.title}</h2>
-              <p className="text-sm whitespace-pre-line">{cardText}</p>
+              <p className="text-sm whitespace-pre-line text-gray-700">{cardText}</p>
             </div>
           </div>
         </div>
@@ -105,7 +107,7 @@ export default function CardModal({ card, type, isOpen, onClose }: CardModalProp
 
       <button
         onClick={onClose}
-        className="absolute top-6 right-6 text-white hover:text-red-400"
+        className="absolute top-6 right-6 text-white hover:text-red-400 z-50"
         aria-label="Close"
       >
         <X size={28} />

@@ -27,20 +27,9 @@ export default function NameAndBirthdateForm({
     }
   }, [])
 
-  const saveProfile = () => {
-    const newProfile = { name, birthdate }
-    const updated = [...savedProfiles, newProfile]
-    setSavedProfiles(updated)
-    localStorage.setItem('savedReadings', JSON.stringify(updated))
-  }
+  
 
-  const deleteProfile = () => {
-    const updated = savedProfiles.filter(
-      (p) => !(p.name === name && p.birthdate === birthdate)
-    )
-    setSavedProfiles(updated)
-    localStorage.setItem('savedReadings', JSON.stringify(updated))
-  }
+  
 
   const handleSelectSaved = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const [savedName, savedDate] = e.target.value.split('||')
