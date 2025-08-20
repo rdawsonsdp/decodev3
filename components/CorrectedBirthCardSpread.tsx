@@ -32,6 +32,39 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
   const [savedProfiles, setSavedProfiles] = useState<{ name: string; birthdate: string }[]>([]);
   const [flippedCards, setFlippedCards] = useState<Set<string>>(new Set());
 
+  const cardPositionDescriptions = {
+    birth: {
+      title: "Birth Card",
+      description: "Your child's core personality and natural gifts. This card reveals their fundamental nature, strengths, and the energy they bring to the world.",
+      insights: "Understanding this card helps you support their authentic self and natural tendencies."
+    },
+    longRange: {
+      title: "Long Range",
+      description: "The overarching theme and lessons for this year. This influence shapes major life experiences and growth opportunities.",
+      insights: "This energy guides the bigger picture of what your child is learning and developing this year."
+    },
+    pluto: {
+      title: "Pluto Card",
+      description: "Deep transformation and subconscious influences. This card represents powerful inner changes and spiritual growth happening beneath the surface.",
+      insights: "Pay attention to profound shifts in maturity, wisdom, and inner strength during this period."
+    },
+    result: {
+      title: "Result Card",
+      description: "The outcome and harvest of this year's experiences. This card shows what your child will accomplish or achieve by year's end.",
+      insights: "This represents the fruits of their efforts and the positive changes you can expect to see."
+    },
+    support: {
+      title: "Support Card",
+      description: "The energies and influences that will help your child succeed. This card reveals sources of strength and assistance available to them.",
+      insights: "Look for these supportive qualities in their environment, relationships, and natural abilities."
+    },
+    development: {
+      title: "Development Card",
+      description: "Areas of growth and skill-building focus. This card shows where your child will expand their abilities and knowledge.",
+      insights: "Encourage activities and experiences that align with this developmental energy and potential."
+    }
+  };
+
   useEffect(() => {
     const stored = localStorage.getItem('savedReadings');
     if (stored) {
@@ -249,8 +282,10 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                       <div className="card-inner">
                         {/* Card Back */}
                         <div className="card-face card-face-back">
-                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 flex items-center justify-center">
-                            <div className="text-white text-2xl font-bold opacity-30">✨</div>
+                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 p-3 flex flex-col justify-center text-white text-center">
+                            <h5 className="text-sm font-bold mb-2">{cardPositionDescriptions.birth.title}</h5>
+                            <p className="text-xs leading-tight mb-2">{cardPositionDescriptions.birth.description}</p>
+                            <p className="text-xs italic opacity-90">{cardPositionDescriptions.birth.insights}</p>
                           </div>
                         </div>
                         {/* Card Front */}
@@ -280,8 +315,10 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                       <div className="card-inner">
                         {/* Card Back */}
                         <div className="card-face card-face-back">
-                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 flex items-center justify-center">
-                            <div className="text-white text-2xl font-bold opacity-30">✨</div>
+                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 p-3 flex flex-col justify-center text-white text-center">
+                            <h5 className="text-sm font-bold mb-2">{cardPositionDescriptions.longRange.title}</h5>
+                            <p className="text-xs leading-tight mb-2">{cardPositionDescriptions.longRange.description}</p>
+                            <p className="text-xs italic opacity-90">{cardPositionDescriptions.longRange.insights}</p>
                           </div>
                         </div>
                         {/* Card Front */}
@@ -311,8 +348,10 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                       <div className="card-inner">
                         {/* Card Back */}
                         <div className="card-face card-face-back">
-                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 flex items-center justify-center">
-                            <div className="text-white text-2xl font-bold opacity-30">✨</div>
+                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-red-600 via-pink-600 to-purple-600 p-3 flex flex-col justify-center text-white text-center">
+                            <h5 className="text-sm font-bold mb-2">{cardPositionDescriptions.pluto.title}</h5>
+                            <p className="text-xs leading-tight mb-2">{cardPositionDescriptions.pluto.description}</p>
+                            <p className="text-xs italic opacity-90">{cardPositionDescriptions.pluto.insights}</p>
                           </div>
                         </div>
                         {/* Card Front */}
@@ -342,8 +381,10 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                       <div className="card-inner">
                         {/* Card Back */}
                         <div className="card-face card-face-back">
-                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 flex items-center justify-center">
-                            <div className="text-white text-2xl font-bold opacity-30">✨</div>
+                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-green-600 via-emerald-600 to-teal-600 p-3 flex flex-col justify-center text-white text-center">
+                            <h5 className="text-sm font-bold mb-2">{cardPositionDescriptions.result.title}</h5>
+                            <p className="text-xs leading-tight mb-2">{cardPositionDescriptions.result.description}</p>
+                            <p className="text-xs italic opacity-90">{cardPositionDescriptions.result.insights}</p>
                           </div>
                         </div>
                         {/* Card Front */}
@@ -373,8 +414,10 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                       <div className="card-inner">
                         {/* Card Back */}
                         <div className="card-face card-face-back">
-                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 flex items-center justify-center">
-                            <div className="text-white text-2xl font-bold opacity-30">✨</div>
+                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-yellow-600 via-orange-600 to-red-600 p-3 flex flex-col justify-center text-white text-center">
+                            <h5 className="text-sm font-bold mb-2">{cardPositionDescriptions.support.title}</h5>
+                            <p className="text-xs leading-tight mb-2">{cardPositionDescriptions.support.description}</p>
+                            <p className="text-xs italic opacity-90">{cardPositionDescriptions.support.insights}</p>
                           </div>
                         </div>
                         {/* Card Front */}
@@ -404,8 +447,10 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                       <div className="card-inner">
                         {/* Card Back */}
                         <div className="card-face card-face-back">
-                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 flex items-center justify-center">
-                            <div className="text-white text-2xl font-bold opacity-30">✨</div>
+                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 p-3 flex flex-col justify-center text-white text-center">
+                            <h5 className="text-sm font-bold mb-2">{cardPositionDescriptions.development.title}</h5>
+                            <p className="text-xs leading-tight mb-2">{cardPositionDescriptions.development.description}</p>
+                            <p className="text-xs italic opacity-90">{cardPositionDescriptions.development.insights}</p>
                           </div>
                         </div>
                         {/* Card Front */}
