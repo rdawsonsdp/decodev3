@@ -74,6 +74,10 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
 
   const handleCardClick = (card: string, type: string) => {
     setSelectedCard({ card, type });
+    // Haptic feedback for mobile
+    if (typeof window !== 'undefined' && 'vibrate' in navigator) {
+      navigator.vibrate(30);
+    }
   };
 
   const handleAgeSubmit = (e: React.FormEvent) => {
@@ -86,6 +90,13 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
     const updated = [...savedProfiles, newProfile];
     setSavedProfiles(updated);
     localStorage.setItem('savedReadings', JSON.stringify(updated));
+    
+    // Add sparkle effect
+    const saveButton = document.querySelector('[data-save-reading]')
+    if (saveButton) {
+      saveButton.classList.add('sparkle-effect')
+      setTimeout(() => saveButton.classList.remove('sparkle-effect'), 1000)
+    }
   };
 
   const deleteProfile = () => {
@@ -175,7 +186,8 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                         type="button"
                         variant="secondary"
                         onClick={saveProfile}
-                        className="h-6 px-2 text-xs"
+                        className="h-6 px-2 text-xs ripple-effect"
+                        data-save-reading
                       >
                         Save
                       </Button>
@@ -215,8 +227,8 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                     <img
                       src={getCardImage(birthCard) || '/placeholder.svg'}
                       alt={birthCard}
-                      className="w-full max-w-24 mx-auto mb-2 rounded-lg shadow-md cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl group-hover:shadow-purple-200"
-                      onClick={() => handleCardClick(birthCard, 'birth')}
+                      className="w-full max-w-24 mx-auto mb-2 rounded-lg shadow-md cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl group-hover:shadow-purple-200 card-shimmer card-glow mobile-feedback fade-in"
+                      onClick={() => { handleCardClick(birthCard, 'birth'); }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-purple-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
                   </div>
@@ -230,8 +242,8 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                     <img
                       src={getCardImage(yearlyForecast.longRange) || '/placeholder.svg'}
                       alt={yearlyForecast.longRange}
-                      className="w-full max-w-24 mx-auto mb-2 rounded-lg shadow-md cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl group-hover:shadow-blue-200"
-                      onClick={() => handleCardClick(yearlyForecast.longRange, 'forecast')}
+                      className="w-full max-w-24 mx-auto mb-2 rounded-lg shadow-md cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl group-hover:shadow-blue-200 card-shimmer card-glow mobile-feedback fade-in"
+                      onClick={() => { handleCardClick(yearlyForecast.longRange, 'forecast'); }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-blue-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
                   </div>
@@ -245,8 +257,8 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                     <img
                       src={getCardImage(yearlyForecast.pluto) || '/placeholder.svg'}
                       alt={yearlyForecast.pluto}
-                      className="w-full max-w-24 mx-auto mb-2 rounded-lg shadow-md cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl group-hover:shadow-red-200"
-                      onClick={() => handleCardClick(yearlyForecast.pluto, 'forecast')}
+                      className="w-full max-w-24 mx-auto mb-2 rounded-lg shadow-md cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl group-hover:shadow-red-200 card-shimmer card-glow mobile-feedback fade-in"
+                      onClick={() => { handleCardClick(yearlyForecast.pluto, 'forecast'); }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-red-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
                   </div>
@@ -260,8 +272,8 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                     <img
                       src={getCardImage(yearlyForecast.result) || '/placeholder.svg'}
                       alt={yearlyForecast.result}
-                      className="w-full max-w-24 mx-auto mb-2 rounded-lg shadow-md cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl group-hover:shadow-green-200"
-                      onClick={() => handleCardClick(yearlyForecast.result, 'forecast')}
+                      className="w-full max-w-24 mx-auto mb-2 rounded-lg shadow-md cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl group-hover:shadow-green-200 card-shimmer card-glow mobile-feedback fade-in"
+                      onClick={() => { handleCardClick(yearlyForecast.result, 'forecast'); }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-green-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
                   </div>
@@ -275,8 +287,8 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                     <img
                       src={getCardImage(yearlyForecast.support) || '/placeholder.svg'}
                       alt={yearlyForecast.support}
-                      className="w-full max-w-24 mx-auto mb-2 rounded-lg shadow-md cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl group-hover:shadow-yellow-200"
-                      onClick={() => handleCardClick(yearlyForecast.support, 'forecast')}
+                      className="w-full max-w-24 mx-auto mb-2 rounded-lg shadow-md cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl group-hover:shadow-yellow-200 card-shimmer card-glow mobile-feedback fade-in"
+                      onClick={() => { handleCardClick(yearlyForecast.support, 'forecast'); }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-yellow-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
                   </div>
@@ -290,8 +302,8 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                     <img
                       src={getCardImage(yearlyForecast.development) || '/placeholder.svg'}
                       alt={yearlyForecast.development}
-                      className="w-full max-w-24 mx-auto mb-2 rounded-lg shadow-md cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl group-hover:shadow-indigo-200"
-                      onClick={() => handleCardClick(yearlyForecast.development, 'forecast')}
+                      className="w-full max-w-24 mx-auto mb-2 rounded-lg shadow-md cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl group-hover:shadow-indigo-200 card-shimmer card-glow mobile-feedback fade-in"
+                      onClick={() => { handleCardClick(yearlyForecast.development, 'forecast'); }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-indigo-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
                   </div>
@@ -335,12 +347,12 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                     <img
                       src={getCardImage(period.card) || '/placeholder.svg'}
                       alt={period.card}
-                      className={`w-full max-w-20 mx-auto mb-2 rounded-lg shadow-md cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl ${
+                      className={`w-full max-w-20 mx-auto mb-2 rounded-lg shadow-md cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl card-shimmer card-glow mobile-feedback fade-in ${
                         period.planet === currentPlanetaryPeriod
                           ? 'ring-2 ring-purple-400 shadow-purple-200'
                           : ''
                       }`}
-                      onClick={() => handleCardClick(period.card, 'planetary')}
+                      onClick={() => { handleCardClick(period.card, 'forecast'); }}
                     />
                     {period.planet === currentPlanetaryPeriod && (
                       <div className="absolute -top-1 -right-1">
@@ -368,7 +380,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
         {selectedCard && (
           <CardModal
             card={selectedCard.card}
-            type={selectedCard.type}
+            type={selectedCard.type as 'birth' | 'forecast' | 'planetary'}
             isOpen={!!selectedCard}
             onClose={() => setSelectedCard(null)}
           />

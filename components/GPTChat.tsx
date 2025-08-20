@@ -78,6 +78,13 @@ export default function GPTChat({
     setSavedConversations(updated);
     localStorage.setItem(`conversations-${childName}`, JSON.stringify(updated));
     setCurrentConversationId(newEntry.id);
+    
+    // Add sparkle effect
+    const saveButton = document.querySelector('[data-save-conversation]')
+    if (saveButton) {
+      saveButton.classList.add('sparkle-effect')
+      setTimeout(() => saveButton.classList.remove('sparkle-effect'), 1000)
+    }
   };
 
   const loadConversation = (convId: string) => {
@@ -128,88 +135,38 @@ export default function GPTChat({
     }
   }
 
-  const generateAIResponse = (userMessage: string, intent: string) => {
-    const currentPlanetaryCard = planetaryPeriods.find((p) => {
-      const today = new Date()
-      const startDate = new Date(p.startDate)
-      const endDate = new Date(p.endDate)
-      return today >= startDate && today <= endDate
-    })
+  const generateAIResponse = async (userMessage: string, intent: string) => {
+    try {
+      const response = await fetch('/api/chat', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          message: userMessage,
+          emotionalIntent: intent,
+          childName,
+          birthCard,
+          currentAge,
+          yearlyForecast,
+          planetaryPeriods,
+          conversationHistory: messages.map(m => ({
+            role: m.type === 'user' ? 'user' : 'assistant',
+            content: m.content
+          }))
+        }),
+      })
 
-    const responses: Record<string, string[]> = {
-      concerned: [
-        `I understand your concern about ${childName}. As a ${birthCard} child at age ${currentAge}, they're naturally navigating some complex energies right now. The ${
-          yearlyForecast?.longRange || 'current'
-        } influence in their yearly spread suggests this is actually a time of important growth. What specific behavior or situation has you worried? I'm here to help you understand it through their cosmic blueprint.`,
-        `Your loving concern for ${childName} shows what a thoughtful parent you are. Children with the ${birthCard} birth card often experience ${
-          currentAge < 10
-            ? 'intense emotional waves'
-            : currentAge < 15
-            ? 'identity exploration phases'
-            : 'independence-seeking behaviors'
-        } around this age. The ${
-          currentPlanetaryCard?.planet || 'current planetary'
-        } period they're in right now (${
-          currentPlanetaryCard?.card || 'their current influence'
-        }) can amplify these tendencies. Let's explore what support they need most.`,
-      ],
-      curious: [
-        `What a wonderful question about ${childName}! Their ${birthCard} birth card reveals such fascinating layers. At age ${currentAge}, they're in their ${
-          yearlyForecast?.longRange || 'Long Range'
-        } year, which brings themes of ${
-          yearlyForecast?.longRange?.includes('♥')
-            ? 'emotional growth and relationships'
-            : yearlyForecast?.longRange?.includes('♣')
-            ? 'learning and communication'
-            : yearlyForecast?.longRange?.includes('♦')
-            ? 'practical skills and values'
-            : 'action and new experiences'
-        }. Right now, they're also under the ${
-          currentPlanetaryCard?.planet || 'current'
-        } planetary influence (${
-          currentPlanetaryCard?.card || 'their current card'
-        }), which adds another beautiful dimension to their personality.`,
-        `I love your curiosity about ${childName}'s inner world! The ${birthCard} energy is so special - these children often ${
-          birthCard.includes('♥')
-            ? 'lead with their emotions and have deep empathy'
-            : birthCard.includes('♣')
-            ? 'are natural communicators and love learning'
-            : birthCard.includes('♦')
-            ? 'have strong values and practical wisdom'
-            : 'are action-oriented and pioneering spirits'
-        }. At ${currentAge}, this manifests as... What specific aspect of their personality are you most curious about?`,
-      ],
-      celebrating: [
-        `How wonderful that you're celebrating ${childName}! Their ${birthCard} energy is truly shining through. At age ${currentAge}, they're in such a beautiful phase of development. The ${
-          yearlyForecast?.result || 'Result'
-        } card in their yearly spread (${
-          yearlyForecast?.result || 'their current result card'
-        }) suggests this is indeed a time for recognition and joy. Their ${
-          currentPlanetaryCard?.planet || 'current planetary'
-        } period is supporting this growth beautifully.`,
-        `Your joy about ${childName}'s growth fills my heart! As a ${birthCard} child, they're naturally gifted in ways that are becoming more visible at age ${currentAge}. The cosmic influences this year - especially their ${
-          yearlyForecast?.support || 'Support'
-        } card (${
-          yearlyForecast?.support || 'their support card'
-        }) - are creating perfect conditions for them to flourish. What specific achievement or growth are you celebrating?`,
-      ],
-      supportive: [
-        `Your supportive energy for ${childName} is exactly what they need right now. As a ${birthCard} child at age ${currentAge}, they're learning to balance their natural gifts with the world around them. The ${
-          yearlyForecast?.development || 'Development'
-        } card in their spread (${
-          yearlyForecast?.development || 'their development card'
-        }) shows where they're growing, and your loving support is helping them integrate these new aspects of themselves.`,
-        `What a gift you are to ${childName}! Your understanding approach is perfect for a ${birthCard} child. At this age (${currentAge}), they're working with the ${
-          yearlyForecast?.pluto || 'Pluto'
-        } influence (${
-          yearlyForecast?.pluto || 'their transformation card'
-        }), which can bring deep changes. Your supportive presence helps them navigate these shifts with confidence and grace.`,
-      ],
+      if (!response.ok) {
+        throw new Error('Failed to get response')
+      }
+
+      const data = await response.json()
+      return data.response
+    } catch (error) {
+      console.error('Chat error:', error)
+      return "I'm having trouble connecting right now. Please try again in a moment."
     }
-
-    const intentResponses =
-      responses[intent as keyof typeof responses] || responses.curious
-    return intentResponses[Math.floor(Math.random() * intentResponses.length)]
   }
 
   const handleSendMessage = async () => {
@@ -227,24 +184,31 @@ export default function GPTChat({
     setInputMessage('')
     setIsLoading(true)
 
-    // Simulate AI response delay
-    setTimeout(() => {
-      const assistantMessage: Message = {
-        id: (Date.now() + 1).toString(),
-        type: 'assistant',
-        content: generateAIResponse(inputMessage, emotionalIntent),
-        timestamp: new Date(),
-      }
+    // Get AI response
+    const aiResponse = await generateAIResponse(inputMessage, emotionalIntent)
+    
+    const assistantMessage: Message = {
+      id: (Date.now() + 1).toString(),
+      type: 'assistant',
+      content: aiResponse,
+      timestamp: new Date(),
+    }
 
-      setMessages((prev) => [...prev, assistantMessage])
-      setIsLoading(false)
-    }, 1500)
+    setMessages((prev) => [...prev, assistantMessage])
+    setIsLoading(false)
   }
 
-  const handleKeyPress = (e: React.KeyboardEvent) => {
+  const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter' && !e.shiftKey) {
       e.preventDefault()
       handleSendMessage()
+    }
+  }
+
+  // Haptic feedback for mobile devices
+  const triggerHapticFeedback = () => {
+    if (typeof window !== 'undefined' && 'vibrate' in navigator) {
+      navigator.vibrate(50)
     }
   }
 
@@ -433,22 +397,23 @@ export default function GPTChat({
             <Input
               value={inputMessage}
               onChange={(e) => setInputMessage(e.target.value)}
-              onKeyPress={handleKeyPress}
+              onKeyDown={handleKeyDown}
               placeholder="Ask me anything..."
               disabled={isLoading}
               className="flex-1 border-purple-200 focus:border-purple-500"
             />
             <Button
-              onClick={handleSendMessage}
+              onClick={() => { handleSendMessage(); triggerHapticFeedback(); }}
               disabled={!inputMessage.trim() || isLoading}
-              className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600"
+              className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 ripple-effect mobile-feedback"
             >
               <Send className="w-4 h-4" />
             </Button>
             <Button
-              onClick={() => saveConversation(`Conversation ${new Date().toLocaleString()}`)}
+              data-save-conversation
+              onClick={() => { saveConversation(`Conversation ${new Date().toLocaleString()}`); triggerHapticFeedback(); }}
               disabled={isLoading || messages.length <= 1}
-              className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600"
+              className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 transition-all duration-300 hover:shadow-lg ripple-effect mobile-feedback"
             >
               Save Conversation
             </Button>
