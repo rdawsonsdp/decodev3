@@ -30,6 +30,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
   const [planetaryPeriods, setPlanetaryPeriods] = useState<any[]>([]);
   const [currentPlanetaryPeriod, setCurrentPlanetaryPeriod] = useState<string>('');
   const [savedProfiles, setSavedProfiles] = useState<{ name: string; birthdate: string }[]>([]);
+  const [flippedCards, setFlippedCards] = useState<Set<string>>(new Set());
 
   useEffect(() => {
     const stored = localStorage.getItem('savedReadings');
@@ -74,6 +75,22 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
 
   const handleCardClick = (card: string, type: string) => {
     setSelectedCard({ card, type });
+    // Haptic feedback for mobile
+    if (typeof window !== 'undefined' && 'vibrate' in navigator) {
+      navigator.vibrate(30);
+    }
+  };
+
+  const handleCardFlip = (cardId: string) => {
+    setFlippedCards(prev => {
+      const newSet = new Set(prev);
+      if (newSet.has(cardId)) {
+        newSet.delete(cardId);
+      } else {
+        newSet.add(cardId);
+      }
+      return newSet;
+    });
     // Haptic feedback for mobile
     if (typeof window !== 'undefined' && 'vibrate' in navigator) {
       navigator.vibrate(30);
@@ -224,90 +241,192 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                 <div className="text-center group">
                   <h4 className="font-semibold text-purple-800 text-sm">Birth Card</h4>
                   <div className="relative">
-                    <img
-                      src={getCardImage(birthCard) || '/placeholder.svg'}
-                      alt={birthCard}
-                      className="w-full max-w-24 mx-auto mb-2 rounded-lg shadow-md cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl group-hover:shadow-purple-200 card-shimmer card-glow mobile-feedback fade-in"
-                      onClick={() => { handleCardClick(birthCard, 'birth'); }}
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-purple-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
+                    <div 
+                      className={`card-container w-full max-w-24 mx-auto mb-2 cursor-pointer ${flippedCards.has('birth') ? 'card-flipped' : ''}`}
+                      onClick={() => handleCardFlip('birth')}
+                      onDoubleClick={() => { handleCardClick(birthCard, 'birth'); }}
+                    >
+                      <div className="card-inner">
+                        {/* Card Back */}
+                        <div className="card-face card-face-back">
+                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 flex items-center justify-center card-shimmer card-glow mobile-feedback fade-in">
+                            <div className="text-white text-lg font-bold opacity-20">✨</div>
+                          </div>
+                        </div>
+                        {/* Card Front */}
+                        <div className="card-face card-face-front">
+                          <img
+                            src={getCardImage(birthCard) || '/placeholder.svg'}
+                            alt={birthCard}
+                            className="w-full h-full rounded-lg shadow-md card-shimmer card-glow mobile-feedback fade-in"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-purple-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg pointer-events-none"></div>
                   </div>
                   <p className="text-xs text-gray-600">{birthCard}</p>
+                  <p className="text-xs text-gray-400 mt-1">Click to flip • Double-click for details</p>
                 </div>
 
                 {/* Long Range */}
                 <div className="text-center group">
                   <h4 className="font-semibold text-blue-800 text-sm">Long Range</h4>
                   <div className="relative">
-                    <img
-                      src={getCardImage(yearlyForecast.longRange) || '/placeholder.svg'}
-                      alt={yearlyForecast.longRange}
-                      className="w-full max-w-24 mx-auto mb-2 rounded-lg shadow-md cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl group-hover:shadow-blue-200 card-shimmer card-glow mobile-feedback fade-in"
-                      onClick={() => { handleCardClick(yearlyForecast.longRange, 'forecast'); }}
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-blue-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
+                    <div 
+                      className={`card-container w-full max-w-24 mx-auto mb-2 cursor-pointer ${flippedCards.has('longRange') ? 'card-flipped' : ''}`}
+                      onClick={() => handleCardFlip('longRange')}
+                      onDoubleClick={() => { handleCardClick(yearlyForecast.longRange, 'forecast'); }}
+                    >
+                      <div className="card-inner">
+                        {/* Card Back */}
+                        <div className="card-face card-face-back">
+                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 flex items-center justify-center card-shimmer card-glow mobile-feedback fade-in">
+                            <div className="text-white text-lg font-bold opacity-20">✨</div>
+                          </div>
+                        </div>
+                        {/* Card Front */}
+                        <div className="card-face card-face-front">
+                          <img
+                            src={getCardImage(yearlyForecast.longRange) || '/placeholder.svg'}
+                            alt={yearlyForecast.longRange}
+                            className="w-full h-full rounded-lg shadow-md card-shimmer card-glow mobile-feedback fade-in"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-blue-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg pointer-events-none"></div>
                   </div>
                   <p className="text-xs text-gray-600">{yearlyForecast.longRange}</p>
+                  <p className="text-xs text-gray-400 mt-1">Click to flip • Double-click for details</p>
                 </div>
 
                 {/* Pluto */}
                 <div className="text-center group">
                   <h4 className="font-semibold text-red-800 text-sm">Pluto</h4>
                   <div className="relative">
-                    <img
-                      src={getCardImage(yearlyForecast.pluto) || '/placeholder.svg'}
-                      alt={yearlyForecast.pluto}
-                      className="w-full max-w-24 mx-auto mb-2 rounded-lg shadow-md cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl group-hover:shadow-red-200 card-shimmer card-glow mobile-feedback fade-in"
-                      onClick={() => { handleCardClick(yearlyForecast.pluto, 'forecast'); }}
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-red-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
+                    <div 
+                      className={`card-container w-full max-w-24 mx-auto mb-2 cursor-pointer ${flippedCards.has('pluto') ? 'card-flipped' : ''}`}
+                      onClick={() => handleCardFlip('pluto')}
+                      onDoubleClick={() => { handleCardClick(yearlyForecast.pluto, 'forecast'); }}
+                    >
+                      <div className="card-inner">
+                        {/* Card Back */}
+                        <div className="card-face card-face-back">
+                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 flex items-center justify-center card-shimmer card-glow mobile-feedback fade-in">
+                            <div className="text-white text-lg font-bold opacity-20">✨</div>
+                          </div>
+                        </div>
+                        {/* Card Front */}
+                        <div className="card-face card-face-front">
+                          <img
+                            src={getCardImage(yearlyForecast.pluto) || '/placeholder.svg'}
+                            alt={yearlyForecast.pluto}
+                            className="w-full h-full rounded-lg shadow-md card-shimmer card-glow mobile-feedback fade-in"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-red-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg pointer-events-none"></div>
                   </div>
                   <p className="text-xs text-gray-600">{yearlyForecast.pluto}</p>
+                  <p className="text-xs text-gray-400 mt-1">Click to flip • Double-click for details</p>
                 </div>
 
                 {/* Result */}
                 <div className="text-center group">
                   <h4 className="font-semibold text-green-800 text-sm">Result</h4>
                   <div className="relative">
-                    <img
-                      src={getCardImage(yearlyForecast.result) || '/placeholder.svg'}
-                      alt={yearlyForecast.result}
-                      className="w-full max-w-24 mx-auto mb-2 rounded-lg shadow-md cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl group-hover:shadow-green-200 card-shimmer card-glow mobile-feedback fade-in"
-                      onClick={() => { handleCardClick(yearlyForecast.result, 'forecast'); }}
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-green-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
+                    <div 
+                      className={`card-container w-full max-w-24 mx-auto mb-2 cursor-pointer ${flippedCards.has('result') ? 'card-flipped' : ''}`}
+                      onClick={() => handleCardFlip('result')}
+                      onDoubleClick={() => { handleCardClick(yearlyForecast.result, 'forecast'); }}
+                    >
+                      <div className="card-inner">
+                        {/* Card Back */}
+                        <div className="card-face card-face-back">
+                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 flex items-center justify-center card-shimmer card-glow mobile-feedback fade-in">
+                            <div className="text-white text-lg font-bold opacity-20">✨</div>
+                          </div>
+                        </div>
+                        {/* Card Front */}
+                        <div className="card-face card-face-front">
+                          <img
+                            src={getCardImage(yearlyForecast.result) || '/placeholder.svg'}
+                            alt={yearlyForecast.result}
+                            className="w-full h-full rounded-lg shadow-md card-shimmer card-glow mobile-feedback fade-in"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-green-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg pointer-events-none"></div>
                   </div>
                   <p className="text-xs text-gray-600">{yearlyForecast.result}</p>
+                  <p className="text-xs text-gray-400 mt-1">Click to flip • Double-click for details</p>
                 </div>
 
                 {/* Support */}
                 <div className="text-center group">
                   <h4 className="font-semibold text-yellow-800 text-sm">Support</h4>
                   <div className="relative">
-                    <img
-                      src={getCardImage(yearlyForecast.support) || '/placeholder.svg'}
-                      alt={yearlyForecast.support}
-                      className="w-full max-w-24 mx-auto mb-2 rounded-lg shadow-md cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl group-hover:shadow-yellow-200 card-shimmer card-glow mobile-feedback fade-in"
-                      onClick={() => { handleCardClick(yearlyForecast.support, 'forecast'); }}
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-yellow-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
+                    <div 
+                      className={`card-container w-full max-w-24 mx-auto mb-2 cursor-pointer ${flippedCards.has('support') ? 'card-flipped' : ''}`}
+                      onClick={() => handleCardFlip('support')}
+                      onDoubleClick={() => { handleCardClick(yearlyForecast.support, 'forecast'); }}
+                    >
+                      <div className="card-inner">
+                        {/* Card Back */}
+                        <div className="card-face card-face-back">
+                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 flex items-center justify-center card-shimmer card-glow mobile-feedback fade-in">
+                            <div className="text-white text-lg font-bold opacity-20">✨</div>
+                          </div>
+                        </div>
+                        {/* Card Front */}
+                        <div className="card-face card-face-front">
+                          <img
+                            src={getCardImage(yearlyForecast.support) || '/placeholder.svg'}
+                            alt={yearlyForecast.support}
+                            className="w-full h-full rounded-lg shadow-md card-shimmer card-glow mobile-feedback fade-in"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-yellow-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg pointer-events-none"></div>
                   </div>
                   <p className="text-xs text-gray-600">{yearlyForecast.support}</p>
+                  <p className="text-xs text-gray-400 mt-1">Click to flip • Double-click for details</p>
                 </div>
 
                 {/* Development */}
                 <div className="text-center group">
                   <h4 className="font-semibold text-indigo-800 text-sm">Development</h4>
                   <div className="relative">
-                    <img
-                      src={getCardImage(yearlyForecast.development) || '/placeholder.svg'}
-                      alt={yearlyForecast.development}
-                      className="w-full max-w-24 mx-auto mb-2 rounded-lg shadow-md cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl group-hover:shadow-indigo-200 card-shimmer card-glow mobile-feedback fade-in"
-                      onClick={() => { handleCardClick(yearlyForecast.development, 'forecast'); }}
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-indigo-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
+                    <div 
+                      className={`card-container w-full max-w-24 mx-auto mb-2 cursor-pointer ${flippedCards.has('development') ? 'card-flipped' : ''}`}
+                      onClick={() => handleCardFlip('development')}
+                      onDoubleClick={() => { handleCardClick(yearlyForecast.development, 'forecast'); }}
+                    >
+                      <div className="card-inner">
+                        {/* Card Back */}
+                        <div className="card-face card-face-back">
+                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 flex items-center justify-center card-shimmer card-glow mobile-feedback fade-in">
+                            <div className="text-white text-lg font-bold opacity-20">✨</div>
+                          </div>
+                        </div>
+                        {/* Card Front */}
+                        <div className="card-face card-face-front">
+                          <img
+                            src={getCardImage(yearlyForecast.development) || '/placeholder.svg'}
+                            alt={yearlyForecast.development}
+                            className="w-full h-full rounded-lg shadow-md card-shimmer card-glow mobile-feedback fade-in"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-indigo-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg pointer-events-none"></div>
                   </div>
                   <p className="text-xs text-gray-600">{yearlyForecast.development}</p>
+                  <p className="text-xs text-gray-400 mt-1">Click to flip • Double-click for details</p>
                 </div>
               </div>
             )}
