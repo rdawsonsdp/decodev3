@@ -295,7 +295,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                           <img
                             src={getCardImage(birthCard) || '/placeholder.svg'}
                             alt={birthCard}
-                            className="w-full h-full object-contain rounded-lg shadow-md"
+                            className="w-full h-full object-contain rounded-lg"
                           />
                         </div>
                       </div>
@@ -330,7 +330,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                           <img
                             src={getCardImage(yearlyForecast.longRange) || '/placeholder.svg'}
                             alt={yearlyForecast.longRange}
-                            className="w-full h-full object-contain rounded-lg shadow-md"
+                            className="w-full h-full object-contain"
                           />
                         </div>
                       </div>
@@ -365,7 +365,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                           <img
                             src={getCardImage(yearlyForecast.pluto) || '/placeholder.svg'}
                             alt={yearlyForecast.pluto}
-                            className="w-full h-full object-contain rounded-lg shadow-md"
+                            className="w-full h-full object-contain"
                           />
                         </div>
                       </div>
@@ -400,7 +400,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                           <img
                             src={getCardImage(yearlyForecast.result) || '/placeholder.svg'}
                             alt={yearlyForecast.result}
-                            className="w-full h-full object-contain rounded-lg shadow-md"
+                            className="w-full h-full object-contain"
                           />
                         </div>
                       </div>
@@ -435,7 +435,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                           <img
                             src={getCardImage(yearlyForecast.support) || '/placeholder.svg'}
                             alt={yearlyForecast.support}
-                            className="w-full h-full object-contain rounded-lg shadow-md"
+                            className="w-full h-full object-contain"
                           />
                         </div>
                       </div>
@@ -470,7 +470,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                           <img
                             src={getCardImage(yearlyForecast.development) || '/placeholder.svg'}
                             alt={yearlyForecast.development}
-                            className="w-full h-full object-contain rounded-lg shadow-md"
+                            className="w-full h-full object-contain"
                           />
                         </div>
                       </div>
