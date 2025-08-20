@@ -242,15 +242,15 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                   <h4 className="font-semibold text-purple-800 text-sm">Birth Card</h4>
                   <div className="relative">
                     <div 
-                      className={`card-container w-full max-w-24 mx-auto mb-2 cursor-pointer ${flippedCards.has('birth') ? 'card-flipped' : ''}`}
+                      className={`card-container mx-auto mb-2 cursor-pointer ${flippedCards.has('birth') ? 'card-flipped' : ''}`}
                       onClick={() => handleCardFlip('birth')}
                       onDoubleClick={() => { handleCardClick(birthCard, 'birth'); }}
                     >
                       <div className="card-inner">
                         {/* Card Back */}
                         <div className="card-face card-face-back">
-                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 flex items-center justify-center card-shimmer card-glow mobile-feedback fade-in">
-                            <div className="text-white text-lg font-bold opacity-20">✨</div>
+                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 flex items-center justify-center">
+                            <div className="text-white text-2xl font-bold opacity-30">✨</div>
                           </div>
                         </div>
                         {/* Card Front */}
@@ -258,12 +258,11 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                           <img
                             src={getCardImage(birthCard) || '/placeholder.svg'}
                             alt={birthCard}
-                            className="w-full h-full rounded-lg shadow-md card-shimmer card-glow mobile-feedback fade-in"
+                            className="w-full h-full object-contain rounded-lg shadow-md"
                           />
                         </div>
                       </div>
                     </div>
-                    <div className="absolute inset-0 bg-gradient-to-t from-purple-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg pointer-events-none"></div>
                   </div>
                   <p className="text-xs text-gray-600">{birthCard}</p>
                   <p className="text-xs text-gray-400 mt-1">Click to flip • Double-click for details</p>
@@ -274,15 +273,15 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                   <h4 className="font-semibold text-blue-800 text-sm">Long Range</h4>
                   <div className="relative">
                     <div 
-                      className={`card-container w-full max-w-24 mx-auto mb-2 cursor-pointer ${flippedCards.has('longRange') ? 'card-flipped' : ''}`}
+                      className={`card-container mx-auto mb-2 cursor-pointer ${flippedCards.has('longRange') ? 'card-flipped' : ''}`}
                       onClick={() => handleCardFlip('longRange')}
                       onDoubleClick={() => { handleCardClick(yearlyForecast.longRange, 'forecast'); }}
                     >
                       <div className="card-inner">
                         {/* Card Back */}
                         <div className="card-face card-face-back">
-                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 flex items-center justify-center card-shimmer card-glow mobile-feedback fade-in">
-                            <div className="text-white text-lg font-bold opacity-20">✨</div>
+                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 flex items-center justify-center">
+                            <div className="text-white text-2xl font-bold opacity-30">✨</div>
                           </div>
                         </div>
                         {/* Card Front */}
@@ -290,12 +289,11 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                           <img
                             src={getCardImage(yearlyForecast.longRange) || '/placeholder.svg'}
                             alt={yearlyForecast.longRange}
-                            className="w-full h-full rounded-lg shadow-md card-shimmer card-glow mobile-feedback fade-in"
+                            className="w-full h-full object-contain rounded-lg shadow-md"
                           />
                         </div>
                       </div>
                     </div>
-                    <div className="absolute inset-0 bg-gradient-to-t from-blue-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg pointer-events-none"></div>
                   </div>
                   <p className="text-xs text-gray-600">{yearlyForecast.longRange}</p>
                   <p className="text-xs text-gray-400 mt-1">Click to flip • Double-click for details</p>
@@ -306,15 +304,15 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                   <h4 className="font-semibold text-red-800 text-sm">Pluto</h4>
                   <div className="relative">
                     <div 
-                      className={`card-container w-full max-w-24 mx-auto mb-2 cursor-pointer ${flippedCards.has('pluto') ? 'card-flipped' : ''}`}
+                      className={`card-container mx-auto mb-2 cursor-pointer ${flippedCards.has('pluto') ? 'card-flipped' : ''}`}
                       onClick={() => handleCardFlip('pluto')}
                       onDoubleClick={() => { handleCardClick(yearlyForecast.pluto, 'forecast'); }}
                     >
                       <div className="card-inner">
                         {/* Card Back */}
                         <div className="card-face card-face-back">
-                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 flex items-center justify-center card-shimmer card-glow mobile-feedback fade-in">
-                            <div className="text-white text-lg font-bold opacity-20">✨</div>
+                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 flex items-center justify-center">
+                            <div className="text-white text-2xl font-bold opacity-30">✨</div>
                           </div>
                         </div>
                         {/* Card Front */}
@@ -322,12 +320,11 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                           <img
                             src={getCardImage(yearlyForecast.pluto) || '/placeholder.svg'}
                             alt={yearlyForecast.pluto}
-                            className="w-full h-full rounded-lg shadow-md card-shimmer card-glow mobile-feedback fade-in"
+                            className="w-full h-full object-contain rounded-lg shadow-md"
                           />
                         </div>
                       </div>
                     </div>
-                    <div className="absolute inset-0 bg-gradient-to-t from-red-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg pointer-events-none"></div>
                   </div>
                   <p className="text-xs text-gray-600">{yearlyForecast.pluto}</p>
                   <p className="text-xs text-gray-400 mt-1">Click to flip • Double-click for details</p>
@@ -338,15 +335,15 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                   <h4 className="font-semibold text-green-800 text-sm">Result</h4>
                   <div className="relative">
                     <div 
-                      className={`card-container w-full max-w-24 mx-auto mb-2 cursor-pointer ${flippedCards.has('result') ? 'card-flipped' : ''}`}
+                      className={`card-container mx-auto mb-2 cursor-pointer ${flippedCards.has('result') ? 'card-flipped' : ''}`}
                       onClick={() => handleCardFlip('result')}
                       onDoubleClick={() => { handleCardClick(yearlyForecast.result, 'forecast'); }}
                     >
                       <div className="card-inner">
                         {/* Card Back */}
                         <div className="card-face card-face-back">
-                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 flex items-center justify-center card-shimmer card-glow mobile-feedback fade-in">
-                            <div className="text-white text-lg font-bold opacity-20">✨</div>
+                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 flex items-center justify-center">
+                            <div className="text-white text-2xl font-bold opacity-30">✨</div>
                           </div>
                         </div>
                         {/* Card Front */}
@@ -354,12 +351,11 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                           <img
                             src={getCardImage(yearlyForecast.result) || '/placeholder.svg'}
                             alt={yearlyForecast.result}
-                            className="w-full h-full rounded-lg shadow-md card-shimmer card-glow mobile-feedback fade-in"
+                            className="w-full h-full object-contain rounded-lg shadow-md"
                           />
                         </div>
                       </div>
                     </div>
-                    <div className="absolute inset-0 bg-gradient-to-t from-green-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg pointer-events-none"></div>
                   </div>
                   <p className="text-xs text-gray-600">{yearlyForecast.result}</p>
                   <p className="text-xs text-gray-400 mt-1">Click to flip • Double-click for details</p>
@@ -370,15 +366,15 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                   <h4 className="font-semibold text-yellow-800 text-sm">Support</h4>
                   <div className="relative">
                     <div 
-                      className={`card-container w-full max-w-24 mx-auto mb-2 cursor-pointer ${flippedCards.has('support') ? 'card-flipped' : ''}`}
+                      className={`card-container mx-auto mb-2 cursor-pointer ${flippedCards.has('support') ? 'card-flipped' : ''}`}
                       onClick={() => handleCardFlip('support')}
                       onDoubleClick={() => { handleCardClick(yearlyForecast.support, 'forecast'); }}
                     >
                       <div className="card-inner">
                         {/* Card Back */}
                         <div className="card-face card-face-back">
-                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 flex items-center justify-center card-shimmer card-glow mobile-feedback fade-in">
-                            <div className="text-white text-lg font-bold opacity-20">✨</div>
+                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 flex items-center justify-center">
+                            <div className="text-white text-2xl font-bold opacity-30">✨</div>
                           </div>
                         </div>
                         {/* Card Front */}
@@ -386,12 +382,11 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                           <img
                             src={getCardImage(yearlyForecast.support) || '/placeholder.svg'}
                             alt={yearlyForecast.support}
-                            className="w-full h-full rounded-lg shadow-md card-shimmer card-glow mobile-feedback fade-in"
+                            className="w-full h-full object-contain rounded-lg shadow-md"
                           />
                         </div>
                       </div>
                     </div>
-                    <div className="absolute inset-0 bg-gradient-to-t from-yellow-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg pointer-events-none"></div>
                   </div>
                   <p className="text-xs text-gray-600">{yearlyForecast.support}</p>
                   <p className="text-xs text-gray-400 mt-1">Click to flip • Double-click for details</p>
@@ -402,15 +397,15 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                   <h4 className="font-semibold text-indigo-800 text-sm">Development</h4>
                   <div className="relative">
                     <div 
-                      className={`card-container w-full max-w-24 mx-auto mb-2 cursor-pointer ${flippedCards.has('development') ? 'card-flipped' : ''}`}
+                      className={`card-container mx-auto mb-2 cursor-pointer ${flippedCards.has('development') ? 'card-flipped' : ''}`}
                       onClick={() => handleCardFlip('development')}
                       onDoubleClick={() => { handleCardClick(yearlyForecast.development, 'forecast'); }}
                     >
                       <div className="card-inner">
                         {/* Card Back */}
                         <div className="card-face card-face-back">
-                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 flex items-center justify-center card-shimmer card-glow mobile-feedback fade-in">
-                            <div className="text-white text-lg font-bold opacity-20">✨</div>
+                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 flex items-center justify-center">
+                            <div className="text-white text-2xl font-bold opacity-30">✨</div>
                           </div>
                         </div>
                         {/* Card Front */}
@@ -418,12 +413,11 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                           <img
                             src={getCardImage(yearlyForecast.development) || '/placeholder.svg'}
                             alt={yearlyForecast.development}
-                            className="w-full h-full rounded-lg shadow-md card-shimmer card-glow mobile-feedback fade-in"
+                            className="w-full h-full object-contain rounded-lg shadow-md"
                           />
                         </div>
                       </div>
                     </div>
-                    <div className="absolute inset-0 bg-gradient-to-t from-indigo-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg pointer-events-none"></div>
                   </div>
                   <p className="text-xs text-gray-600">{yearlyForecast.development}</p>
                   <p className="text-xs text-gray-400 mt-1">Click to flip • Double-click for details</p>
