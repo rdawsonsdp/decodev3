@@ -274,10 +274,10 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                         {/* Card Back */}
                         <div className="card-face card-face-back">
                           <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 relative overflow-hidden">
-                            <div className="absolute inset-2 flex flex-col justify-center text-white text-center">
-                              <h5 className="text-sm font-bold mb-1">{cardPositionDescriptions.birth.title}</h5>
-                              <p className="text-xs leading-tight mb-1">{cardPositionDescriptions.birth.description}</p>
-                              <p className="text-xs italic opacity-90">{cardPositionDescriptions.birth.insights}</p>
+                            <div className="absolute inset-y-2 inset-x-[10px] flex flex-col justify-center text-white text-center">
+                              <h5 className="text-lg font-bold mb-1">{cardPositionDescriptions.birth.title}</h5>
+                              <p className="text-[17px] leading-tight mb-1">{cardPositionDescriptions.birth.description}</p>
+                              <p className="text-[17px] italic opacity-90">{cardPositionDescriptions.birth.insights}</p>
                             </div>
                           </div>
                         </div>
@@ -306,10 +306,10 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                         {/* Card Back */}
                         <div className="card-face card-face-back">
                           <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 relative overflow-hidden">
-                            <div className="absolute inset-2 flex flex-col justify-center text-white text-center">
-                              <h5 className="text-sm font-bold mb-1">{cardPositionDescriptions.longRange.title}</h5>
-                              <p className="text-xs leading-tight mb-1">{cardPositionDescriptions.longRange.description}</p>
-                              <p className="text-xs italic opacity-90">{cardPositionDescriptions.longRange.insights}</p>
+                            <div className="absolute inset-y-2 inset-x-[10px] flex flex-col justify-center text-white text-center">
+                              <h5 className="text-lg font-bold mb-1">{cardPositionDescriptions.longRange.title}</h5>
+                              <p className="text-[17px] leading-tight mb-1">{cardPositionDescriptions.longRange.description}</p>
+                              <p className="text-[17px] italic opacity-90">{cardPositionDescriptions.longRange.insights}</p>
                             </div>
                           </div>
                         </div>
@@ -338,10 +338,10 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                         {/* Card Back */}
                         <div className="card-face card-face-back">
                           <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-red-600 via-pink-600 to-purple-600 relative overflow-hidden">
-                            <div className="absolute inset-2 flex flex-col justify-center text-white text-center">
-                              <h5 className="text-sm font-bold mb-1">{cardPositionDescriptions.pluto.title}</h5>
-                              <p className="text-xs leading-tight mb-1">{cardPositionDescriptions.pluto.description}</p>
-                              <p className="text-xs italic opacity-90">{cardPositionDescriptions.pluto.insights}</p>
+                            <div className="absolute inset-y-2 inset-x-[10px] flex flex-col justify-center text-white text-center">
+                              <h5 className="text-lg font-bold mb-1">{cardPositionDescriptions.pluto.title}</h5>
+                              <p className="text-[17px] leading-tight mb-1">{cardPositionDescriptions.pluto.description}</p>
+                              <p className="text-[17px] italic opacity-90">{cardPositionDescriptions.pluto.insights}</p>
                             </div>
                           </div>
                         </div>
@@ -370,10 +370,10 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                         {/* Card Back */}
                         <div className="card-face card-face-back">
                           <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-green-600 via-emerald-600 to-teal-600 relative overflow-hidden">
-                            <div className="absolute inset-2 flex flex-col justify-center text-white text-center">
-                              <h5 className="text-sm font-bold mb-1">{cardPositionDescriptions.result.title}</h5>
-                              <p className="text-xs leading-tight mb-1">{cardPositionDescriptions.result.description}</p>
-                              <p className="text-xs italic opacity-90">{cardPositionDescriptions.result.insights}</p>
+                            <div className="absolute inset-y-2 inset-x-[10px] flex flex-col justify-center text-white text-center">
+                              <h5 className="text-lg font-bold mb-1">{cardPositionDescriptions.result.title}</h5>
+                              <p className="text-[17px] leading-tight mb-1">{cardPositionDescriptions.result.description}</p>
+                              <p className="text-[17px] italic opacity-90">{cardPositionDescriptions.result.insights}</p>
                             </div>
                           </div>
                         </div>
@@ -402,10 +402,10 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                         {/* Card Back */}
                         <div className="card-face card-face-back">
                           <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-yellow-600 via-orange-600 to-red-600 relative overflow-hidden">
-                            <div className="absolute inset-2 flex flex-col justify-center text-white text-center">
-                              <h5 className="text-sm font-bold mb-1">{cardPositionDescriptions.support.title}</h5>
-                              <p className="text-xs leading-tight mb-1">{cardPositionDescriptions.support.description}</p>
-                              <p className="text-xs italic opacity-90">{cardPositionDescriptions.support.insights}</p>
+                            <div className="absolute inset-y-2 inset-x-[10px] flex flex-col justify-center text-white text-center">
+                              <h5 className="text-lg font-bold mb-1">{cardPositionDescriptions.support.title}</h5>
+                              <p className="text-[17px] leading-tight mb-1">{cardPositionDescriptions.support.description}</p>
+                              <p className="text-[17px] italic opacity-90">{cardPositionDescriptions.support.insights}</p>
                             </div>
                           </div>
                         </div>
@@ -434,10 +434,10 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                         {/* Card Back */}
                         <div className="card-face card-face-back">
                           <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 relative overflow-hidden">
-                            <div className="absolute inset-2 flex flex-col justify-center text-white text-center">
-                              <h5 className="text-sm font-bold mb-1">{cardPositionDescriptions.development.title}</h5>
-                              <p className="text-xs leading-tight mb-1">{cardPositionDescriptions.development.description}</p>
-                              <p className="text-xs italic opacity-90">{cardPositionDescriptions.development.insights}</p>
+                            <div className="absolute inset-y-2 inset-x-[10px] flex flex-col justify-center text-white text-center">
+                              <h5 className="text-lg font-bold mb-1">{cardPositionDescriptions.development.title}</h5>
+                              <p className="text-[17px] leading-tight mb-1">{cardPositionDescriptions.development.description}</p>
+                              <p className="text-[17px] italic opacity-90">{cardPositionDescriptions.development.insights}</p>
                             </div>
                           </div>
                         </div>
