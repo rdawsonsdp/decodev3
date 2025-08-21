@@ -30,7 +30,6 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
   const [planetaryPeriods, setPlanetaryPeriods] = useState<any[]>([]);
   const [currentPlanetaryPeriod, setCurrentPlanetaryPeriod] = useState<string>('');
   const [savedProfiles, setSavedProfiles] = useState<{ name: string; birthdate: string }[]>([]);
-  const [flippedCards, setFlippedCards] = useState<Set<string>>(new Set());
 
   const cardPositionDescriptions = {
     birth: {
@@ -114,21 +113,6 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
     }
   };
 
-  const handleCardFlip = (cardId: string) => {
-    setFlippedCards(prev => {
-      const newSet = new Set(prev);
-      if (newSet.has(cardId)) {
-        newSet.delete(cardId);
-      } else {
-        newSet.add(cardId);
-      }
-      return newSet;
-    });
-    // Haptic feedback for mobile
-    if (typeof window !== 'undefined' && 'vibrate' in navigator) {
-      navigator.vibrate(30);
-    }
-  };
 
   const handleAgeSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -166,16 +150,19 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
       <div className="container mx-auto px-4 py-6 max-w-7xl">
         {/* Header */}
-        {onBack && (
-          <Button
-            variant="ghost"
-            onClick={onBack}
-            className="mb-4 flex items-center gap-2 hover:bg-white/50 transition-all duration-200"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            Back to Form
-          </Button>
-        )}
+        <div className="flex justify-between items-center mb-4">
+          {onBack && (
+            <Button
+              variant="ghost"
+              onClick={onBack}
+              className="flex items-center gap-2 hover:bg-white/50 transition-all duration-200"
+            >
+              <ArrowLeft className="h-4 w-4" />
+              Back to Form
+            </Button>
+          )}
+          <p className="text-sm text-gray-600 font-medium">Click cards to flip and view details</p>
+        </div>
 
         {/* Top Left Info Panel */}
         <Card className="mb-8 shadow-lg border-0 bg-white/90 backdrop-blur-sm">
@@ -275,9 +262,8 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                   <h4 className="font-semibold text-purple-800 text-sm">Birth Card</h4>
                   <div className="relative">
                     <div 
-                      className={`card-container mx-auto mb-2 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl card-shimmer card-glow mobile-feedback fade-in ${flippedCards.has('birth') ? 'card-flipped' : ''}`}
-                      onClick={() => handleCardFlip('birth')}
-                      onDoubleClick={() => { handleCardClick(birthCard, 'birth'); }}
+                      className="card-container mx-auto mb-2 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl card-shimmer card-glow mobile-feedback fade-in"
+                      onClick={() => handleCardClick(birthCard, 'birth')}
                     >
                       <div className="card-inner">
                         {/* Card Back */}
@@ -301,8 +287,6 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                       </div>
                     </div>
                   </div>
-                  <p className="text-xs text-gray-600">{birthCard}</p>
-                  <p className="text-xs text-gray-400 mt-1">Click to flip • Double-click for details</p>
                 </div>
 
                 {/* Long Range */}
@@ -310,9 +294,8 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                   <h4 className="font-semibold text-blue-800 text-sm">Long Range</h4>
                   <div className="relative">
                     <div 
-                      className={`card-container mx-auto mb-2 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl card-shimmer card-glow mobile-feedback fade-in ${flippedCards.has('longRange') ? 'card-flipped' : ''}`}
-                      onClick={() => handleCardFlip('longRange')}
-                      onDoubleClick={() => { handleCardClick(yearlyForecast.longRange, 'forecast'); }}
+                      className="card-container mx-auto mb-2 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl card-shimmer card-glow mobile-feedback fade-in"
+                      onClick={() => handleCardClick(yearlyForecast.longRange, 'forecast')}
                     >
                       <div className="card-inner">
                         {/* Card Back */}
@@ -336,8 +319,6 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                       </div>
                     </div>
                   </div>
-                  <p className="text-xs text-gray-600">{yearlyForecast.longRange}</p>
-                  <p className="text-xs text-gray-400 mt-1">Click to flip • Double-click for details</p>
                 </div>
 
                 {/* Pluto */}
@@ -345,9 +326,8 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                   <h4 className="font-semibold text-red-800 text-sm">Pluto</h4>
                   <div className="relative">
                     <div 
-                      className={`card-container mx-auto mb-2 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl card-shimmer card-glow mobile-feedback fade-in ${flippedCards.has('pluto') ? 'card-flipped' : ''}`}
-                      onClick={() => handleCardFlip('pluto')}
-                      onDoubleClick={() => { handleCardClick(yearlyForecast.pluto, 'forecast'); }}
+                      className="card-container mx-auto mb-2 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl card-shimmer card-glow mobile-feedback fade-in"
+                      onClick={() => handleCardClick(yearlyForecast.pluto, 'forecast')}
                     >
                       <div className="card-inner">
                         {/* Card Back */}
@@ -371,8 +351,6 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                       </div>
                     </div>
                   </div>
-                  <p className="text-xs text-gray-600">{yearlyForecast.pluto}</p>
-                  <p className="text-xs text-gray-400 mt-1">Click to flip • Double-click for details</p>
                 </div>
 
                 {/* Result */}
@@ -380,9 +358,8 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                   <h4 className="font-semibold text-green-800 text-sm">Result</h4>
                   <div className="relative">
                     <div 
-                      className={`card-container mx-auto mb-2 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl card-shimmer card-glow mobile-feedback fade-in ${flippedCards.has('result') ? 'card-flipped' : ''}`}
-                      onClick={() => handleCardFlip('result')}
-                      onDoubleClick={() => { handleCardClick(yearlyForecast.result, 'forecast'); }}
+                      className="card-container mx-auto mb-2 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl card-shimmer card-glow mobile-feedback fade-in"
+                      onClick={() => handleCardClick(yearlyForecast.result, 'forecast')}
                     >
                       <div className="card-inner">
                         {/* Card Back */}
@@ -406,8 +383,6 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                       </div>
                     </div>
                   </div>
-                  <p className="text-xs text-gray-600">{yearlyForecast.result}</p>
-                  <p className="text-xs text-gray-400 mt-1">Click to flip • Double-click for details</p>
                 </div>
 
                 {/* Support */}
@@ -415,9 +390,8 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                   <h4 className="font-semibold text-yellow-800 text-sm">Support</h4>
                   <div className="relative">
                     <div 
-                      className={`card-container mx-auto mb-2 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl card-shimmer card-glow mobile-feedback fade-in ${flippedCards.has('support') ? 'card-flipped' : ''}`}
-                      onClick={() => handleCardFlip('support')}
-                      onDoubleClick={() => { handleCardClick(yearlyForecast.support, 'forecast'); }}
+                      className="card-container mx-auto mb-2 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl card-shimmer card-glow mobile-feedback fade-in"
+                      onClick={() => handleCardClick(yearlyForecast.support, 'forecast')}
                     >
                       <div className="card-inner">
                         {/* Card Back */}
@@ -441,8 +415,6 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                       </div>
                     </div>
                   </div>
-                  <p className="text-xs text-gray-600">{yearlyForecast.support}</p>
-                  <p className="text-xs text-gray-400 mt-1">Click to flip • Double-click for details</p>
                 </div>
 
                 {/* Development */}
@@ -450,9 +422,8 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                   <h4 className="font-semibold text-indigo-800 text-sm">Development</h4>
                   <div className="relative">
                     <div 
-                      className={`card-container mx-auto mb-2 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl card-shimmer card-glow mobile-feedback fade-in ${flippedCards.has('development') ? 'card-flipped' : ''}`}
-                      onClick={() => handleCardFlip('development')}
-                      onDoubleClick={() => { handleCardClick(yearlyForecast.development, 'forecast'); }}
+                      className="card-container mx-auto mb-2 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl card-shimmer card-glow mobile-feedback fade-in"
+                      onClick={() => handleCardClick(yearlyForecast.development, 'forecast')}
                     >
                       <div className="card-inner">
                         {/* Card Back */}
@@ -476,8 +447,6 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                       </div>
                     </div>
                   </div>
-                  <p className="text-xs text-gray-600">{yearlyForecast.development}</p>
-                  <p className="text-xs text-gray-400 mt-1">Click to flip • Double-click for details</p>
                 </div>
               </div>
             )}
@@ -522,7 +491,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                           ? 'ring-2 ring-purple-400 shadow-purple-200'
                           : ''
                       }`}
-                      onClick={() => { handleCardClick(period.card, 'forecast'); }}
+                      onClick={() => handleCardClick(period.card, 'forecast')}
                     />
                     {period.planet === currentPlanetaryPeriod && (
                       <div className="absolute -top-1 -right-1">

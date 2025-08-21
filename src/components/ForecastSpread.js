@@ -138,10 +138,6 @@ const ForecastSpread = ({ birthCard, age, onForecastCardsGenerated }) => {
             >
               <div className="card-label">{displayName}</div>
               
-              <div style={{marginBottom: '10px'}}>
-                <strong>{cardCode}</strong>
-              </div>
-              
               {cardCode && cardCode !== 'None' && (
                 <div className="card-image-container">
                   <img
