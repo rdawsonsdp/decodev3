@@ -142,7 +142,8 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
   };
 
   const formatDate = (dateStr: string) => {
-    const date = new Date(dateStr);
+    const [year, month, day] = dateStr.split('-').map(Number);
+    const date = new Date(year, month - 1, day);
     return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
   };
 
@@ -181,11 +182,15 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                 <div>
                   <Label className="text-sm text-gray-600">Date of Birth</Label>
                   <p className="font-semibold text-lg text-gray-800">
-                    {new Date(childData.birthdate).toLocaleDateString('en-US', {
-                      year: 'numeric',
-                      month: 'long',
-                      day: 'numeric',
-                    })}
+                    {(() => {
+                      const [year, month, day] = childData.birthdate.split('-').map(Number);
+                      const birthDate = new Date(year, month - 1, day);
+                      return birthDate.toLocaleDateString('en-US', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric',
+                      });
+                    })()}
                   </p>
                 </div>
               </div>
