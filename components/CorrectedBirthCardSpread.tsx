@@ -23,7 +23,10 @@ interface CorrectedBirthCardSpreadProps {
 
 export default function CorrectedBirthCardSpread({ childData, onBack }: CorrectedBirthCardSpreadProps) {
   const [currentAge, setCurrentAge] = useState(0);
-  const [isEditingAge, setIsEditingAge] = useState(false);
+  const [isEditingName, setIsEditingName] = useState(false);
+  const [isEditingBirthdate, setIsEditingBirthdate] = useState(false);
+  const [editedName, setEditedName] = useState(childData.name);
+  const [editedBirthdate, setEditedBirthdate] = useState(childData.birthdate);
   const [selectedCard, setSelectedCard] = useState<{ card: string; type: string } | null>(null);
   const [birthCard, setBirthCard] = useState('');
   const [yearlyForecast, setYearlyForecast] = useState<any>(null);
@@ -74,15 +77,15 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
   useEffect(() => {
     // Calculate initial age
     const today = new Date();
-    const [year, month, day] = childData.birthdate.split('-').map(Number);
+    const [year, month, day] = editedBirthdate.split('-').map(Number);
     const birthDate = new Date(year, month - 1, day);
     const age = Math.floor((today.getTime() - birthDate.getTime()) / (365.25 * 24 * 60 * 60 * 1000));
     setCurrentAge(age);
 
     // Get birth card
-    const card = getBirthCardFromDate(childData.birthdate);
+    const card = getBirthCardFromDate(editedBirthdate);
     setBirthCard(card);
-  }, [childData.birthdate]);
+  }, [editedBirthdate]);
 
   useEffect(() => {
     if (birthCard && currentAge >= 0) {
@@ -91,7 +94,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
       setYearlyForecast(forecast);
 
       // Get planetary periods
-      const periods = getPlanetaryPeriods(birthCard, currentAge, childData.birthdate);
+      const periods = getPlanetaryPeriods(birthCard, currentAge, editedBirthdate);
       setPlanetaryPeriods(periods);
 
       // Determine current planetary period
@@ -103,7 +106,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
       });
       setCurrentPlanetaryPeriod(currentPeriod?.planet || '');
     }
-  }, [birthCard, currentAge, childData.birthdate]);
+  }, [birthCard, currentAge, editedBirthdate]);
 
   const handleCardClick = (card: string, type: string) => {
     setSelectedCard({ card, type });
@@ -114,13 +117,24 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
   };
 
 
-  const handleAgeSubmit = (e: React.FormEvent) => {
+  const handleNameSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsEditingAge(false);
+    setIsEditingName(false);
+  };
+
+  const handleBirthdateSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsEditingBirthdate(false);
+    // Recalculate age and other data based on new birthdate
+    const today = new Date();
+    const [year, month, day] = editedBirthdate.split('-').map(Number);
+    const birthDate = new Date(year, month - 1, day);
+    const age = Math.floor((today.getTime() - birthDate.getTime()) / (365.25 * 24 * 60 * 60 * 1000));
+    setCurrentAge(age);
   };
 
   const saveProfile = () => {
-    const newProfile = { name: childData.name, birthdate: childData.birthdate };
+    const newProfile = { name: editedName, birthdate: editedBirthdate };
     const updated = [...savedProfiles, newProfile];
     setSavedProfiles(updated);
     localStorage.setItem('savedReadings', JSON.stringify(updated));
@@ -135,7 +149,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
 
   const deleteProfile = () => {
     const updated = savedProfiles.filter(
-      (p) => !(p.name === childData.name && p.birthdate === childData.birthdate)
+      (p) => !(p.name === editedName && p.birthdate === editedBirthdate)
     );
     setSavedProfiles(updated);
     localStorage.setItem('savedReadings', JSON.stringify(updated));
@@ -170,79 +184,103 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
           <CardContent className="p-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
               <div className="flex items-center gap-3">
-                <User className="w-5 h-5 text-purple-600" />
-                <div>
-                  <Label className="text-sm text-gray-600">Child's Name</Label>
-                  <p className="font-semibold text-lg text-gray-800">{childData.name}</p>
-                </div>
-              </div>
-              
-              <div className="flex items-center gap-3">
-                <Calendar className="w-5 h-5 text-purple-600" />
-                <div>
-                  <Label className="text-sm text-gray-600">Date of Birth</Label>
-                  <p className="font-semibold text-lg text-gray-800">
-                    {(() => {
-                      const [year, month, day] = childData.birthdate.split('-').map(Number);
-                      const birthDate = new Date(year, month - 1, day);
-                      return birthDate.toLocaleDateString('en-US', {
-                        year: 'numeric',
-                        month: 'long',
-                        day: 'numeric',
-                      });
-                    })()}
-                  </p>
-                </div>
-              </div>
-              
-              <div className="flex items-center gap-3">
-                <Edit3 className="w-5 h-5 text-purple-600" />
+                <User className="w-5 h-5 text-blue-600" />
                 <div className="flex-1">
-                  <Label className="text-sm text-gray-600">Age</Label>
-                  {isEditingAge ? (
-                    <form onSubmit={handleAgeSubmit} className="flex gap-2">
+                  <Label className="text-sm text-gray-600">Child's Name</Label>
+                  {isEditingName ? (
+                    <form onSubmit={handleNameSubmit} className="flex gap-2">
                       <Input
-                        type="number"
-                        value={currentAge}
-                        onChange={(e) => setCurrentAge(parseInt(e.target.value) || 0)}
-                        className="w-20 h-8"
-                        min="0"
-                        max="100"
+                        type="text"
+                        value={editedName}
+                        onChange={(e) => setEditedName(e.target.value)}
+                        className="h-8"
                       />
-                      <Button type="submit" size="sm" className="h-8">
+                      <Button type="submit" size="sm" className="h-8 bg-blue-600 hover:bg-blue-700 text-white">
                         Save
                       </Button>
                     </form>
                   ) : (
                     <div className="flex items-center gap-2">
-                      <p className="font-semibold text-lg text-gray-800">{currentAge}</p>
+                      <p className="font-semibold text-lg text-gray-800">{editedName}</p>
                       <Button
-                        variant="ghost"
+                        variant="outline"
                         size="sm"
-                        onClick={() => setIsEditingAge(true)}
-                        className="h-6 px-2 text-xs"
+                        onClick={() => setIsEditingName(true)}
+                        className="h-8 px-3 text-xs bg-blue-50 border-blue-200 text-blue-700 hover:bg-blue-100 hover:border-blue-300"
                       >
                         Edit
                       </Button>
-                      <Button
-                        type="button"
-                        variant="secondary"
-                        onClick={saveProfile}
-                        className="h-6 px-2 text-xs ripple-effect"
-                        data-save-reading
-                      >
+                    </div>
+                  )}
+                </div>
+              </div>
+              
+              <div className="flex items-center gap-3">
+                <Calendar className="w-5 h-5 text-blue-600" />
+                <div className="flex-1">
+                  <Label className="text-sm text-gray-600">Date of Birth</Label>
+                  {isEditingBirthdate ? (
+                    <form onSubmit={handleBirthdateSubmit} className="flex gap-2">
+                      <Input
+                        type="date"
+                        value={editedBirthdate}
+                        onChange={(e) => setEditedBirthdate(e.target.value)}
+                        className="h-8"
+                      />
+                      <Button type="submit" size="sm" className="h-8 bg-blue-600 hover:bg-blue-700 text-white">
                         Save
                       </Button>
+                    </form>
+                  ) : (
+                    <div className="flex items-center gap-2">
+                      <p className="font-semibold text-lg text-gray-800">
+                        {(() => {
+                          const [year, month, day] = editedBirthdate.split('-').map(Number);
+                          const birthDate = new Date(year, month - 1, day);
+                          return birthDate.toLocaleDateString('en-US', {
+                            year: 'numeric',
+                            month: 'long',
+                            day: 'numeric',
+                          });
+                        })()}
+                      </p>
                       <Button
-                        type="button"
-                        variant="destructive"
-                        onClick={deleteProfile}
-                        className="h-6 px-2 text-xs"
+                        variant="outline"
+                        size="sm"
+                        onClick={() => setIsEditingBirthdate(true)}
+                        className="h-8 px-3 text-xs bg-blue-50 border-blue-200 text-blue-700 hover:bg-blue-100 hover:border-blue-300"
                       >
-                        Delete
+                        Edit
                       </Button>
                     </div>
                   )}
+                </div>
+              </div>
+              
+              <div className="flex items-center gap-3">
+                <Edit3 className="w-5 h-5 text-blue-600" />
+                <div className="flex-1">
+                  <Label className="text-sm text-gray-600">Age</Label>
+                  <div className="flex items-center gap-2">
+                    <p className="font-semibold text-lg text-gray-800">{currentAge}</p>
+                    <Button
+                      type="button"
+                      variant="outline"
+                      onClick={saveProfile}
+                      className="h-8 px-3 text-xs bg-teal-50 border-teal-200 text-teal-700 hover:bg-teal-100 hover:border-teal-300 ripple-effect"
+                      data-save-reading
+                    >
+                      Save
+                    </Button>
+                    <Button
+                      type="button"
+                      variant="outline"
+                      onClick={deleteProfile}
+                      className="h-8 px-3 text-xs bg-red-50 border-red-200 text-red-700 hover:bg-red-100 hover:border-red-300"
+                    >
+                      Delete
+                    </Button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -256,7 +294,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
               Yearly Energetic Outlook
             </CardTitle>
             <p className="text-center text-gray-600">
-              {childData.name}'s energetic outlook for age {currentAge}
+              {editedName}'s energetic outlook for age {currentAge}
             </p>
           </CardHeader>
           <CardContent>
@@ -470,7 +508,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
           </CardHeader>
           <CardContent>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-4">
-              {planetaryPeriods.map((period, index) => (
+              {planetaryPeriods.map((period) => (
                 <div
                   key={period.planet}
                   className={`text-center group ${
@@ -513,7 +551,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
 
         {/* GPT Chat */}
         <GPTChat
-          childName={childData.name}
+          childName={editedName}
           birthCard={birthCard}
           currentAge={currentAge}
           yearlyForecast={yearlyForecast}
