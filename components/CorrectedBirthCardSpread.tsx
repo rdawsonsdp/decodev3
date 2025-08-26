@@ -75,7 +75,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
   }, []);
 
   useEffect(() => {
-    // Calculate initial age
+    // Calculate initial age only when birthdate changes
     const today = new Date();
     const [year, month, day] = editedBirthdate.split('-').map(Number);
     const birthDate = new Date(year, month - 1, day);
@@ -125,12 +125,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
   const handleBirthdateSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsEditingBirthdate(false);
-    // Recalculate age and other data based on new birthdate
-    const today = new Date();
-    const [year, month, day] = editedBirthdate.split('-').map(Number);
-    const birthDate = new Date(year, month - 1, day);
-    const age = Math.floor((today.getTime() - birthDate.getTime()) / (365.25 * 24 * 60 * 60 * 1000));
-    setCurrentAge(age);
+    // Age will be recalculated automatically by useEffect when editedBirthdate changes
   };
 
   const saveProfile = () => {
@@ -266,7 +261,16 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                 <div className="flex-1">
                   <Label className="text-sm text-gray-600">Age</Label>
                   <div className="flex items-center gap-2">
-                    <p className="font-semibold text-lg text-gray-800">{currentAge}</p>
+                    <div className="relative">
+                      <input
+                        type="number"
+                        value={currentAge}
+                        onChange={(e) => setCurrentAge(Math.max(0, parseInt(e.target.value) || 0))}
+                        className="w-20 h-8 px-2 text-center font-semibold text-lg text-gray-800 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                        min="0"
+                        max="120"
+                      />
+                    </div>
                     <Button
                       type="button"
                       variant="outline"
