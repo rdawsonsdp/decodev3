@@ -158,8 +158,11 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
   const formatDate = (dateStr: string) => {
     const [year, month, day] = dateStr.split('-').map(Number);
     const date = new Date(year, month - 1, day);
-    const twoDigitYear = year.toString().slice(-2);
-    return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) + ', ' + twoDigitYear;
+    return date.toLocaleDateString('en-US', { 
+      month: '2-digit', 
+      day: '2-digit', 
+      year: 'numeric' 
+    });
   };
 
   return (
