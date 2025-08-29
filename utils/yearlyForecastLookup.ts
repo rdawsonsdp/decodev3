@@ -1,79 +1,55 @@
+import yearlyForecastsData from '../src/data/yearlyForecasts.json'
+
 export function getYearlyForecast(birthCard: string, age: number) {
-  // Mock yearly forecast data - in real app, this would come from your JSON files
-  // For testing with 5♦ at age 51 (as of 2025)
-  if (birthCard === '5♦' && age === 51) {
-    return {
-      longRange: '7♦',
-      pluto: '2♦',
-      result: 'A♣',
-      support: 'A♠',
-      development: '5♣',
+  try {
+    // Get the data for this birth card
+    const cardData = yearlyForecastsData[birthCard as keyof typeof yearlyForecastsData]
+    
+    if (!cardData) {
+      console.error(`No forecast data found for birth card: ${birthCard}`)
+      return {
+        mercury: '?', venus: '?', mars: '?', jupiter: '?', 
+        saturn: '?', uranus: '?', neptune: '?',
+        longRange: '?', pluto: '?', result: '?', 
+        support: '?', development: '?'
+      }
     }
-  }
-
-  // Generate forecast based on birth card and age
-  const cards = [
-    'A♠',
-    'A♥',
-    'A♦',
-    'A♣',
-    '2♠',
-    '2♥',
-    '2♦',
-    '2♣',
-    '3♠',
-    '3♥',
-    '3♦',
-    '3♣',
-    '4♠',
-    '4♥',
-    '4♦',
-    '4♣',
-    '5♠',
-    '5♥',
-    '5♦',
-    '5♣',
-    '6♠',
-    '6♥',
-    '6♦',
-    '6♣',
-    '7♠',
-    '7♥',
-    '7♦',
-    '7♣',
-    '8♠',
-    '8♥',
-    '8♦',
-    '8♣',
-    '9♠',
-    '9♥',
-    '9♦',
-    '9♣',
-    '10♠',
-    '10♥',
-    '10♦',
-    '10♣',
-    'J♠',
-    'J♥',
-    'J♦',
-    'J♣',
-    'Q♠',
-    'Q♥',
-    'Q♦',
-    'Q♣',
-    'K♠',
-    'K♥',
-    'K♦',
-    'K♣',
-  ]
-
-  const baseIndex = cards.indexOf(birthCard) || 0
-
-  return {
-    longRange: cards[(baseIndex + age) % cards.length],
-    pluto: cards[(baseIndex + age + 7) % cards.length],
-    result: cards[(baseIndex + age + 14) % cards.length],
-    support: cards[(baseIndex + age + 21) % cards.length],
-    development: cards[(baseIndex + age + 28) % cards.length],
+    
+    // Find the data for this specific age
+    const ageData = cardData.find((entry: any) => entry.age === age)
+    
+    if (!ageData) {
+      console.error(`No forecast data found for age ${age}`)
+      return {
+        mercury: '?', venus: '?', mars: '?', jupiter: '?', 
+        saturn: '?', uranus: '?', neptune: '?',
+        longRange: '?', pluto: '?', result: '?', 
+        support: '?', development: '?'
+      }
+    }
+    
+    return {
+      mercury: ageData.mercury || '',
+      venus: ageData.venus || '',
+      mars: ageData.mars || '',
+      jupiter: ageData.jupiter || '',
+      saturn: ageData.saturn || '',
+      uranus: ageData.uranus || '',
+      neptune: ageData.neptune || '',
+      longRange: ageData.longRange || '',
+      pluto: ageData.pluto || '',
+      result: ageData.result || '',
+      support: ageData.support || '',
+      development: ageData.development || ''
+    }
+    
+  } catch (error) {
+    console.error('Error reading yearly forecasts:', error)
+    return {
+      mercury: '?', venus: '?', mars: '?', jupiter: '?', 
+      saturn: '?', uranus: '?', neptune: '?',
+      longRange: '?', pluto: '?', result: '?', 
+      support: '?', development: '?'
+    }
   }
 }

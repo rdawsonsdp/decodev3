@@ -1,23 +1,33 @@
+import birthdateLookup from '../src/data/birthdateLookup.json'
+
 export function getBirthCardFromDate(birthdate: string): string {
-  // For testing purposes, handle the specific test date
-  if (birthdate === '1974-01-22') {
-    return '5♦'
+  // Handle different date formats and avoid timezone issues
+  let month: number
+  let day: number
+  
+  if (birthdate.includes('-')) {
+    // Handle YYYY-MM-DD format
+    const parts = birthdate.split('-')
+    month = parseInt(parts[1], 10)
+    day = parseInt(parts[2], 10)
+  } else {
+    // Fallback to Date parsing for other formats
+    const date = new Date(birthdate + ' 12:00:00') // Add time to avoid timezone issues
+    month = date.getMonth() + 1
+    day = date.getDate()
   }
   
-  const date = new Date(birthdate)
-  const month = date.getMonth() + 1
-  const day = date.getDate()
+  // Create lookup key in MM-DD format
+  const key = String(month).padStart(2, '0') + '-' + String(day).padStart(2, '0')
   
-  // Simple birth card calculation based on month and day
-  // In a real app, this would use the actual Cardology algorithm
-  const cards = [
-    'A♠', 'A♥', 'A♦', 'A♣', '2♠', '2♥', '2♦', '2♣', '3♠', '3♥', '3♦', '3♣',
-    '4♠', '4♥', '4♦', '4♣', '5♠', '5♥', '5♦', '5♣', '6♠', '6♥', '6♦', '6♣',
-    '7♠', '7♥', '7♦', '7♣', '8♠', '8♥', '8♦', '8♣', '9♠', '9♥', '9♦', '9♣',
-    '10♠', '10♥', '10♦', '10♣', 'J♠', 'J♥', 'J♦', 'J♣', 'Q♠', 'Q♥', 'Q♦', 'Q♣',
-    'K♠', 'K♥', 'K♦', 'K♣'
-  ]
+  // Look up the birth card from our real Cardology data
+  const cardData = birthdateLookup[key as keyof typeof birthdateLookup]
   
-  const index = (month * day) % cards.length
-  return cards[index]
+  if (cardData) {
+    return cardData.card
+  }
+  
+  // Fallback if no card found
+  console.error(`No birth card found for date ${birthdate} (key: ${key})`)
+  return '?'
 }

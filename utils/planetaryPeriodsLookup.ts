@@ -1,143 +1,79 @@
+import { getYearlyForecast } from './yearlyForecastLookup'
+
 export function getPlanetaryPeriods(
   birthCard: string,
   age: number,
   birthdate: string
 ) {
-  const planets = [
-    'Mercury',
-    'Venus',
-    'Mars',
-    'Jupiter',
-    'Saturn',
-    'Uranus',
-    'Neptune',
+  // Get the yearly forecast data which contains the planetary cards
+  const forecast = getYearlyForecast(birthCard, age)
+  
+  // Parse birthdate to calculate period start dates
+  const [year, month, day] = birthdate.split('-').map(Number)
+  const ageYear = new Date().getFullYear()
+  
+  // Calculate the birthday this year (age year start)
+  const ageYearStart = new Date(ageYear, month - 1, day)
+  
+  // Define the 7 planetary periods with their cards and dates
+  const periods = [
+    {
+      planet: 'Mercury',
+      card: forecast.mercury,
+      startDate: new Date(ageYearStart.getTime()),
+      duration: 52,
+    },
+    {
+      planet: 'Venus', 
+      card: forecast.venus,
+      startDate: new Date(ageYearStart.getTime() + 52 * 24 * 60 * 60 * 1000),
+      duration: 52,
+    },
+    {
+      planet: 'Mars',
+      card: forecast.mars,
+      startDate: new Date(ageYearStart.getTime() + 104 * 24 * 60 * 60 * 1000),
+      duration: 52,
+    },
+    {
+      planet: 'Jupiter',
+      card: forecast.jupiter,
+      startDate: new Date(ageYearStart.getTime() + 156 * 24 * 60 * 60 * 1000),
+      duration: 52,
+    },
+    {
+      planet: 'Saturn',
+      card: forecast.saturn,
+      startDate: new Date(ageYearStart.getTime() + 208 * 24 * 60 * 60 * 1000),
+      duration: 52,
+    },
+    {
+      planet: 'Uranus',
+      card: forecast.uranus,
+      startDate: new Date(ageYearStart.getTime() + 260 * 24 * 60 * 60 * 1000),
+      duration: 52,
+    },
+    {
+      planet: 'Neptune',
+      card: forecast.neptune,
+      startDate: new Date(ageYearStart.getTime() + 312 * 24 * 60 * 60 * 1000),
+      duration: 53,
+    },
   ]
 
-  // For testing with 5♦ at age 51
-  if (birthCard === '5♦' && age === 51) {
-    const birthYear = new Date(birthdate).getFullYear()
-    const currentYear = birthYear + age
-
-    return [
-      {
-        planet: 'Mercury',
-        card: '7♠',
-        startDate: `${currentYear}-01-22`,
-        endDate: `${currentYear}-03-14`,
-      },
-      {
-        planet: 'Venus',
-        card: 'K♣',
-        startDate: `${currentYear}-03-15`,
-        endDate: `${currentYear}-05-05`,
-      },
-      {
-        planet: 'Mars',
-        card: '2♠',
-        startDate: `${currentYear}-05-06`,
-        endDate: `${currentYear}-06-26`,
-      },
-      {
-        planet: 'Jupiter',
-        card: '9♥',
-        startDate: `${currentYear}-06-27`,
-        endDate: `${currentYear}-08-17`,
-      },
-      {
-        planet: 'Saturn',
-        card: '3♦',
-        startDate: `${currentYear}-08-18`,
-        endDate: `${currentYear}-10-08`,
-      },
-      {
-        planet: 'Uranus',
-        card: 'J♥',
-        startDate: `${currentYear}-10-09`,
-        endDate: `${currentYear}-11-29`,
-      },
-      {
-        planet: 'Neptune',
-        card: '5♠',
-        startDate: `${currentYear}-11-30`,
-        endDate: `${currentYear + 1}-01-21`,
-      },
-    ]
-  }
-
-  // Generate planetary periods for other cards
-  const cards = [
-    'A♠',
-    'A♥',
-    'A♦',
-    'A♣',
-    '2♠',
-    '2♥',
-    '2♦',
-    '2♣',
-    '3♠',
-    '3♥',
-    '3♦',
-    '3♣',
-    '4♠',
-    '4♥',
-    '4♦',
-    '4♣',
-    '5♠',
-    '5♥',
-    '5♦',
-    '5♣',
-    '6♠',
-    '6♥',
-    '6♦',
-    '6♣',
-    '7♠',
-    '7♥',
-    '7♦',
-    '7♣',
-    '8♠',
-    '8♥',
-    '8♦',
-    '8♣',
-    '9♠',
-    '9♥',
-    '9♦',
-    '9♣',
-    '10♠',
-    '10♥',
-    '10♦',
-    '10♣',
-    'J♠',
-    'J♥',
-    'J♦',
-    'J♣',
-    'Q♠',
-    'Q♥',
-    'Q♦',
-    'Q♣',
-    'K♠',
-    'K♥',
-    'K♦',
-    'K♣',
-  ]
-
-  const baseIndex = cards.indexOf(birthCard) || 0
-  const birthYear = new Date(birthdate).getFullYear()
-  const currentYear = birthYear + age
-  const birthMonth = new Date(birthdate).getMonth() + 1
-  const birthDay = new Date(birthdate).getDate()
-
-  return planets.map((planet, index) => {
-    const startDate = new Date(currentYear, birthMonth - 1, birthDay)
-    startDate.setDate(startDate.getDate() + index * 52)
-
-    const endDate = new Date(startDate)
-    endDate.setDate(endDate.getDate() + 51)
-
+  // Add end dates and current status
+  const today = new Date()
+  return periods.map((period) => {
+    const endDate = new Date(period.startDate.getTime() + period.duration * 24 * 60 * 60 * 1000)
+    const isCurrent = today >= period.startDate && today < endDate
+    
     return {
-      planet,
-      card: cards[(baseIndex + age + index) % cards.length],
-      startDate: startDate.toISOString().split('T')[0],
+      planet: period.planet,
+      card: period.card,
+      startDate: period.startDate.toISOString().split('T')[0],
       endDate: endDate.toISOString().split('T')[0],
+      isCurrent,
+      dateRange: `${period.startDate.toLocaleDateString()} - ${endDate.toLocaleDateString()}`
     }
   })
 }

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 export function NameAndBirthdateForm({ onSubmit }) {
-  const [name, setName] = useState('Test User');
-  const [birthdate, setBirthdate] = useState('1974-01-22');
+  const [name, setName] = useState('');
+  const [birthdate, setBirthdate] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
