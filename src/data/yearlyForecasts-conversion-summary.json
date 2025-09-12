@@ -1,0 +1,374 @@
+{
+  "totalBirthCards": 52,
+  "totalEntries": 4732,
+  "birthCards": [
+    "10♠",
+    "10♣",
+    "10♥",
+    "10♦",
+    "2♠",
+    "2♣",
+    "2♥",
+    "2♦",
+    "3♠",
+    "3♣",
+    "3♥",
+    "3♦",
+    "4♠",
+    "4♣",
+    "4♥",
+    "4♦",
+    "5♠",
+    "5♣",
+    "5♥",
+    "5♦",
+    "6♠",
+    "6♣",
+    "6♥",
+    "6♦",
+    "7♠",
+    "7♣",
+    "7♥",
+    "7♦",
+    "8♠",
+    "8♣",
+    "8♥",
+    "8♦",
+    "9♠",
+    "9♣",
+    "9♥",
+    "9♦",
+    "A♠",
+    "A♣",
+    "A♥",
+    "A♦",
+    "J♠",
+    "J♣",
+    "J♥",
+    "J♦",
+    "K♠",
+    "K♣",
+    "K♥",
+    "K♦",
+    "Q♠",
+    "Q♣",
+    "Q♥",
+    "Q♦"
+  ],
+  "ageRanges": [
+    {
+      "birthCard": "2♥",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "2♣",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "2♦",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "2♠",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "3♥",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "3♣",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "3♦",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "3♠",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "4♥",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "4♣",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "4♦",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "4♠",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "5♥",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "5♣",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "5♦",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "5♠",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "6♥",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "6♣",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "6♦",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "6♠",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "7♥",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "7♣",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "7♦",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "7♠",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "8♥",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "8♣",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "8♦",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "8♠",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "9♥",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "9♣",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "9♦",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "9♠",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "10♥",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "10♣",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "10♦",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "10♠",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "J♥",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "J♣",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "J♦",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "J♠",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "Q♥",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "Q♣",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "Q♦",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "Q♠",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "K♥",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "K♣",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "K♦",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "K♠",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "A♥",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "A♣",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "A♦",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    },
+    {
+      "birthCard": "A♠",
+      "minAge": 0,
+      "maxAge": 90,
+      "entryCount": 91
+    }
+  ],
+  "conversionDate": "2025-09-12T02:32:32.128Z",
+  "sourceFile": "Yearly_data/Yearly Forecast.csv"
+}

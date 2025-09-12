@@ -12,8 +12,8 @@
       "longRange": "K♥",
       "pluto": "6♦",
       "result": "4♠",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 1,
@@ -27,8 +27,8 @@
       "longRange": "K♦",
       "pluto": "4♦",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 2,
@@ -42,8 +42,8 @@
       "longRange": "6♥",
       "pluto": "J♦",
       "result": "10♠",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 3,
@@ -57,8 +57,8 @@
       "longRange": "4♣",
       "pluto": "5♣",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 4,
@@ -72,8 +72,8 @@
       "longRange": "2♦",
       "pluto": "10♥",
       "result": "9♣",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 5,
@@ -87,8 +87,8 @@
       "longRange": "J♠",
       "pluto": "6♥",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 6,
@@ -102,8 +102,8 @@
       "longRange": "8♣",
       "pluto": "4♦",
       "result": "3♠",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 7,
@@ -117,8 +117,8 @@
       "longRange": "10♦",
       "pluto": "Q♦",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 8,
@@ -132,8 +132,8 @@
       "longRange": "Q♥",
       "pluto": "5♣",
       "result": "J♣",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 9,
@@ -147,8 +147,8 @@
       "longRange": "4♣",
       "pluto": "5♦",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 10,
@@ -162,8 +162,8 @@
       "longRange": "Q♦",
       "pluto": "6♥",
       "result": "5♠",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 11,
@@ -177,8 +177,8 @@
       "longRange": "2♣",
       "pluto": "K♦",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 12,
@@ -192,8 +192,8 @@
       "longRange": "A♠",
       "pluto": "Q♦",
       "result": "5♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 13,
@@ -207,8 +207,8 @@
       "longRange": "9♥",
       "pluto": "8♥",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 14,
@@ -222,8 +222,8 @@
       "longRange": "6♠",
       "pluto": "5♦",
       "result": "4♣",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 15,
@@ -237,8 +237,8 @@
       "longRange": "8♥",
       "pluto": "A♠",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 16,
@@ -252,8 +252,8 @@
       "longRange": "Q♦",
       "pluto": "K♦",
       "result": "3♦",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 17,
@@ -267,8 +267,8 @@
       "longRange": "3♦",
       "pluto": "K♥",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 18,
@@ -282,8 +282,8 @@
       "longRange": "A♥",
       "pluto": "8♥",
       "result": "9♦",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 19,
@@ -297,8 +297,8 @@
       "longRange": "4♠",
       "pluto": "6♠",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 20,
@@ -312,8 +312,8 @@
       "longRange": "8♣",
       "pluto": "A♠",
       "result": "3♣",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 21,
@@ -327,8 +327,8 @@
       "longRange": "8♦",
       "pluto": "K♣",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 22,
@@ -342,8 +342,8 @@
       "longRange": "6♦",
       "pluto": "K♥",
       "result": "7♠",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 23,
@@ -357,8 +357,8 @@
       "longRange": "3♦",
       "pluto": "6♣",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 24,
@@ -372,8 +372,8 @@
       "longRange": "5♦",
       "pluto": "6♠",
       "result": "7♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 25,
@@ -387,8 +387,8 @@
       "longRange": "9♠",
       "pluto": "A♦",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 26,
@@ -402,8 +402,8 @@
       "longRange": "K♥",
       "pluto": "K♣",
       "result": "2♣",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 27,
@@ -417,8 +417,8 @@
       "longRange": "9♥",
       "pluto": "3♥",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 28,
@@ -432,8 +432,8 @@
       "longRange": "K♣",
       "pluto": "6♣",
       "result": "9♠",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 29,
@@ -447,8 +447,8 @@
       "longRange": "A♠",
       "pluto": "10♦",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 30,
@@ -462,8 +462,8 @@
       "longRange": "5♦",
       "pluto": "A♦",
       "result": "2♠",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 31,
@@ -477,8 +477,8 @@
       "longRange": "9♥",
       "pluto": "8♦",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 32,
@@ -492,8 +492,8 @@
       "longRange": "Q♣",
       "pluto": "3♥",
       "result": "8♠",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 33,
@@ -507,8 +507,8 @@
       "longRange": "10♠",
       "pluto": "J♠",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 34,
@@ -522,8 +522,8 @@
       "longRange": "8♣",
       "pluto": "10♦",
       "result": "2♦",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 35,
@@ -537,8 +537,8 @@
       "longRange": "J♠",
       "pluto": "4♠",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 36,
@@ -552,8 +552,8 @@
       "longRange": "J♦",
       "pluto": "8♦",
       "result": "A♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 37,
@@ -567,8 +567,8 @@
       "longRange": "9♦",
       "pluto": "10♠",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 38,
@@ -582,8 +582,8 @@
       "longRange": "K♦",
       "pluto": "J♠",
       "result": "Q♣",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 39,
@@ -597,8 +597,8 @@
       "longRange": "2♠",
       "pluto": "9♣",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 40,
@@ -612,8 +612,8 @@
       "longRange": "6♠",
       "pluto": "4♠",
       "result": "Q♠",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 41,
@@ -627,8 +627,8 @@
       "longRange": "9♥",
       "pluto": "3♠",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 42,
@@ -642,8 +642,8 @@
       "longRange": "6♣",
       "pluto": "10♠",
       "result": "7♣",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 43,
@@ -657,8 +657,8 @@
       "longRange": "K♥",
       "pluto": "J♣",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 44,
@@ -672,8 +672,8 @@
       "longRange": "K♦",
       "pluto": "9♣",
       "result": "10♠",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 45,
@@ -687,8 +687,8 @@
       "longRange": "3♣",
       "pluto": "5♠",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 46,
@@ -702,8 +702,8 @@
       "longRange": "Q♠",
       "pluto": "3♠",
       "result": "4♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 47,
@@ -717,8 +717,8 @@
       "longRange": "9♣",
       "pluto": "5♥",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 48,
@@ -732,8 +732,8 @@
       "longRange": "8♣",
       "pluto": "J♣",
       "result": "Q♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 49,
@@ -747,8 +747,8 @@
       "longRange": "4♠",
       "pluto": "4♣",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 50,
@@ -762,8 +762,8 @@
       "longRange": "10♥",
       "pluto": "5♠",
       "result": "6♦",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 51,
@@ -777,8 +777,8 @@
       "longRange": "3♣",
       "pluto": "3♦",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 52,
@@ -792,8 +792,8 @@
       "longRange": "8♥",
       "pluto": "5♥",
       "result": "J♦",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 53,
@@ -807,8 +807,8 @@
       "longRange": "8♠",
       "pluto": "9♦",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 54,
@@ -822,8 +822,8 @@
       "longRange": "K♣",
       "pluto": "4♣",
       "result": "10♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 55,
@@ -837,8 +837,8 @@
       "longRange": "9♥",
       "pluto": "3♣",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 56,
@@ -852,8 +852,8 @@
       "longRange": "A♦",
       "pluto": "3♦",
       "result": "4♦",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 57,
@@ -867,8 +867,8 @@
       "longRange": "6♠",
       "pluto": "7♠",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 58,
@@ -882,8 +882,8 @@
       "longRange": "8♥",
       "pluto": "9♦",
       "result": "5♣",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 59,
@@ -897,8 +897,8 @@
       "longRange": "7♠",
       "pluto": "7♥",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 60,
@@ -912,8 +912,8 @@
       "longRange": "7♣",
       "pluto": "3♣",
       "result": "6♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 61,
@@ -927,8 +927,8 @@
       "longRange": "3♠",
       "pluto": "2♣",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 62,
@@ -942,8 +942,8 @@
       "longRange": "8♣",
       "pluto": "7♠",
       "result": "Q♦",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 63,
@@ -957,8 +957,8 @@
       "longRange": "10♠",
       "pluto": "9♠",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 64,
@@ -972,8 +972,8 @@
       "longRange": "4♦",
       "pluto": "7♥",
       "result": "5♦",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 65,
@@ -987,8 +987,8 @@
       "longRange": "7♠",
       "pluto": "2♠",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 66,
@@ -1002,8 +1002,8 @@
       "longRange": "A♠",
       "pluto": "2♣",
       "result": "K♦",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 67,
@@ -1017,8 +1017,8 @@
       "longRange": "2♦",
       "pluto": "8♠",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 68,
@@ -1032,8 +1032,8 @@
       "longRange": "6♣",
       "pluto": "9♠",
       "result": "8♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 69,
@@ -1047,8 +1047,8 @@
       "longRange": "9♥",
       "pluto": "2♦",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 70,
@@ -1062,8 +1062,8 @@
       "longRange": "3♥",
       "pluto": "2♠",
       "result": "A♠",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 71,
@@ -1077,8 +1077,8 @@
       "longRange": "K♣",
       "pluto": "A♥",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 72,
@@ -1092,8 +1092,8 @@
       "longRange": "A♠",
       "pluto": "8♠",
       "result": "K♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 73,
@@ -1107,8 +1107,8 @@
       "longRange": "7♥",
       "pluto": "Q♣",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 74,
@@ -1122,8 +1122,8 @@
       "longRange": "10♣",
       "pluto": "2♦",
       "result": "6♠",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 75,
@@ -1137,8 +1137,8 @@
       "longRange": "J♣",
       "pluto": "Q♠",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 76,
@@ -1152,8 +1152,8 @@
       "longRange": "8♣",
       "pluto": "A♥",
       "result": "K♣",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 77,
@@ -1167,8 +1167,8 @@
       "longRange": "9♣",
       "pluto": "7♣",
       "result": "J ♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 78,
@@ -1182,8 +1182,8 @@
       "longRange": "5♣",
       "pluto": "Q♣",
       "result": "6♣",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 79,
@@ -1197,8 +1197,8 @@
       "longRange": "7♥",
       "pluto": "10♣",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 80,
@@ -1212,8 +1212,8 @@
       "longRange": "K♥",
       "pluto": "Q♠",
       "result": "A♦",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 81,
@@ -1227,8 +1227,8 @@
       "longRange": "A♥",
       "pluto": "4♥",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 82,
@@ -1242,8 +1242,8 @@
       "longRange": "A♦",
       "pluto": "7♣",
       "result": "3♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 83,
@@ -1257,8 +1257,8 @@
       "longRange": "9♥",
       "pluto": "Q♥",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 84,
@@ -1272,8 +1272,8 @@
       "longRange": "10♦",
       "pluto": "10♣",
       "result": "10♦",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 85,
@@ -1287,8 +1287,8 @@
       "longRange": "6♣",
       "pluto": "6♦",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 86,
@@ -1302,8 +1302,8 @@
       "longRange": "K♥",
       "pluto": "4♥",
       "result": "8♦",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 87,
@@ -1317,8 +1317,8 @@
       "longRange": "2♣",
       "pluto": "J♦",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 88,
@@ -1332,8 +1332,8 @@
       "longRange": "4♥",
       "pluto": "Q♥",
       "result": "J♠",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 89,
@@ -1347,8 +1347,8 @@
       "longRange": "5♠",
       "pluto": "10♥",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     },
     {
       "age": 90,
@@ -1362,8 +1362,8 @@
       "longRange": "8♣",
       "pluto": "6♦",
       "result": "4♠",
-      "support": "",
-      "development": ""
+      "support": "2♥",
+      "development": "2♥"
     }
   ],
   "2♣": [
@@ -10974,19 +10974,19 @@
       "jupiter": "A♣",
       "saturn": "Q♠",
       "uranus": "9♣",
-      "neptune": "6♥  ",
-      "longRange": "8♥  ",
+      "neptune": "6♥",
+      "longRange": "8♥",
       "pluto": "9♦",
-      "result": "K♥  ",
-      "support": "Q♥  ",
+      "result": "K♥",
+      "support": "Q♥",
       "development": "10♣"
     },
     {
       "age": 3,
       "mercury": "8♣",
       "venus": "J♣",
-      "mars": "Q♥  ",
-      "jupiter": "5♥  ",
+      "mars": "Q♥",
+      "jupiter": "5♥",
       "saturn": "7♣",
       "uranus": "A♦",
       "neptune": "10♦",
@@ -10998,9 +10998,9 @@
     },
     {
       "age": 4,
-      "mercury": "8♥  ",
+      "mercury": "8♥",
       "venus": "10♣",
-      "mars": "5♥  ",
+      "mars": "5♥",
       "jupiter": "7♠",
       "saturn": "2♣",
       "uranus": "2♠",
@@ -11015,12 +11015,12 @@
       "age": 5,
       "mercury": "K♠",
       "venus": "7♣",
-      "mars": "2♥  ",
+      "mars": "2♥",
       "jupiter": "J♠",
       "saturn": "J♦",
       "uranus": "9♦",
       "neptune": "K♦",
-      "longRange": "Q♥  ",
+      "longRange": "Q♥",
       "pluto": "2♠",
       "result": "6♠",
       "support": "3♠",
@@ -16667,7 +16667,7 @@
       "jupiter": "J♠",
       "saturn": "Q♥",
       "uranus": "7♥",
-      "neptune": "9♦ ",
+      "neptune": "9♦",
       "longRange": "2♥",
       "pluto": "9♠",
       "result": "10♠",
@@ -25123,7 +25123,7 @@
       "mars": "7♦",
       "jupiter": "10♣",
       "saturn": "J♥",
-      "uranus": " Q♣",
+      "uranus": "Q♣",
       "neptune": "Q♦",
       "longRange": "Q♥",
       "pluto": "2♥",
@@ -25217,7 +25217,7 @@
       "neptune": "5♠",
       "longRange": "7♠",
       "pluto": "10♥",
-      "result": "6♠ ",
+      "result": "6♠",
       "support": "4♠",
       "development": "5♠"
     },
@@ -25744,7 +25744,7 @@
       "pluto": "J♦",
       "result": "4♦",
       "support": "A♦",
-      "development": " 3♣"
+      "development": "3♣"
     },
     {
       "age": 76,
@@ -25824,7 +25824,7 @@
     {
       "age": 81,
       "mercury": "A♠",
-      "venus": "2♦ ",
+      "venus": "2♦",
       "mars": "8♣",
       "jupiter": "8♦",
       "saturn": "A♥",
@@ -27856,7 +27856,7 @@
       "venus": "4♥",
       "mars": "10♥",
       "jupiter": "Q♠",
-      "saturn": " 9♥",
+      "saturn": "9♥",
       "uranus": "K♣",
       "neptune": "J♣",
       "longRange": "7♠",
@@ -30086,8 +30086,8 @@
       "longRange": "5♠",
       "pluto": "6♥",
       "result": "4♣",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 1,
@@ -30101,8 +30101,8 @@
       "longRange": "J♥",
       "pluto": "8♠",
       "result": "J♣",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 2,
@@ -30116,8 +30116,8 @@
       "longRange": "9♣",
       "pluto": "Q♦",
       "result": "3♦",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 3,
@@ -30131,8 +30131,8 @@
       "longRange": "9♠",
       "pluto": "2♦",
       "result": "5♠",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 4,
@@ -30146,8 +30146,8 @@
       "longRange": "2♥",
       "pluto": "5♦",
       "result": "9♦",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 5,
@@ -30161,8 +30161,8 @@
       "longRange": "K♥",
       "pluto": "A♥",
       "result": "5♥",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 6,
@@ -30176,8 +30176,8 @@
       "longRange": "K♦",
       "pluto": "K♦",
       "result": "3♣",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 7,
@@ -30191,8 +30191,8 @@
       "longRange": "J♠",
       "pluto": "Q♣",
       "result": "4♣",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 8,
@@ -30206,8 +30206,8 @@
       "longRange": "3♣",
       "pluto": "8♥",
       "result": "7♠",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 9,
@@ -30221,8 +30221,8 @@
       "longRange": "8♦",
       "pluto": "Q♠",
       "result": "3♦",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 10,
@@ -30236,8 +30236,8 @@
       "longRange": "10♥",
       "pluto": "A♠",
       "result": "7♥",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 11,
@@ -30251,8 +30251,8 @@
       "longRange": "5♦",
       "pluto": "7♣",
       "result": "9♦",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 12,
@@ -30266,8 +30266,8 @@
       "longRange": "8♥",
       "pluto": "K♥",
       "result": "2♣",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 13,
@@ -30281,8 +30281,8 @@
       "longRange": "K♥",
       "pluto": "10♣",
       "result": "3♣",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 14,
@@ -30296,8 +30296,8 @@
       "longRange": "5♥",
       "pluto": "6♠",
       "result": "9♠",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 15,
@@ -30311,8 +30311,8 @@
       "longRange": "J♥",
       "pluto": "4♥",
       "result": "7♠",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 16,
@@ -30326,8 +30326,8 @@
       "longRange": "3♠",
       "pluto": "K♣",
       "result": "2♠",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 17,
@@ -30341,8 +30341,8 @@
       "longRange": "2♠",
       "pluto": "Q♥",
       "result": "7♥",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 18,
@@ -30356,8 +30356,8 @@
       "longRange": "2♥",
       "pluto": "6♣",
       "result": "8♠",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 19,
@@ -30371,8 +30371,8 @@
       "longRange": "6♠",
       "pluto": "6♦",
       "result": "2♣",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 20,
@@ -30386,8 +30386,8 @@
       "longRange": "8♥",
       "pluto": "A♦",
       "result": "2♦",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 21,
@@ -30401,8 +30401,8 @@
       "longRange": "4♠",
       "pluto": "J♦",
       "result": "9♠",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 22,
@@ -30416,8 +30416,8 @@
       "longRange": "7♠",
       "pluto": "3♥",
       "result": "A♥",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 23,
@@ -30431,8 +30431,8 @@
       "longRange": "J♠",
       "pluto": "10♥",
       "result": "2♠",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 24,
@@ -30446,8 +30446,8 @@
       "longRange": "4♦",
       "pluto": "10♦",
       "result": "Q♣",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 25,
@@ -30461,8 +30461,8 @@
       "longRange": "K♦",
       "pluto": "4♦",
       "result": "8♠",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 26,
@@ -30476,8 +30476,8 @@
       "longRange": "A♠",
       "pluto": "8♦",
       "result": "Q♠",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 27,
@@ -30491,8 +30491,8 @@
       "longRange": "6♠",
       "pluto": "5♣",
       "result": "2♦",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 28,
@@ -30506,8 +30506,8 @@
       "longRange": "4♣",
       "pluto": "J♠",
       "result": "7♣",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 29,
@@ -30521,8 +30521,8 @@
       "longRange": "J♥",
       "pluto": "6♥",
       "result": "A♥",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 30,
@@ -30536,8 +30536,8 @@
       "longRange": "J♣",
       "pluto": "4♠",
       "result": "10♣",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 31,
@@ -30551,8 +30551,8 @@
       "longRange": "8♠",
       "pluto": "Q♦",
       "result": "Q♣",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 32,
@@ -30566,8 +30566,8 @@
       "longRange": "2♥",
       "pluto": "10♠",
       "result": "4♥",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 33,
@@ -30581,8 +30581,8 @@
       "longRange": "K♣",
       "pluto": "5♦",
       "result": "Q♠",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 34,
@@ -30596,8 +30596,8 @@
       "longRange": "A♠",
       "pluto": "9♣",
       "result": "Q♥",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 35,
@@ -30611,8 +30611,8 @@
       "longRange": "10♠",
       "pluto": "K♦",
       "result": "7♣",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 36,
@@ -30626,8 +30626,8 @@
       "longRange": "7♥",
       "pluto": "3♠",
       "result": "6♦",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 37,
@@ -30641,8 +30641,8 @@
       "longRange": "4♠",
       "pluto": "8♥",
       "result": "10♣",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 38,
@@ -30656,8 +30656,8 @@
       "longRange": "5♣",
       "pluto": "J♣",
       "result": "J♦",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 39,
@@ -30671,8 +30671,8 @@
       "longRange": "8♥",
       "pluto": "A♠",
       "result": "4♥",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 40,
@@ -30686,8 +30686,8 @@
       "longRange": "K♥",
       "pluto": "5♠",
       "result": "10♥",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 41,
@@ -30701,8 +30701,8 @@
       "longRange": "K♣",
       "pluto": "K♥",
       "result": "Q♥",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 42,
@@ -30716,8 +30716,8 @@
       "longRange": "3♦",
       "pluto": "5♥",
       "result": "4♦",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 43,
@@ -30731,8 +30731,8 @@
       "longRange": "J♥",
       "pluto": "6♠",
       "result": "6♦",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 44,
@@ -30746,8 +30746,8 @@
       "longRange": "5♠",
       "pluto": "4♣",
       "result": "5♣",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 45,
@@ -30761,8 +30761,8 @@
       "longRange": "2♦",
       "pluto": "K♣",
       "result": "J♦",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 46,
@@ -30776,8 +30776,8 @@
       "longRange": "2♥",
       "pluto": "3♦",
       "result": "6♥",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 47,
@@ -30791,8 +30791,8 @@
       "longRange": "6♣",
       "pluto": "6♣",
       "result": "10♥",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 48,
@@ -30806,8 +30806,8 @@
       "longRange": "K♥",
       "pluto": "9♦",
       "result": "Q♦",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 49,
@@ -30821,8 +30821,8 @@
       "longRange": "9♣",
       "pluto": "A♦",
       "result": "4♦",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 50,
@@ -30836,8 +30836,8 @@
       "longRange": "2♣",
       "pluto": "3♣",
       "result": "5♦",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 51,
@@ -30851,8 +30851,8 @@
       "longRange": "10♠",
       "pluto": "3♥",
       "result": "5♣",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 52,
@@ -30866,8 +30866,8 @@
       "longRange": "6♥",
       "pluto": "7♠",
       "result": "K♦",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 53,
@@ -30881,8 +30881,8 @@
       "longRange": "A♠",
       "pluto": "10♦",
       "result": "6♥",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 54,
@@ -30896,8 +30896,8 @@
       "longRange": "6♠",
       "pluto": "7♥",
       "result": "8♥",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 55,
@@ -30911,8 +30911,8 @@
       "longRange": "6♣",
       "pluto": "8♦",
       "result": "Q♦",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 56,
@@ -30926,8 +30926,8 @@
       "longRange": "9♦",
       "pluto": "2♣",
       "result": "A♠",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 57,
@@ -30941,8 +30941,8 @@
       "longRange": "J♥",
       "pluto": "J♠",
       "result": "5♦",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 58,
@@ -30956,8 +30956,8 @@
       "longRange": "5♥",
       "pluto": "9♠",
       "result": "K♥",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 59,
@@ -30971,8 +30971,8 @@
       "longRange": "A♥",
       "pluto": "4♠",
       "result": "K♦",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 60,
@@ -30986,8 +30986,8 @@
       "longRange": "2♥",
       "pluto": "2♠",
       "result": "6♠",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 61,
@@ -31001,8 +31001,8 @@
       "longRange": "A♦",
       "pluto": "10♠",
       "result": "8♥",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 62,
@@ -31016,8 +31016,8 @@
       "longRange": "6♠",
       "pluto": "8♠",
       "result": "K♣",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 63,
@@ -31031,8 +31031,8 @@
       "longRange": "3♠",
       "pluto": "9♣",
       "result": "A♠",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 64,
@@ -31046,8 +31046,8 @@
       "longRange": "9♠",
       "pluto": "2♦",
       "result": "6♣",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 65,
@@ -31061,8 +31061,8 @@
       "longRange": "9♣",
       "pluto": "3♠",
       "result": "K♥",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 66,
@@ -31076,8 +31076,8 @@
       "longRange": "Q♦",
       "pluto": "A♠",
       "result": "A♦",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 67,
@@ -31091,8 +31091,8 @@
       "longRange": "K♥",
       "pluto": "J♣",
       "result": "6♠",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 68,
@@ -31106,8 +31106,8 @@
       "longRange": "K♣",
       "pluto": "Q♣",
       "result": "3♥",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 69,
@@ -31121,8 +31121,8 @@
       "longRange": "A♦",
       "pluto": "5♠",
       "result": "K♣",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 70,
@@ -31136,8 +31136,8 @@
       "longRange": "3♣",
       "pluto": "Q♠",
       "result": "10♦",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 71,
@@ -31151,8 +31151,8 @@
       "longRange": "J♥",
       "pluto": "5♥",
       "result": "6♣",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 72,
@@ -31166,8 +31166,8 @@
       "longRange": "4♣",
       "pluto": "7♣",
       "result": "8♦",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 73,
@@ -31181,8 +31181,8 @@
       "longRange": "Q♣",
       "pluto": "4♣",
       "result": "A♦",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 74,
@@ -31196,8 +31196,8 @@
       "longRange": "2♥",
       "pluto": "10♣",
       "result": "J♠",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 75,
@@ -31211,8 +31211,8 @@
       "longRange": "3♥",
       "pluto": "3♦",
       "result": "3♥",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 76,
@@ -31226,8 +31226,8 @@
       "longRange": "K♣",
       "pluto": "4♥",
       "result": "4♣",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 77,
@@ -31241,8 +31241,8 @@
       "longRange": "J♣",
       "pluto": "9♦",
       "result": "10♦",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 78,
@@ -31256,8 +31256,8 @@
       "longRange": "2♠",
       "pluto": "Q♥",
       "result": "10♠",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 79,
@@ -31271,8 +31271,8 @@
       "longRange": "3♠",
       "pluto": "3♣",
       "result": "8♦",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 80,
@@ -31286,8 +31286,8 @@
       "longRange": "5♦",
       "pluto": "6♦",
       "result": "9♣",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 81,
@@ -31301,8 +31301,8 @@
       "longRange": "6♠",
       "pluto": "7♠",
       "result": "J♠",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 82,
@@ -31316,8 +31316,8 @@
       "longRange": "6♣",
       "pluto": "J♦",
       "result": "3♠",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 83,
@@ -31331,8 +31331,8 @@
       "longRange": "3♥",
       "pluto": "7♥",
       "result": "4♠",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 84,
@@ -31346,8 +31346,8 @@
       "longRange": "7♠",
       "pluto": "10♥",
       "result": "J♣",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 85,
@@ -31361,8 +31361,8 @@
       "longRange": "J♥",
       "pluto": "2♣",
       "result": "10♠",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 86,
@@ -31376,8 +31376,8 @@
       "longRange": "3♦",
       "pluto": "4♦",
       "result": "5♠",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 87,
@@ -31391,8 +31391,8 @@
       "longRange": "Q♠",
       "pluto": "9♠",
       "result": "9♣",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 88,
@@ -31406,8 +31406,8 @@
       "longRange": "2♥",
       "pluto": "5♣",
       "result": "5♥",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 89,
@@ -31421,8 +31421,8 @@
       "longRange": "10♦",
       "pluto": "2♠",
       "result": "3♠",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     },
     {
       "age": 90,
@@ -31436,8 +31436,8 @@
       "longRange": "6♣",
       "pluto": "6♥",
       "result": "4♣",
-      "support": "NONE",
-      "development": "NONE"
+      "support": "7♦",
+      "development": "7♦"
     }
   ],
   "7♠": [
@@ -32501,7 +32501,7 @@
       "uranus": "3♠",
       "neptune": "4♦",
       "longRange": "2♠",
-      "pluto": " 8♠",
+      "pluto": "8♠",
       "result": "2♣",
       "support": "10♠",
       "development": "7♣"
@@ -34187,8 +34187,8 @@
       "longRange": "6♦",
       "pluto": "Q♦",
       "result": "5♥",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 1,
@@ -34202,8 +34202,8 @@
       "longRange": "4♠",
       "pluto": "9♦",
       "result": "5♣",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 2,
@@ -34217,8 +34217,8 @@
       "longRange": "10♥",
       "pluto": "5♦",
       "result": "4♣",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 3,
@@ -34232,8 +34232,8 @@
       "longRange": "10♦",
       "pluto": "3♣",
       "result": "6♥",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 4,
@@ -34247,8 +34247,8 @@
       "longRange": "8♠",
       "pluto": "K♦",
       "result": "3♦",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 5,
@@ -34262,8 +34262,8 @@
       "longRange": "A♥",
       "pluto": "7♠",
       "result": "Q♦",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 6,
@@ -34277,8 +34277,8 @@
       "longRange": "A♦",
       "pluto": "8♥",
       "result": "9♦",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 7,
@@ -34292,8 +34292,8 @@
       "longRange": "3♠",
       "pluto": "7♥",
       "result": "5♦",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 8,
@@ -34307,8 +34307,8 @@
       "longRange": "4♥",
       "pluto": "A♠",
       "result": "3♣",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 9,
@@ -34322,8 +34322,8 @@
       "longRange": "5♠",
       "pluto": "2♣",
       "result": "K♣",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 10,
@@ -34337,8 +34337,8 @@
       "longRange": "Q♠",
       "pluto": "K♥",
       "result": "7♠",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 11,
@@ -34352,8 +34352,8 @@
       "longRange": "6♣",
       "pluto": "9♠",
       "result": "8♥",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 12,
@@ -34367,8 +34367,8 @@
       "longRange": "3♥",
       "pluto": "6♠",
       "result": "7♥",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 13,
@@ -34382,8 +34382,8 @@
       "longRange": "A♥",
       "pluto": "2♠",
       "result": "A♠",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 14,
@@ -34397,8 +34397,8 @@
       "longRange": "J♦",
       "pluto": "K♣",
       "result": "2♣",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 15,
@@ -34412,8 +34412,8 @@
       "longRange": "10♠",
       "pluto": "8♠",
       "result": "K♥",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 16,
@@ -34427,8 +34427,8 @@
       "longRange": "4♦",
       "pluto": "6♣",
       "result": "9♠",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 17,
@@ -34442,8 +34442,8 @@
       "longRange": "8♦",
       "pluto": "2♦",
       "result": "6♠",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 18,
@@ -34457,8 +34457,8 @@
       "longRange": "2♦",
       "pluto": "A♦",
       "result": "2♠",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 19,
@@ -34472,8 +34472,8 @@
       "longRange": "Q♣",
       "pluto": "A♥",
       "result": "K♣",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 20,
@@ -34487,8 +34487,8 @@
       "longRange": "3♥",
       "pluto": "3♥",
       "result": "8♠",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 21,
@@ -34502,8 +34502,8 @@
       "longRange": "J♣",
       "pluto": "Q♣",
       "result": "6♣",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 22,
@@ -34517,8 +34517,8 @@
       "longRange": "Q♥",
       "pluto": "10♦",
       "result": "2♦",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 23,
@@ -34532,8 +34532,8 @@
       "longRange": "5♥",
       "pluto": "Q♠",
       "result": "A♦",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 24,
@@ -34547,8 +34547,8 @@
       "longRange": "7♣",
       "pluto": "8♦",
       "result": "A♥",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 25,
@@ -34562,8 +34562,8 @@
       "longRange": "A♦",
       "pluto": "7♣",
       "result": "3♥",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 26,
@@ -34577,8 +34577,8 @@
       "longRange": "10♦",
       "pluto": "J♠",
       "result": "Q♣",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 27,
@@ -34592,8 +34592,8 @@
       "longRange": "Q♣",
       "pluto": "10♣",
       "result": "10♦",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 28,
@@ -34607,8 +34607,8 @@
       "longRange": "10♥",
       "pluto": "4♠",
       "result": "Q♠",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 29,
@@ -34622,8 +34622,8 @@
       "longRange": "9♣",
       "pluto": "4♥",
       "result": "8♦",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 30,
@@ -34637,8 +34637,8 @@
       "longRange": "5♣",
       "pluto": "10♠",
       "result": "7♣",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 31,
@@ -34652,8 +34652,8 @@
       "longRange": "J♠",
       "pluto": "Q♥",
       "result": "J♠",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 32,
@@ -34667,8 +34667,8 @@
       "longRange": "A♥",
       "pluto": "9♣",
       "result": "10♣",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 33,
@@ -34682,8 +34682,8 @@
       "longRange": "Q♠",
       "pluto": "6♦",
       "result": "Q♠",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 34,
@@ -34697,8 +34697,8 @@
       "longRange": "10♦",
       "pluto": "3♠",
       "result": "4♥",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 35,
@@ -34712,8 +34712,8 @@
       "longRange": "5♠",
       "pluto": "J♦",
       "result": "10♠",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 36,
@@ -34727,8 +34727,8 @@
       "longRange": "6♦",
       "pluto": "J♣",
       "result": "Q♥",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 37,
@@ -34742,8 +34742,8 @@
       "longRange": "4♣",
       "pluto": "10♥",
       "result": "9♣",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 38,
@@ -34757,8 +34757,8 @@
       "longRange": "10♣",
       "pluto": "5♠",
       "result": "6♦",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 39,
@@ -34772,8 +34772,8 @@
       "longRange": "3♥",
       "pluto": "4♦",
       "result": "3♠",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 40,
@@ -34787,8 +34787,8 @@
       "longRange": "8♦",
       "pluto": "5♥",
       "result": "J♦",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 41,
@@ -34802,8 +34802,8 @@
       "longRange": "Q♠",
       "pluto": "5♣",
       "result": "J♣",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 42,
@@ -34817,8 +34817,8 @@
       "longRange": "4♦",
       "pluto": "4♣",
       "result": "10♥",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 43,
@@ -34832,8 +34832,8 @@
       "longRange": "3♠",
       "pluto": "6♥",
       "result": "5♠",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 44,
@@ -34847,8 +34847,8 @@
       "longRange": "6♥",
       "pluto": "3♦",
       "result": "4♦",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 45,
@@ -34862,8 +34862,8 @@
       "longRange": "4♠",
       "pluto": "Q♦",
       "result": "5♥",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 46,
@@ -34877,8 +34877,8 @@
       "longRange": "Q♣",
       "pluto": "9♦",
       "result": "5♣",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 47,
@@ -34892,8 +34892,8 @@
       "longRange": "7♣",
       "pluto": "5♦",
       "result": "4♣",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 48,
@@ -34907,8 +34907,8 @@
       "longRange": "8♦",
       "pluto": "3♣",
       "result": "6♥",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 49,
@@ -34922,8 +34922,8 @@
       "longRange": "5♥",
       "pluto": "K♦",
       "result": "3♦",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 50,
@@ -34937,8 +34937,8 @@
       "longRange": "J♦",
       "pluto": "7♠",
       "result": "Q♦",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 51,
@@ -34952,8 +34952,8 @@
       "longRange": "3♦",
       "pluto": "8♥",
       "result": "9♦",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 52,
@@ -34967,8 +34967,8 @@
       "longRange": "4♥",
       "pluto": "7♥",
       "result": "5♦",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 53,
@@ -34982,8 +34982,8 @@
       "longRange": "10♦",
       "pluto": "A♠",
       "result": "3♣",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 54,
@@ -34997,8 +34997,8 @@
       "longRange": "J♠",
       "pluto": "2♣",
       "result": "K♦",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 55,
@@ -35012,8 +35012,8 @@
       "longRange": "7♣",
       "pluto": "K♥",
       "result": "7♠",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 56,
@@ -35027,8 +35027,8 @@
       "longRange": "5♣",
       "pluto": "9♠",
       "result": "8♥",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 57,
@@ -35042,8 +35042,8 @@
       "longRange": "J♣",
       "pluto": "6♠",
       "result": "7♥",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 58,
@@ -35057,8 +35057,8 @@
       "longRange": "Q♦",
       "pluto": "2♠",
       "result": "A♠",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 59,
@@ -35072,8 +35072,8 @@
       "longRange": "10♠",
       "pluto": "K♣",
       "result": "2♣",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 60,
@@ -35087,8 +35087,8 @@
       "longRange": "Q♠",
       "pluto": "8♠",
       "result": "K♥",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 61,
@@ -35102,8 +35102,8 @@
       "longRange": "10♣",
       "pluto": "6♣",
       "result": "9♠",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 62,
@@ -35117,8 +35117,8 @@
       "longRange": "J♠",
       "pluto": "2♦",
       "result": "6♠",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 63,
@@ -35132,8 +35132,8 @@
       "longRange": "4♣",
       "pluto": "A♦",
       "result": "2♠",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 64,
@@ -35147,8 +35147,8 @@
       "longRange": "10♥",
       "pluto": "A♥",
       "result": "K♣",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 65,
@@ -35162,8 +35162,8 @@
       "longRange": "9♦",
       "pluto": "3♥",
       "result": "8♠",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 66,
@@ -35177,8 +35177,8 @@
       "longRange": "Q♥",
       "pluto": "Q♣",
       "result": "6♣",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 67,
@@ -35192,8 +35192,8 @@
       "longRange": "8♦",
       "pluto": "10♦",
       "result": "2♦",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 68,
@@ -35207,8 +35207,8 @@
       "longRange": "4♠",
       "pluto": "Q♠",
       "result": "A♦",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 69,
@@ -35222,8 +35222,8 @@
       "longRange": "10♣",
       "pluto": "8♦",
       "result": "A♥",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 70,
@@ -35237,8 +35237,8 @@
       "longRange": "6♥",
       "pluto": "7♣",
       "result": "3♥",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 71,
@@ -35252,8 +35252,8 @@
       "longRange": "5♠",
       "pluto": "J♠",
       "result": "Q♣",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 72,
@@ -35267,8 +35267,8 @@
       "longRange": "5♦",
       "pluto": "10♣",
       "result": "10♦",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 73,
@@ -35282,8 +35282,8 @@
       "longRange": "9♣",
       "pluto": "4♠",
       "result": "Q♠",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 74,
@@ -35297,8 +35297,8 @@
       "longRange": "7♣",
       "pluto": "4♥",
       "result": "8♦",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 75,
@@ -35312,8 +35312,8 @@
       "longRange": "4♥",
       "pluto": "10♠",
       "result": "7♣",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 76,
@@ -35327,8 +35327,8 @@
       "longRange": "4♠",
       "pluto": "Q♥",
       "result": "J♠",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 77,
@@ -35342,8 +35342,8 @@
       "longRange": "3♦",
       "pluto": "9♣",
       "result": "10♣",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 78,
@@ -35357,8 +35357,8 @@
       "longRange": "4♦",
       "pluto": "6♦",
       "result": "4♠",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 79,
@@ -35372,8 +35372,8 @@
       "longRange": "3♣",
       "pluto": "3♠",
       "result": "4♥",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 80,
@@ -35387,8 +35387,8 @@
       "longRange": "6♦",
       "pluto": "J♦",
       "result": "10♠",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 81,
@@ -35402,8 +35402,8 @@
       "longRange": "J♠",
       "pluto": "J♣",
       "result": "Q♥",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 82,
@@ -35417,8 +35417,8 @@
       "longRange": "10♠",
       "pluto": "10♥",
       "result": "9♣",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 83,
@@ -35432,8 +35432,8 @@
       "longRange": "4♥",
       "pluto": "5♠",
       "result": "6♦",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 84,
@@ -35447,8 +35447,8 @@
       "longRange": "Q♦",
       "pluto": "4♦",
       "result": "3♠",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 85,
@@ -35462,8 +35462,8 @@
       "longRange": "5♥",
       "pluto": "5♥",
       "result": "J♦",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 86,
@@ -35477,8 +35477,8 @@
       "longRange": "K♦",
       "pluto": "5♣",
       "result": "J♣",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 87,
@@ -35492,8 +35492,8 @@
       "longRange": "3♠",
       "pluto": "4♣",
       "result": "10♥",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 88,
@@ -35507,8 +35507,8 @@
       "longRange": "10♣",
       "pluto": "6♥",
       "result": "5♠",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 89,
@@ -35522,8 +35522,8 @@
       "longRange": "Q♥",
       "pluto": "3♦",
       "result": "4♦",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     },
     {
       "age": 90,
@@ -35537,8 +35537,8 @@
       "longRange": "10♠",
       "pluto": "Q♦",
       "result": "5♥",
-      "support": "",
-      "development": ""
+      "support": "8♣",
+      "development": "8♣"
     }
   ],
   "8♦": [
@@ -38288,8 +38288,8 @@
       "longRange": "7♣",
       "pluto": "K♣",
       "result": "J♦",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 1,
@@ -38303,8 +38303,8 @@
       "longRange": "5♦",
       "pluto": "3♦",
       "result": "6♥",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 2,
@@ -38318,8 +38318,8 @@
       "longRange": "Q♠",
       "pluto": "6♣",
       "result": "10♥",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 3,
@@ -38333,8 +38333,8 @@
       "longRange": "J♣",
       "pluto": "9♦",
       "result": "Q♦",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 4,
@@ -38348,8 +38348,8 @@
       "longRange": "9♦",
       "pluto": "A♦",
       "result": "4♦",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 5,
@@ -38363,8 +38363,8 @@
       "longRange": "7♠",
       "pluto": "3♣",
       "result": "5♦",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 6,
@@ -38378,8 +38378,8 @@
       "longRange": "2♣",
       "pluto": "3♥",
       "result": "5♣",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 7,
@@ -38393,8 +38393,8 @@
       "longRange": "4♦",
       "pluto": "7♠",
       "result": "K♦",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 8,
@@ -38408,8 +38408,8 @@
       "longRange": "J♥",
       "pluto": "10♦",
       "result": "6♥",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 9,
@@ -38423,8 +38423,8 @@
       "longRange": "6♦",
       "pluto": "7♥",
       "result": "8♥",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 10,
@@ -38438,8 +38438,8 @@
       "longRange": "6♠",
       "pluto": "8♦",
       "result": "Q♦",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 11,
@@ -38453,8 +38453,8 @@
       "longRange": "A♣",
       "pluto": "2♣",
       "result": "A♠",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 12,
@@ -38468,8 +38468,8 @@
       "longRange": "9♠",
       "pluto": "J♠",
       "result": "5♦",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 13,
@@ -38483,8 +38483,8 @@
       "longRange": "7♠",
       "pluto": "9♠",
       "result": "K♥",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 14,
@@ -38498,8 +38498,8 @@
       "longRange": "10♣",
       "pluto": "4♠",
       "result": "K♦",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 15,
@@ -38513,8 +38513,8 @@
       "longRange": "K♦",
       "pluto": "2♠",
       "result": "6♠",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 16,
@@ -38528,8 +38528,8 @@
       "longRange": "7♣",
       "pluto": "10♠",
       "result": "8♥",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 17,
@@ -38543,8 +38543,8 @@
       "longRange": "5♠",
       "pluto": "8♠",
       "result": "K♣",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 18,
@@ -38558,8 +38558,8 @@
       "longRange": "3♣",
       "pluto": "9♣",
       "result": "A♠",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 19,
@@ -38573,8 +38573,8 @@
       "longRange": "7♥",
       "pluto": "2♦",
       "result": "6♣",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 20,
@@ -38588,8 +38588,8 @@
       "longRange": "9♠",
       "pluto": "3♠",
       "result": "K♥",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 21,
@@ -38603,8 +38603,8 @@
       "longRange": "5♣",
       "pluto": "A♥",
       "result": "A♦",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 22,
@@ -38618,8 +38618,8 @@
       "longRange": "J♥",
       "pluto": "J♣",
       "result": "6♠",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 23,
@@ -38633,8 +38633,8 @@
       "longRange": "J♦",
       "pluto": "Q♣",
       "result": "3♥",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 24,
@@ -38648,8 +38648,8 @@
       "longRange": "K♣",
       "pluto": "5♠",
       "result": "K♣",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 25,
@@ -38663,8 +38663,8 @@
       "longRange": "A♣",
       "pluto": "Q♠",
       "result": "10♦",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 26,
@@ -38678,8 +38678,8 @@
       "longRange": "2♠",
       "pluto": "5♥",
       "result": "6♣",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 27,
@@ -38693,8 +38693,8 @@
       "longRange": "7♥",
       "pluto": "7♣",
       "result": "8♦",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 28,
@@ -38708,8 +38708,8 @@
       "longRange": "4♥",
       "pluto": "4♣",
       "result": "A♦",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 29,
@@ -38723,8 +38723,8 @@
       "longRange": "8♥",
       "pluto": "10♣",
       "result": "J♠",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 30,
@@ -38738,8 +38738,8 @@
       "longRange": "10♣",
       "pluto": "3♦",
       "result": "3♥",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 31,
@@ -38753,8 +38753,8 @@
       "longRange": "5♥",
       "pluto": "4♥",
       "result": "4♠",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 32,
@@ -38768,8 +38768,8 @@
       "longRange": "7♠",
       "pluto": "9♦",
       "result": "10♦",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 33,
@@ -38783,8 +38783,8 @@
       "longRange": "2♣",
       "pluto": "Q♥",
       "result": "10♠",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 34,
@@ -38798,8 +38798,8 @@
       "longRange": "2♠",
       "pluto": "3♣",
       "result": "8♦",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 35,
@@ -38813,8 +38813,8 @@
       "longRange": "6♥",
       "pluto": "6♦",
       "result": "9♣",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 36,
@@ -38828,8 +38828,8 @@
       "longRange": "J♥",
       "pluto": "7♠",
       "result": "J♠",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 37,
@@ -38843,8 +38843,8 @@
       "longRange": "10♥",
       "pluto": "J♦",
       "result": "3♠",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 38,
@@ -38858,8 +38858,8 @@
       "longRange": "6♣",
       "pluto": "7♥",
       "result": "4♠",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 39,
@@ -38873,8 +38873,8 @@
       "longRange": "A♣",
       "pluto": "10♥",
       "result": "J♣",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 40,
@@ -38888,8 +38888,8 @@
       "longRange": "8♠",
       "pluto": "2♣",
       "result": "10♠",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 41,
@@ -38903,8 +38903,8 @@
       "longRange": "2♣",
       "pluto": "4♦",
       "result": "5♠",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 42,
@@ -38918,8 +38918,8 @@
       "longRange": "Q♥",
       "pluto": "9♠",
       "result": "9♣",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 43,
@@ -38933,8 +38933,8 @@
       "longRange": "A♠",
       "pluto": "5♣",
       "result": "5♥",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 44,
@@ -38948,8 +38948,8 @@
       "longRange": "4♥",
       "pluto": "2♠",
       "result": "3♠",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 45,
@@ -38963,8 +38963,8 @@
       "longRange": "4♣",
       "pluto": "6♥",
       "result": "4♣",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 46,
@@ -38978,8 +38978,8 @@
       "longRange": "7♥",
       "pluto": "8♠",
       "result": "J♣",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 47,
@@ -38993,8 +38993,8 @@
       "longRange": "9♠",
       "pluto": "Q♦",
       "result": "3♦",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 48,
@@ -39008,8 +39008,8 @@
       "longRange": "8♠",
       "pluto": "2♦",
       "result": "5♠",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 49,
@@ -39023,8 +39023,8 @@
       "longRange": "Q♦",
       "pluto": "5♦",
       "result": "9♦",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 50,
@@ -39038,8 +39038,8 @@
       "longRange": "J♥",
       "pluto": "A♥",
       "result": "5♥",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 51,
@@ -39053,8 +39053,8 @@
       "longRange": "4♦",
       "pluto": "K♦",
       "result": "3♣",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 52,
@@ -39068,8 +39068,8 @@
       "longRange": "A♦",
       "pluto": "Q♣",
       "result": "4♣",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 53,
@@ -39083,8 +39083,8 @@
       "longRange": "A♣",
       "pluto": "8♥",
       "result": "7♠",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 54,
@@ -39098,8 +39098,8 @@
       "longRange": "2♦",
       "pluto": "Q♠",
       "result": "3♦",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 55,
@@ -39113,8 +39113,8 @@
       "longRange": "9♠",
       "pluto": "A♠",
       "result": "7♥",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 56,
@@ -39128,8 +39128,8 @@
       "longRange": "6♦",
       "pluto": "7♣",
       "result": "9♦",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 57,
@@ -39143,8 +39143,8 @@
       "longRange": "K♥",
       "pluto": "K♥",
       "result": "2♣",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 58,
@@ -39158,8 +39158,8 @@
       "longRange": "Q♥",
       "pluto": "10♣",
       "result": "3♣",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 59,
@@ -39173,8 +39173,8 @@
       "longRange": "3♦",
       "pluto": "6♠",
       "result": "9♠",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 60,
@@ -39188,8 +39188,8 @@
       "longRange": "2♣",
       "pluto": "4♥",
       "result": "7♠",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 61,
@@ -39203,8 +39203,8 @@
       "longRange": "2♠",
       "pluto": "K♣",
       "result": "2♠",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 62,
@@ -39218,8 +39218,8 @@
       "longRange": "2♦",
       "pluto": "Q♥",
       "result": "7♥",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 63,
@@ -39233,8 +39233,8 @@
       "longRange": "5♦",
       "pluto": "6♣",
       "result": "8♠",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 64,
@@ -39248,8 +39248,8 @@
       "longRange": "J♥",
       "pluto": "6♦",
       "result": "2♣",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 65,
@@ -39263,8 +39263,8 @@
       "longRange": "5♣",
       "pluto": "A♦",
       "result": "2♦",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 66,
@@ -39278,8 +39278,8 @@
       "longRange": "3♥",
       "pluto": "J♦",
       "result": "9♠",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 67,
@@ -39293,8 +39293,8 @@
       "longRange": "A♣",
       "pluto": "3♥",
       "result": "A♥",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 68,
@@ -39308,8 +39308,8 @@
       "longRange": "A♥",
       "pluto": "10♥",
       "result": "2♠",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 69,
@@ -39323,8 +39323,8 @@
       "longRange": "2♠",
       "pluto": "10♦",
       "result": "Q♣",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 70,
@@ -39338,8 +39338,8 @@
       "longRange": "J♦",
       "pluto": "4♦",
       "result": "8♠",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 71,
@@ -39353,8 +39353,8 @@
       "longRange": "6♠",
       "pluto": "8♦",
       "result": "Q♠",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 72,
@@ -39368,8 +39368,8 @@
       "longRange": "6♦",
       "pluto": "5♣",
       "result": "2♦",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 73,
@@ -39383,8 +39383,8 @@
       "longRange": "9♦",
       "pluto": "J♠",
       "result": "7♣",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 74,
@@ -39398,8 +39398,8 @@
       "longRange": "9♠",
       "pluto": "6♥",
       "result": "A♥",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 75,
@@ -39413,8 +39413,8 @@
       "longRange": "8♠",
       "pluto": "4♠",
       "result": "10♣",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 76,
@@ -39428,8 +39428,8 @@
       "longRange": "A♥",
       "pluto": "Q♦",
       "result": "Q♣",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 77,
@@ -39443,8 +39443,8 @@
       "longRange": "K♦",
       "pluto": "10♠",
       "result": "4♥",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 78,
@@ -39458,8 +39458,8 @@
       "longRange": "J♥",
       "pluto": "5♦",
       "result": "Q♠",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 79,
@@ -39473,8 +39473,8 @@
       "longRange": "6♥",
       "pluto": "9♣",
       "result": "Q♥",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 80,
@@ -39488,8 +39488,8 @@
       "longRange": "10♦",
       "pluto": "K♦",
       "result": "7♣",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 81,
@@ -39503,8 +39503,8 @@
       "longRange": "A♣",
       "pluto": "3♠",
       "result": "6♦",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 82,
@@ -39518,8 +39518,8 @@
       "longRange": "Q♣",
       "pluto": "8♥",
       "result": "10♣",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 83,
@@ -39533,8 +39533,8 @@
       "longRange": "8♠",
       "pluto": "J♣",
       "result": "J♦",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 84,
@@ -39548,8 +39548,8 @@
       "longRange": "10♥",
       "pluto": "A♠",
       "result": "4♥",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 85,
@@ -39563,8 +39563,8 @@
       "longRange": "K♣",
       "pluto": "5♠",
       "result": "10♥",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 86,
@@ -39578,8 +39578,8 @@
       "longRange": "J♦",
       "pluto": "K♥",
       "result": "Q♥",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 87,
@@ -39593,8 +39593,8 @@
       "longRange": "3♣",
       "pluto": "5♥",
       "result": "4♦",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 88,
@@ -39608,8 +39608,8 @@
       "longRange": "2♠",
       "pluto": "6♠",
       "result": "6♦",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 89,
@@ -39623,8 +39623,8 @@
       "longRange": "2♦",
       "pluto": "4♣",
       "result": "5♣",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     },
     {
       "age": 90,
@@ -39638,8 +39638,8 @@
       "longRange": "Q♣",
       "pluto": "K♣",
       "result": "J♦",
-      "support": "",
-      "development": ""
+      "support": "9♥",
+      "development": "9♥"
     }
   ],
   "9♣": [
@@ -40545,7 +40545,7 @@
     },
     {
       "age": 60,
-      "mercury": " 5♣",
+      "mercury": "5♣",
       "venus": "8♣",
       "mars": "3♣",
       "jupiter": "6♥",
@@ -40691,7 +40691,7 @@
       "pluto": "3♠",
       "result": "4♠",
       "support": "9♠",
-      "development": "A♠ "
+      "development": "A♠"
     },
     {
       "age": 70,
@@ -40841,7 +40841,7 @@
       "pluto": "9♠",
       "result": "K♦",
       "support": "Q♣",
-      "development": "6♥ "
+      "development": "6♥"
     },
     {
       "age": 80,
@@ -40946,7 +40946,7 @@
       "pluto": "2♣",
       "result": "5♦",
       "support": "4♠",
-      "development": "J♣ "
+      "development": "J♣"
     },
     {
       "age": 87,
@@ -41323,7 +41323,7 @@
       "pluto": "5♠",
       "result": "3♥",
       "support": "Q♣",
-      "development": "J♠ "
+      "development": "J♠"
     },
     {
       "age": 21,
@@ -43730,7 +43730,7 @@
     {
       "age": 90,
       "mercury": "2 ♥",
-      "venus": "K♥ ",
+      "venus": "K♥",
       "mars": "K♦",
       "jupiter": "6♥",
       "saturn": "4♣",
@@ -44126,10 +44126,10 @@
       "mars": "K♦",
       "jupiter": "K♠",
       "saturn": "Q♦",
-      "uranus": "2♥  ",
+      "uranus": "2♥",
       "neptune": "9♦",
       "longRange": "4♦",
-      "pluto": "K♥  ",
+      "pluto": "K♥",
       "result": "Q♣",
       "support": "2♦",
       "development": "6♠"
@@ -45133,7 +45133,7 @@
       "mars": "4♥",
       "jupiter": "5♠",
       "saturn": "Q♠",
-      "uranus": " 6♣",
+      "uranus": "6♣",
       "neptune": "3♥",
       "longRange": "K♠",
       "pluto": "A♥",
@@ -45214,7 +45214,7 @@
       "pluto": "J♥",
       "result": "5♠",
       "support": "6♦",
-      "development": "Q♣ "
+      "development": "Q♣"
     },
     {
       "age": 7,
@@ -45289,7 +45289,7 @@
       "pluto": "9♣",
       "result": "5♣",
       "support": "5♠",
-      "development": "6♣ "
+      "development": "6♣"
     },
     {
       "age": 12,
@@ -45379,7 +45379,7 @@
       "pluto": "Q♦",
       "result": "2♣",
       "support": "3♦",
-      "development": "K♥ "
+      "development": "K♥"
     },
     {
       "age": 18,
@@ -45443,7 +45443,7 @@
     },
     {
       "age": 22,
-      "mercury": "Q♥ ",
+      "mercury": "Q♥",
       "venus": "J♣",
       "mars": "6♠",
       "jupiter": "8♥",
@@ -45494,7 +45494,7 @@
       "jupiter": "10♠",
       "saturn": "3♠",
       "uranus": "4♦",
-      "neptune": "8♠ ",
+      "neptune": "8♠",
       "longRange": "6♦",
       "pluto": "2♣",
       "result": "A♥",
@@ -45638,12 +45638,12 @@
     },
     {
       "age": 35,
-      "mercury": "6♠  ",
+      "mercury": "6♠",
       "venus": "7♠",
       "mars": "2♣",
       "jupiter": "A♠",
       "saturn": "J♦",
-      "uranus": "10♠  ",
+      "uranus": "10♠",
       "neptune": "5♠",
       "longRange": "3♥",
       "pluto": "8♦",
@@ -45676,8 +45676,8 @@
       "uranus": "K♦",
       "neptune": "Q♠",
       "longRange": "Q♠",
-      "pluto": "A♥   ",
-      "result": "6♣  ",
+      "pluto": "A♥",
+      "result": "6♣",
       "support": "A♥",
       "development": "J♦"
     },
@@ -46013,7 +46013,7 @@
     },
     {
       "age": 60,
-      "mercury": " 5♣",
+      "mercury": "5♣",
       "venus": "8♣",
       "mars": "3♣",
       "jupiter": "6♥",
@@ -46159,7 +46159,7 @@
       "pluto": "3♠",
       "result": "4♠",
       "support": "9♠",
-      "development": "A♠ "
+      "development": "A♠"
     },
     {
       "age": 70,
@@ -46309,7 +46309,7 @@
       "pluto": "9♠",
       "result": "K♦",
       "support": "Q♣",
-      "development": "6♥ "
+      "development": "6♥"
     },
     {
       "age": 80,
@@ -46414,7 +46414,7 @@
       "pluto": "2♣",
       "result": "5♦",
       "support": "4♠",
-      "development": "J♣ "
+      "development": "J♣"
     },
     {
       "age": 87,
@@ -49224,8 +49224,8 @@
       "longRange": "9♣",
       "pluto": "2♦",
       "result": "J♠",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 1,
@@ -49239,8 +49239,8 @@
       "longRange": "9♠",
       "pluto": "A♦",
       "result": "10♣",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 2,
@@ -49254,8 +49254,8 @@
       "longRange": "2♥",
       "pluto": "A♥",
       "result": "4♠",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 3,
@@ -49269,8 +49269,8 @@
       "longRange": "K♥",
       "pluto": "3♥",
       "result": "4♥",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 4,
@@ -49284,8 +49284,8 @@
       "longRange": "K♦",
       "pluto": "Q♣",
       "result": "10♠",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 5,
@@ -49299,8 +49299,8 @@
       "longRange": "6♥",
       "pluto": "10♦",
       "result": "Q♥",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 6,
@@ -49314,8 +49314,8 @@
       "longRange": "4♣",
       "pluto": "Q♠",
       "result": "9♣",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 7,
@@ -49329,8 +49329,8 @@
       "longRange": "6♦",
       "pluto": "8♦",
       "result": "6♦",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 8,
@@ -49344,8 +49344,8 @@
       "longRange": "6♠",
       "pluto": "7♣",
       "result": "3♠",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 9,
@@ -49359,8 +49359,8 @@
       "longRange": "A♣",
       "pluto": "J♠",
       "result": "J♦",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 10,
@@ -49374,8 +49374,8 @@
       "longRange": "9♠",
       "pluto": "10♣",
       "result": "J♣",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 11,
@@ -49389,8 +49389,8 @@
       "longRange": "7♠",
       "pluto": "4♠",
       "result": "10♥",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 12,
@@ -49404,8 +49404,8 @@
       "longRange": "3♦",
       "pluto": "4♥",
       "result": "5♠",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 13,
@@ -49419,8 +49419,8 @@
       "longRange": "6♥",
       "pluto": "10♠",
       "result": "4♦",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 14,
@@ -49434,8 +49434,8 @@
       "longRange": "3♠",
       "pluto": "Q♥",
       "result": "5♥",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 15,
@@ -49449,8 +49449,8 @@
       "longRange": "2♠",
       "pluto": "9♣",
       "result": "5♣",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 16,
@@ -49464,8 +49464,8 @@
       "longRange": "2♥",
       "pluto": "6♦",
       "result": "4♣",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 17,
@@ -49479,8 +49479,8 @@
       "longRange": "6♠",
       "pluto": "3♠",
       "result": "6♥",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 18,
@@ -49494,8 +49494,8 @@
       "longRange": "8♥",
       "pluto": "J♦",
       "result": "3♦",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 19,
@@ -49509,8 +49509,8 @@
       "longRange": "Q♦",
       "pluto": "J♣",
       "result": "Q♦",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 20,
@@ -49524,8 +49524,8 @@
       "longRange": "3♦",
       "pluto": "10♥",
       "result": "9♦",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 21,
@@ -49539,8 +49539,8 @@
       "longRange": "J♦",
       "pluto": "5♠",
       "result": "5♦",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 22,
@@ -49554,8 +49554,8 @@
       "longRange": "K♣",
       "pluto": "4♦",
       "result": "3♣",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 23,
@@ -49569,8 +49569,8 @@
       "longRange": "A♣",
       "pluto": "5♥",
       "result": "K♦",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 24,
@@ -49584,8 +49584,8 @@
       "longRange": "2♠",
       "pluto": "5♣",
       "result": "7♠",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 25,
@@ -49599,8 +49599,8 @@
       "longRange": "7♥",
       "pluto": "4♣",
       "result": "8♥",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 26,
@@ -49614,8 +49614,8 @@
       "longRange": "9♦",
       "pluto": "6♥",
       "result": "7♥",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 27,
@@ -49629,8 +49629,8 @@
       "longRange": "Q♦",
       "pluto": "3♦",
       "result": "A♠",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 28,
@@ -49644,8 +49644,8 @@
       "longRange": "J♣",
       "pluto": "Q♦",
       "result": "2♣",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 29,
@@ -49659,8 +49659,8 @@
       "longRange": "8♠",
       "pluto": "9♦",
       "result": "K♥",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 30,
@@ -49674,8 +49674,8 @@
       "longRange": "2♥",
       "pluto": "5♦",
       "result": "9♠",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 31,
@@ -49689,8 +49689,8 @@
       "longRange": "K♣",
       "pluto": "3♣",
       "result": "6♠",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 32,
@@ -49704,8 +49704,8 @@
       "longRange": "A♠",
       "pluto": "K♦",
       "result": "2♠",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 33,
@@ -49719,8 +49719,8 @@
       "longRange": "5♦",
       "pluto": "7♠",
       "result": "K♣",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 34,
@@ -49734,8 +49734,8 @@
       "longRange": "9♦",
       "pluto": "8♥",
       "result": "8♠",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 35,
@@ -49749,8 +49749,8 @@
       "longRange": "10♥",
       "pluto": "7♥",
       "result": "6♣",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 36,
@@ -49764,8 +49764,8 @@
       "longRange": "6♣",
       "pluto": "A♠",
       "result": "2♦",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 37,
@@ -49779,8 +49779,8 @@
       "longRange": "A♣",
       "pluto": "2♣",
       "result": "A♦",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 38,
@@ -49794,8 +49794,8 @@
       "longRange": "8♠",
       "pluto": "K♥",
       "result": "A♥",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 39,
@@ -49809,8 +49809,8 @@
       "longRange": "2♣",
       "pluto": "9♠",
       "result": "3♥",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 40,
@@ -49824,8 +49824,8 @@
       "longRange": "3♣",
       "pluto": "6♠",
       "result": "Q♣",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 41,
@@ -49839,8 +49839,8 @@
       "longRange": "5♦",
       "pluto": "2♠",
       "result": "10♦",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 42,
@@ -49854,8 +49854,8 @@
       "longRange": "5♠",
       "pluto": "K♣",
       "result": "Q♠",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 43,
@@ -49869,8 +49869,8 @@
       "longRange": "2♦",
       "pluto": "8♠",
       "result": "8♦",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 44,
@@ -49884,8 +49884,8 @@
       "longRange": "2♥",
       "pluto": "6♣",
       "result": "7♣",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 45,
@@ -49899,8 +49899,8 @@
       "longRange": "6♣",
       "pluto": "2♦",
       "result": "J♠",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 46,
@@ -49914,8 +49914,8 @@
       "longRange": "K♥",
       "pluto": "A♦",
       "result": "10♣",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 47,
@@ -49929,8 +49929,8 @@
       "longRange": "K♦",
       "pluto": "A♥",
       "result": "4♠",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 48,
@@ -49944,8 +49944,8 @@
       "longRange": "3♣",
       "pluto": "3♥",
       "result": "4♥",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 49,
@@ -49959,8 +49959,8 @@
       "longRange": "4♦",
       "pluto": "Q♣",
       "result": "10♠",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 50,
@@ -49974,8 +49974,8 @@
       "longRange": "A♦",
       "pluto": "10♦",
       "result": "Q♥",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 51,
@@ -49989,8 +49989,8 @@
       "longRange": "A♣",
       "pluto": "Q♠",
       "result": "9♣",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 52,
@@ -50004,8 +50004,8 @@
       "longRange": "2♦",
       "pluto": "8♦",
       "result": "6♦",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 53,
@@ -50019,8 +50019,8 @@
       "longRange": "9♠",
       "pluto": "7♣",
       "result": "3♠",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 54,
@@ -50034,8 +50034,8 @@
       "longRange": "7♠",
       "pluto": "J♠",
       "result": "J♦",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 55,
@@ -50049,8 +50049,8 @@
       "longRange": "K♦",
       "pluto": "10♣",
       "result": "J♣",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 56,
@@ -50064,8 +50064,8 @@
       "longRange": "5♥",
       "pluto": "4♠",
       "result": "10♥",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 57,
@@ -50079,8 +50079,8 @@
       "longRange": "A♥",
       "pluto": "4♥",
       "result": "5♠",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 58,
@@ -50094,8 +50094,8 @@
       "longRange": "2♥",
       "pluto": "10♠",
       "result": "4♦",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 59,
@@ -50109,8 +50109,8 @@
       "longRange": "A♦",
       "pluto": "Q♥",
       "result": "5♥",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 60,
@@ -50124,8 +50124,8 @@
       "longRange": "6♠",
       "pluto": "9♣",
       "result": "5♣",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 61,
@@ -50139,8 +50139,8 @@
       "longRange": "8♥",
       "pluto": "6♦",
       "result": "4♣",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 62,
@@ -50154,8 +50154,8 @@
       "longRange": "7♠",
       "pluto": "3♠",
       "result": "6 ♥",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 63,
@@ -50169,8 +50169,8 @@
       "longRange": "5♣",
       "pluto": "J♦",
       "result": "3♦",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 64,
@@ -50184,8 +50184,8 @@
       "longRange": "3♥",
       "pluto": "J♣",
       "result": "Q♦",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 65,
@@ -50199,8 +50199,8 @@
       "longRange": "A♣",
       "pluto": "10♥",
       "result": "9♦",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 66,
@@ -50214,8 +50214,8 @@
       "longRange": "A♥",
       "pluto": "5♠",
       "result": "5♦",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 67,
@@ -50229,8 +50229,8 @@
       "longRange": "2♠",
       "pluto": "4♦",
       "result": "3♣",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 68,
@@ -50244,8 +50244,8 @@
       "longRange": "7♥",
       "pluto": "5♥",
       "result": "K♦",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 69,
@@ -50259,8 +50259,8 @@
       "longRange": "8♥",
       "pluto": "5♣",
       "result": "7♠",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 70,
@@ -50274,8 +50274,8 @@
       "longRange": "4♣",
       "pluto": "4♣",
       "result": "8♥",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 71,
@@ -50289,8 +50289,8 @@
       "longRange": "Q♣",
       "pluto": "6♥",
       "result": "7♥",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 72,
@@ -50304,8 +50304,8 @@
       "longRange": "2♥",
       "pluto": "3♦",
       "result": "A♠",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 73,
@@ -50319,8 +50319,8 @@
       "longRange": "3♥",
       "pluto": "Q♦",
       "result": "2♣",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 74,
@@ -50334,8 +50334,8 @@
       "longRange": "K♣",
       "pluto": "9♦",
       "result": "K♥",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 75,
@@ -50349,8 +50349,8 @@
       "longRange": "A♠",
       "pluto": "5♦",
       "result": "9♠",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 76,
@@ -50364,8 +50364,8 @@
       "longRange": "7♥",
       "pluto": "3♣",
       "result": "6♠",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 77,
@@ -50379,8 +50379,8 @@
       "longRange": "6♥",
       "pluto": "K♦",
       "result": "2♠",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 78,
@@ -50394,8 +50394,8 @@
       "longRange": "10♦",
       "pluto": "7♠",
       "result": "K♣",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 79,
@@ -50409,8 +50409,8 @@
       "longRange": "A♣",
       "pluto": "8♥",
       "result": "8♠",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 80,
@@ -50424,8 +50424,8 @@
       "longRange": "Q♣",
       "pluto": "7♥",
       "result": "6♣",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 81,
@@ -50439,8 +50439,8 @@
       "longRange": "8♠",
       "pluto": "A♠",
       "result": "2♦",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 82,
@@ -50454,8 +50454,8 @@
       "longRange": "2♣",
       "pluto": "2♣",
       "result": "A♦",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 83,
@@ -50469,8 +50469,8 @@
       "longRange": "A♠",
       "pluto": "K♥",
       "result": "A♥",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 84,
@@ -50484,8 +50484,8 @@
       "longRange": "3♦",
       "pluto": "9♠",
       "result": "3♥",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 85,
@@ -50499,8 +50499,8 @@
       "longRange": "Q♠",
       "pluto": "6♠",
       "result": "Q♣",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 86,
@@ -50514,8 +50514,8 @@
       "longRange": "2♥",
       "pluto": "2♠",
       "result": "10♦",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 87,
@@ -50529,8 +50529,8 @@
       "longRange": "10♦",
       "pluto": "K♣",
       "result": "Q♠",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 88,
@@ -50544,8 +50544,8 @@
       "longRange": "6♣",
       "pluto": "8♠",
       "result": "8♦",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 89,
@@ -50559,8 +50559,8 @@
       "longRange": "K♥",
       "pluto": "6♣",
       "result": "7♣",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     },
     {
       "age": 90,
@@ -50574,8 +50574,8 @@
       "longRange": "2♣",
       "pluto": "2♦",
       "result": "J♠",
-      "support": "",
-      "development": ""
+      "support": "J♥",
+      "development": "J♥"
     }
   ],
   "J♣": [
@@ -60147,11 +60147,11 @@
       "development": "Q♠"
     }
   ],
-  "K♥   ": [
+  "K♥": [
     {
       "age": 0,
       "mercury": "K♦",
-      "venus": "6♥   ",
+      "venus": "6♥",
       "mars": "4♣",
       "jupiter": "2♦",
       "saturn": "J♠",
@@ -60159,9 +60159,9 @@
       "neptune": "6♦",
       "longRange": "K♦",
       "pluto": "4♠",
-      "result": "10♥   ",
-      "support": "K♥   ",
-      "development": "K♥   "
+      "result": "10♥",
+      "support": "K♥",
+      "development": "K♥"
     },
     {
       "age": 1,
@@ -63559,7 +63559,7 @@
     },
     {
       "age": 45,
-      "mercury": "6♥ ",
+      "mercury": "6♥",
       "venus": "4♣",
       "mars": "2♦",
       "jupiter": "J♠",
@@ -64261,8 +64261,8 @@
       "longRange": "3♥",
       "pluto": "7♥",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 1,
@@ -64276,8 +64276,8 @@
       "longRange": "A♣",
       "pluto": "A♠",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 2,
@@ -64291,8 +64291,8 @@
       "longRange": "Q♣",
       "pluto": "2♣",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 3,
@@ -64306,8 +64306,8 @@
       "longRange": "10♠",
       "pluto": "K♥",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 4,
@@ -64321,8 +64321,8 @@
       "longRange": "5♣",
       "pluto": "9♠",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 5,
@@ -64336,8 +64336,8 @@
       "longRange": "3♦",
       "pluto": "6♠",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 6,
@@ -64351,8 +64351,8 @@
       "longRange": "A♠",
       "pluto": "2♠",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 7,
@@ -64366,8 +64366,8 @@
       "longRange": "Q♣",
       "pluto": "K♣",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 8,
@@ -64381,8 +64381,8 @@
       "longRange": "2♥",
       "pluto": "8♠",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 9,
@@ -64396,8 +64396,8 @@
       "longRange": "10♦",
       "pluto": "6♣",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 10,
@@ -64411,8 +64411,8 @@
       "longRange": "Q♥",
       "pluto": "2♦",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 11,
@@ -64426,8 +64426,8 @@
       "longRange": "4♣",
       "pluto": "A♦",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 12,
@@ -64441,8 +64441,8 @@
       "longRange": "Q♦",
       "pluto": "A♥",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 13,
@@ -64456,8 +64456,8 @@
       "longRange": "2♣",
       "pluto": "3♥",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 14,
@@ -64471,8 +64471,8 @@
       "longRange": "10♦",
       "pluto": "Q♣",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 15,
@@ -64486,8 +64486,8 @@
       "longRange": "A♣",
       "pluto": "10♦",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 16,
@@ -64501,8 +64501,8 @@
       "longRange": "Q♠",
       "pluto": "Q♠",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 17,
@@ -64516,8 +64516,8 @@
       "longRange": "9♣",
       "pluto": "8♦",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 18,
@@ -64531,8 +64531,8 @@
       "longRange": "6♥",
       "pluto": "7♣",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 19,
@@ -64546,8 +64546,8 @@
       "longRange": "9♦",
       "pluto": "J♠",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 20,
@@ -64561,8 +64561,8 @@
       "longRange": "K♥",
       "pluto": "10♣",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 21,
@@ -64576,8 +64576,8 @@
       "longRange": "Q♠",
       "pluto": "4♠",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 22,
@@ -64591,8 +64591,8 @@
       "longRange": "2♥",
       "pluto": "4♥",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 23,
@@ -64606,8 +64606,8 @@
       "longRange": "8♦",
       "pluto": "10♠",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 24,
@@ -64621,8 +64621,8 @@
       "longRange": "6♦",
       "pluto": "Q♥",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 25,
@@ -64636,8 +64636,8 @@
       "longRange": "3♦",
       "pluto": "9♣",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 26,
@@ -64651,8 +64651,8 @@
       "longRange": "5♦",
       "pluto": "6♦",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 27,
@@ -64666,8 +64666,8 @@
       "longRange": "9♠",
       "pluto": "3♠",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 28,
@@ -64681,8 +64681,8 @@
       "longRange": "8♦",
       "pluto": "J♦",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 29,
@@ -64696,8 +64696,8 @@
       "longRange": "A♣",
       "pluto": "J♣",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 30,
@@ -64711,8 +64711,8 @@
       "longRange": "7♣",
       "pluto": "10♥",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 31,
@@ -64726,8 +64726,8 @@
       "longRange": "3♠",
       "pluto": "5♠",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 32,
@@ -64741,8 +64741,8 @@
       "longRange": "Q♦",
       "pluto": "4♦",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 33,
@@ -64756,8 +64756,8 @@
       "longRange": "3♣",
       "pluto": "5♥",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 34,
@@ -64771,8 +64771,8 @@
       "longRange": "6♠",
       "pluto": "5♣",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 35,
@@ -64786,8 +64786,8 @@
       "longRange": "7♣",
       "pluto": "4♣",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 36,
@@ -64801,8 +64801,8 @@
       "longRange": "2♥",
       "pluto": "6♥",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 37,
@@ -64816,8 +64816,8 @@
       "longRange": "J♠",
       "pluto": "3♦",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 38,
@@ -64831,8 +64831,8 @@
       "longRange": "J♦",
       "pluto": "Q♦",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 39,
@@ -64846,8 +64846,8 @@
       "longRange": "9♦",
       "pluto": "9♦",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 40,
@@ -64861,8 +64861,8 @@
       "longRange": "K♦",
       "pluto": "5♦",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 41,
@@ -64876,8 +64876,8 @@
       "longRange": "2♠",
       "pluto": "3♣",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 42,
@@ -64891,8 +64891,8 @@
       "longRange": "J♠",
       "pluto": "K♦",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 43,
@@ -64906,8 +64906,8 @@
       "longRange": "A♣",
       "pluto": "7♠",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 44,
@@ -64921,8 +64921,8 @@
       "longRange": "10♣",
       "pluto": "8♥",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 45,
@@ -64936,8 +64936,8 @@
       "longRange": "J♣",
       "pluto": "7♥",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 46,
@@ -64951,8 +64951,8 @@
       "longRange": "5♦",
       "pluto": "A♠",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 47,
@@ -64966,8 +64966,8 @@
       "longRange": "7♠",
       "pluto": "2♣",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 48,
@@ -64981,8 +64981,8 @@
       "longRange": "K♣",
       "pluto": "K♥",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 49,
@@ -64996,8 +64996,8 @@
       "longRange": "10♣",
       "pluto": "9♠",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 50,
@@ -65011,8 +65011,8 @@
       "longRange": "2♥",
       "pluto": "6♠",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 51,
@@ -65026,8 +65026,8 @@
       "longRange": "4♠",
       "pluto": "2♠",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 52,
@@ -65041,8 +65041,8 @@
       "longRange": "10♥",
       "pluto": "K♣",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 53,
@@ -65056,8 +65056,8 @@
       "longRange": "3♣",
       "pluto": "8♠",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 54,
@@ -65071,8 +65071,8 @@
       "longRange": "8♥",
       "pluto": "6♣",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 55,
@@ -65086,8 +65086,8 @@
       "longRange": "8♠",
       "pluto": "2♦",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 56,
@@ -65101,8 +65101,8 @@
       "longRange": "4♠",
       "pluto": "A♦",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 57,
@@ -65116,8 +65116,8 @@
       "longRange": "A♣",
       "pluto": "A♥",
       "result": "9♣",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 58,
@@ -65131,8 +65131,8 @@
       "longRange": "4♥",
       "pluto": "3♥",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 59,
@@ -65146,8 +65146,8 @@
       "longRange": "5♠",
       "pluto": "Q♣",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 60,
@@ -65161,8 +65161,8 @@
       "longRange": "K♦",
       "pluto": "10♦",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 61,
@@ -65176,8 +65176,8 @@
       "longRange": "7♥",
       "pluto": "Q♠",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 62,
@@ -65191,8 +65191,8 @@
       "longRange": "6♣",
       "pluto": "8♦",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 63,
@@ -65206,8 +65206,8 @@
       "longRange": "4♥",
       "pluto": "7♣",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 64,
@@ -65221,8 +65221,8 @@
       "longRange": "2♥",
       "pluto": "J♠",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 65,
@@ -65236,8 +65236,8 @@
       "longRange": "10♠",
       "pluto": "10♣",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 66,
@@ -65251,8 +65251,8 @@
       "longRange": "4♦",
       "pluto": "4♠",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 67,
@@ -65266,8 +65266,8 @@
       "longRange": "7♠",
       "pluto": "4♥",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 68,
@@ -65281,8 +65281,8 @@
       "longRange": "A♠",
       "pluto": "10♠",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 69,
@@ -65296,8 +65296,8 @@
       "longRange": "2♦",
       "pluto": "Q♥",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 70,
@@ -65311,8 +65311,8 @@
       "longRange": "10♠",
       "pluto": "9♣",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 71,
@@ -65326,8 +65326,8 @@
       "longRange": "A♣",
       "pluto": "6♦",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 72,
@@ -65341,8 +65341,8 @@
       "longRange": "Q♥",
       "pluto": "3♠",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 73,
@@ -65356,8 +65356,8 @@
       "longRange": "5♥",
       "pluto": "J♦",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 74,
@@ -65371,8 +65371,8 @@
       "longRange": "8♥",
       "pluto": "J♣",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 75,
@@ -65386,8 +65386,8 @@
       "longRange": "2♣",
       "pluto": "10♥",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 76,
@@ -65401,8 +65401,8 @@
       "longRange": "A♦",
       "pluto": "5♠",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 77,
@@ -65416,8 +65416,8 @@
       "longRange": "Q♥",
       "pluto": "4♦",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 78,
@@ -65431,8 +65431,8 @@
       "longRange": "2♥",
       "pluto": "5♥",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 79,
@@ -65446,8 +65446,8 @@
       "longRange": "9♣",
       "pluto": "5♣",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 80,
@@ -65461,8 +65461,8 @@
       "longRange": "5♣",
       "pluto": "4♣",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 81,
@@ -65476,8 +65476,8 @@
       "longRange": "7♥",
       "pluto": "6♥",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 82,
@@ -65491,8 +65491,8 @@
       "longRange": "K♥",
       "pluto": "3♦",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 83,
@@ -65506,8 +65506,8 @@
       "longRange": "A♥",
       "pluto": "Q♦",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 84,
@@ -65521,8 +65521,8 @@
       "longRange": "9♣",
       "pluto": "9♦",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 85,
@@ -65536,8 +65536,8 @@
       "longRange": "A♣",
       "pluto": "5♦",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 86,
@@ -65551,8 +65551,8 @@
       "longRange": "6♦",
       "pluto": "3♣",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 87,
@@ -65566,8 +65566,8 @@
       "longRange": "4♣",
       "pluto": "K♦",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 88,
@@ -65581,8 +65581,8 @@
       "longRange": "A♠",
       "pluto": "7♠",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 89,
@@ -65596,8 +65596,8 @@
       "longRange": "9♠",
       "pluto": "8♥",
       "result": "9♥",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     },
     {
       "age": 90,
@@ -65611,8 +65611,8 @@
       "longRange": "3♥",
       "pluto": "7♥",
       "result": "7♦",
-      "support": "",
-      "development": ""
+      "support": "K♠",
+      "development": "K♠"
     }
   ],
   "A♥": [
@@ -66402,12 +66402,12 @@
       "venus": "3♠",
       "mars": "Q♥",
       "jupiter": "K♠",
-      "saturn": "10♣  ",
-      "uranus": "A♣  ",
+      "saturn": "10♣",
+      "uranus": "A♣",
       "neptune": "4♠",
       "longRange": "K♠",
       "pluto": "10♥",
-      "result": "3♣  ",
+      "result": "3♣",
       "support": "J♠",
       "development": "6♠"
     },
@@ -66995,8 +66995,8 @@
       "longRange": "Q♣",
       "pluto": "5♠",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 1,
@@ -67010,8 +67010,8 @@
       "longRange": "10♠",
       "pluto": "3♠",
       "result": "4♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 2,
@@ -67025,8 +67025,8 @@
       "longRange": "5♣",
       "pluto": "5♥",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 3,
@@ -67040,8 +67040,8 @@
       "longRange": "3♦",
       "pluto": "J♣",
       "result": "Q♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 4,
@@ -67055,8 +67055,8 @@
       "longRange": "A♠",
       "pluto": "4♣",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 5,
@@ -67070,8 +67070,8 @@
       "longRange": "7♥",
       "pluto": "5♠",
       "result": "6♦",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 6,
@@ -67085,8 +67085,8 @@
       "longRange": "7♦",
       "pluto": "3♦",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 7,
@@ -67100,8 +67100,8 @@
       "longRange": "9♠",
       "pluto": "5♥",
       "result": "J♦",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 8,
@@ -67115,8 +67115,8 @@
       "longRange": "7♠",
       "pluto": "9♦",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 9,
@@ -67130,8 +67130,8 @@
       "longRange": "3♦",
       "pluto": "4♣",
       "result": "10♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 10,
@@ -67145,8 +67145,8 @@
       "longRange": "6♥",
       "pluto": "3♣",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 11,
@@ -67160,8 +67160,8 @@
       "longRange": "A♦",
       "pluto": "3♦",
       "result": "4♦",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 12,
@@ -67175,8 +67175,8 @@
       "longRange": "10♣",
       "pluto": "7♠",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 13,
@@ -67190,8 +67190,8 @@
       "longRange": "8♣",
       "pluto": "9♦",
       "result": "5♣",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 14,
@@ -67205,8 +67205,8 @@
       "longRange": "Q♠",
       "pluto": "7♥",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 15,
@@ -67220,8 +67220,8 @@
       "longRange": "9♣",
       "pluto": "3♣",
       "result": "6♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 16,
@@ -67235,8 +67235,8 @@
       "longRange": "6♥",
       "pluto": "2♣",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 17,
@@ -67250,8 +67250,8 @@
       "longRange": "9♦",
       "pluto": "7♠",
       "result": "Q♦",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 18,
@@ -67265,8 +67265,8 @@
       "longRange": "K♥",
       "pluto": "9♠",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 19,
@@ -67280,8 +67280,8 @@
       "longRange": "2♣",
       "pluto": "7♥",
       "result": "5♦",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 20,
@@ -67295,8 +67295,8 @@
       "longRange": "7♦",
       "pluto": "2♠",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 21,
@@ -67310,8 +67310,8 @@
       "longRange": "2♠",
       "pluto": "2♣",
       "result": "K♦",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 22,
@@ -67325,8 +67325,8 @@
       "longRange": "7♥",
       "pluto": "8♠",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 23,
@@ -67340,8 +67340,8 @@
       "longRange": "9♦",
       "pluto": "9♠",
       "result": "8♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 24,
@@ -67355,8 +67355,8 @@
       "longRange": "Q♦",
       "pluto": "2♦",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 25,
@@ -67370,8 +67370,8 @@
       "longRange": "3♥",
       "pluto": "2♠",
       "result": "A♠",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 26,
@@ -67385,8 +67385,8 @@
       "longRange": "4♥",
       "pluto": "A♥",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 27,
@@ -67400,8 +67400,8 @@
       "longRange": "8♣",
       "pluto": "8♠",
       "result": "K♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 28,
@@ -67415,8 +67415,8 @@
       "longRange": "7♣",
       "pluto": "Q♣",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 29,
@@ -67430,8 +67430,8 @@
       "longRange": "3♠",
       "pluto": "2♦",
       "result": "6♠",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 30,
@@ -67445,8 +67445,8 @@
       "longRange": "Q♦",
       "pluto": "Q♠",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 31,
@@ -67460,8 +67460,8 @@
       "longRange": "3♣",
       "pluto": "A♥",
       "result": "K♣",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 32,
@@ -67475,8 +67475,8 @@
       "longRange": "6♠",
       "pluto": "7♣",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 33,
@@ -67490,8 +67490,8 @@
       "longRange": "9♠",
       "pluto": "Q♣",
       "result": "6♣",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 34,
@@ -67505,8 +67505,8 @@
       "longRange": "7♦",
       "pluto": "10♣",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 35,
@@ -67520,8 +67520,8 @@
       "longRange": "8♠",
       "pluto": "Q♠",
       "result": "A♦",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 36,
@@ -67535,8 +67535,8 @@
       "longRange": "2♣",
       "pluto": "4♥",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 37,
@@ -67550,8 +67550,8 @@
       "longRange": "3♣",
       "pluto": "7♣",
       "result": "3♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 38,
@@ -67565,8 +67565,8 @@
       "longRange": "5♦",
       "pluto": "Q♥",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 39,
@@ -67580,8 +67580,8 @@
       "longRange": "10♦",
       "pluto": "10♣",
       "result": "10♦",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 40,
@@ -67595,8 +67595,8 @@
       "longRange": "Q♥",
       "pluto": "6♦",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 41,
@@ -67610,8 +67610,8 @@
       "longRange": "8♣",
       "pluto": "4♥",
       "result": "8♦",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 42,
@@ -67625,8 +67625,8 @@
       "longRange": "10♣",
       "pluto": "J♦",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 43,
@@ -67640,8 +67640,8 @@
       "longRange": "J♣",
       "pluto": "Q♥",
       "result": "J♠",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 44,
@@ -67655,8 +67655,8 @@
       "longRange": "5♦",
       "pluto": "10♥",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 45,
@@ -67670,8 +67670,8 @@
       "longRange": "7♠",
       "pluto": "6♦",
       "result": "4♠",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 46,
@@ -67685,8 +67685,8 @@
       "longRange": "K♣",
       "pluto": "4♦",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 47,
@@ -67700,8 +67700,8 @@
       "longRange": "2♠",
       "pluto": "J♦",
       "result": "10♠",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 48,
@@ -67715,8 +67715,8 @@
       "longRange": "7♦",
       "pluto": "5♣",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 49,
@@ -67730,8 +67730,8 @@
       "longRange": "2♦",
       "pluto": "10♥",
       "result": "9♣",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 50,
@@ -67745,8 +67745,8 @@
       "longRange": "9♠",
       "pluto": "6♥",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 51,
@@ -67760,8 +67760,8 @@
       "longRange": "7♠",
       "pluto": "4♦",
       "result": "3♠",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 52,
@@ -67775,8 +67775,8 @@
       "longRange": "K♦",
       "pluto": "Q♦",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 53,
@@ -67790,8 +67790,8 @@
       "longRange": "8♦",
       "pluto": "5♣",
       "result": "J♣",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 54,
@@ -67805,8 +67805,8 @@
       "longRange": "6♦",
       "pluto": "5♦",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 55,
@@ -67820,8 +67820,8 @@
       "longRange": "8♣",
       "pluto": "6♥",
       "result": "5♠",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 56,
@@ -67835,8 +67835,8 @@
       "longRange": "4♥",
       "pluto": "K♦",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 57,
@@ -67850,8 +67850,8 @@
       "longRange": "5♠",
       "pluto": "Q♦",
       "result": "5♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 58,
@@ -67865,8 +67865,8 @@
       "longRange": "K♦",
       "pluto": "8♥",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 59,
@@ -67880,8 +67880,8 @@
       "longRange": "7♥",
       "pluto": "5♦",
       "result": "4♣",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 60,
@@ -67895,8 +67895,8 @@
       "longRange": "6♣",
       "pluto": "A♠",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 61,
@@ -67910,8 +67910,8 @@
       "longRange": "8♠",
       "pluto": "K♦",
       "result": "3♦",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 62,
@@ -67925,8 +67925,8 @@
       "longRange": "7♦",
       "pluto": "K♥",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 63,
@@ -67940,8 +67940,8 @@
       "longRange": "A♥",
       "pluto": "8♥",
       "result": "9♦",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 64,
@@ -67955,8 +67955,8 @@
       "longRange": "2♠",
       "pluto": "6♠",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 65,
@@ -67970,8 +67970,8 @@
       "longRange": "7♥",
       "pluto": "A♠",
       "result": "3♣",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 66,
@@ -67985,8 +67985,8 @@
       "longRange": "8♥",
       "pluto": "K♣",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 67,
@@ -68000,8 +68000,8 @@
       "longRange": "J♠",
       "pluto": "K♥",
       "result": "7♠",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 68,
@@ -68015,8 +68015,8 @@
       "longRange": "J♦",
       "pluto": "6♣",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 69,
@@ -68030,8 +68030,8 @@
       "longRange": "8♣",
       "pluto": "6♠",
       "result": "7♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 70,
@@ -68045,8 +68045,8 @@
       "longRange": "Q♥",
       "pluto": "A♦",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 71,
@@ -68060,8 +68060,8 @@
       "longRange": "5♥",
       "pluto": "K♣",
       "result": "2♣",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 72,
@@ -68075,8 +68075,8 @@
       "longRange": "8♥",
       "pluto": "3♥",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 73,
@@ -68090,8 +68090,8 @@
       "longRange": "2♣",
       "pluto": "6♣",
       "result": "9♠",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 74,
@@ -68105,8 +68105,8 @@
       "longRange": "A♦",
       "pluto": "10♦",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 75,
@@ -68120,8 +68120,8 @@
       "longRange": "2♦",
       "pluto": "A♦",
       "result": "2♠",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 76,
@@ -68135,8 +68135,8 @@
       "longRange": "7♦",
       "pluto": "8♦",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 77,
@@ -68150,8 +68150,8 @@
       "longRange": "Q♣",
       "pluto": "3♥",
       "result": "8♠",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 78,
@@ -68165,8 +68165,8 @@
       "longRange": "8♠",
       "pluto": "J♠",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 79,
@@ -68180,8 +68180,8 @@
       "longRange": "2♣",
       "pluto": "10♦",
       "result": "2♦",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 80,
@@ -68195,8 +68195,8 @@
       "longRange": "A♠",
       "pluto": "4♠",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 81,
@@ -68210,8 +68210,8 @@
       "longRange": "4♠",
       "pluto": "8♦",
       "result": "A♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 82,
@@ -68225,8 +68225,8 @@
       "longRange": "10♥",
       "pluto": "10♠",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 83,
@@ -68240,8 +68240,8 @@
       "longRange": "8♣",
       "pluto": "J♠",
       "result": "Q♣",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 84,
@@ -68255,8 +68255,8 @@
       "longRange": "6♦",
       "pluto": "9♣",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 85,
@@ -68270,8 +68270,8 @@
       "longRange": "4♣",
       "pluto": "4♠",
       "result": "Q♠",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 86,
@@ -68285,8 +68285,8 @@
       "longRange": "A♠",
       "pluto": "3♠",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 87,
@@ -68300,8 +68300,8 @@
       "longRange": "9♠",
       "pluto": "10♠",
       "result": "7♣",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 88,
@@ -68315,8 +68315,8 @@
       "longRange": "3♥",
       "pluto": "J♣",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 89,
@@ -68330,8 +68330,8 @@
       "longRange": "A♥",
       "pluto": "9♣",
       "result": "10♣",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     },
     {
       "age": 90,
@@ -68345,8 +68345,8 @@
       "longRange": "7♦",
       "pluto": "5♠",
       "result": "J♥",
-      "support": "",
-      "development": ""
+      "support": "A♣",
+      "development": "A♣"
     }
   ],
   "A♦": [
@@ -68517,7 +68517,7 @@
     },
     {
       "age": 11,
-      "mercury": " 9♥",
+      "mercury": "9♥",
       "venus": "K♦",
       "mars": "J♥",
       "jupiter": "6♥",
