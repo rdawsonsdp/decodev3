@@ -265,7 +265,7 @@ export default function GPTChat({
       </div>
 
       {/* Main Chat Area */}
-      <Card className="flex-1 shadow-lg border-0 bg-white/90 backdrop-blur-sm flex flex-col">
+      <Card className="flex-1 shadow-lg border-0 bg-white/90 flex flex-col" style={{ zIndex: 1 }}>
         <CardHeader>
           <CardTitle className="text-2xl text-center bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
             Cardology Guidance Chat

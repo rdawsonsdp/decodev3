@@ -9,18 +9,19 @@ interface CardModalProps {
   type: 'birth' | 'forecast' | 'planetary'
   isOpen: boolean
   onClose: () => void
+  personData?: any
 }
 
-export default function CardModal({ card, type, isOpen, onClose }: CardModalProps) {
-  const [isFlipped, setIsFlipped] = useState(false)
+export default function CardModal({ card, type, isOpen, onClose, personData }: CardModalProps) {
   const [profile, setProfile] = useState<any>(null)
   const [cardText, setCardText] = useState('')
+  const [isLoading, setIsLoading] = useState(false)
 
   const cardImageSrc = getCardImage(card)
 
   useEffect(() => {
     if (isOpen && card) {
-      setIsFlipped(false)
+      setIsLoading(true)
       ;(async () => {
         try {
           const profileRes = await fetch('/card-data/profiles.json')
@@ -47,71 +48,89 @@ export default function CardModal({ card, type, isOpen, onClose }: CardModalProp
             activityData[cleanCard]
           ) {
             setProfile({ title: cleanCard })
-            setCardText(activityData[cleanCard])
+            // Clean up the text by replacing literal \n with actual line breaks
+            const rawText = activityData[cleanCard]
+            const cleanedText = rawText.replace(/\\n/g, '\n')
+            setCardText(cleanedText)
           } else {
             setCardText('No description found for this card.')
           }
         } catch (err) {
           console.error('Failed to load card data', err)
           setCardText('Error loading description.')
+        } finally {
+          setIsLoading(false)
         }
       })()
     }
   }, [card, type, isOpen])
 
-  const handleFlip = () => {
-    if (typeof window !== 'undefined' && 'vibrate' in navigator) {
-      navigator.vibrate(50)
-    }
-    const audio = new Audio('/flip-sound.mp3')
-    audio.play().catch(() => {}) // ignore autoplay errors
-    setIsFlipped(!isFlipped)
-  }
-
   if (!isOpen) return null
 
-  return (
-    <div
-      className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
-      onClick={onClose}
-    >
-      <div
-        className="relative w-[260px] h-[360px] sm:w-[320px] sm:h-[440px] perspective-1000"
-        onClick={(e) => e.stopPropagation()}
-      >
-        <div
-          className={`relative w-full h-full transition-all duration-700 transform-style-preserve-3d ${isFlipped ? 'rotate-y-180' : ''}`}
-          onClick={handleFlip}
-        >
-          {/* Front Side */}
-          <div className="absolute w-full h-full backface-hidden rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300">
-            <img
-              src={cardImageSrc}
-              alt="Card"
-              className="w-full h-full object-contain rounded-lg"
-            />
-          </div>
+  const getModalTitle = () => {
+    switch (type) {
+      case 'birth':
+        return 'Birth Card'
+      case 'forecast':
+        return 'Forecast Card'
+      case 'planetary':
+        return 'Planetary Card'
+      default:
+        return 'Card Details'
+    }
+  }
 
-          {/* Back Side */}
-          <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-white rounded-lg shadow-xl p-4 overflow-hidden flex flex-col">
-            <h2 className="font-semibold text-lg mb-2 text-gray-800">{profile?.title}</h2>
-            <div
-              className="flex-1 overflow-y-auto pr-2"
-              style={{ maxHeight: 'calc(100% - 2.5rem)' }} // Adjust max-height based on title height
-            >
-              <p className="text-sm whitespace-pre-line text-gray-700">{cardText}</p>
+  const getCardLabel = () => {
+    return card.toUpperCase()
+  }
+
+  return (
+    <div className="modal-overlay" onClick={onClose}>
+      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+        {/* Modal Header */}
+        <div className="modal-header">
+          <h2 className="modal-title">{getModalTitle()}</h2>
+          <button
+            onClick={onClose}
+            className="modal-close"
+            aria-label="Close"
+          >
+            <X size={24} />
+          </button>
+        </div>
+
+        {/* Modal Body */}
+        <div className="modal-body">
+          <div className="modal-card-container">
+            {/* Modal Card Front */}
+            <div className="modal-card-front">
+              <img
+                src={cardImageSrc || '/placeholder.svg'}
+                alt={card}
+                className="modal-card-image"
+              />
+              <div className="modal-card-label">{getCardLabel()}</div>
+            </div>
+
+            {/* Modal Card Back */}
+            <div className="modal-card-back">
+              {isLoading ? (
+                <div className="modal-description">
+                  <div className="modal-description-line">Loading card details...</div>
+                </div>
+              ) : (
+                <div className="modal-description">
+                  {cardText.split('\n').map((line, index) => (
+                    <div key={index} className="modal-description-line">
+                      {line}
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         </div>
       </div>
-
-      <button
-        onClick={onClose}
-        className="absolute top-6 right-6 text-white hover:text-red-400 z-50"
-        aria-label="Close"
-      >
-        <X size={28} />
-      </button>
     </div>
   )
 }

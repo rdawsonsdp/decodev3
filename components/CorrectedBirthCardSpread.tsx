@@ -10,7 +10,7 @@ import { getBirthCardFromDate } from '@/utils/getBirthCardFromDate'
 import { getYearlyForecast } from '@/utils/yearlyForecastLookup'
 import { getPlanetaryPeriods } from '@/utils/planetaryPeriodsLookup'
 import { getCardImage } from '@/utils/getCardImage'
-import CardModal from './CardModal'
+import FlippableCard from './FlippableCard'
 import GPTChat from './GPTChat'
 
 interface CorrectedBirthCardSpreadProps {
@@ -27,7 +27,6 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
   const [isEditingBirthdate, setIsEditingBirthdate] = useState(false);
   const [editedName, setEditedName] = useState(childData.name);
   const [editedBirthdate, setEditedBirthdate] = useState(childData.birthdate);
-  const [selectedCard, setSelectedCard] = useState<{ card: string; type: string } | null>(null);
   const [birthCard, setBirthCard] = useState('');
   const [yearlyForecast, setYearlyForecast] = useState<any>(null);
   const [planetaryPeriods, setPlanetaryPeriods] = useState<any[]>([]);
@@ -108,14 +107,6 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
     }
   }, [birthCard, currentAge, editedBirthdate]);
 
-  const handleCardClick = (card: string, type: string) => {
-    setSelectedCard({ card, type });
-    // Haptic feedback for mobile
-    if (typeof window !== 'undefined' && 'vibrate' in navigator) {
-      navigator.vibrate(30);
-    }
-  };
-
 
   const handleNameSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -179,7 +170,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
         </div>
 
         {/* Top Left Info Panel */}
-        <Card className="mb-8 shadow-lg border-0 bg-white/90 backdrop-blur-sm">
+        <Card className="mb-8 shadow-lg border-0 bg-white/90" style={{ zIndex: 1 }}>
           <CardContent className="p-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
               <div className="flex items-center gap-3">
@@ -296,7 +287,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
         </Card>
 
         {/* Yearly Energetic Outlook */}
-        <Card className="mb-8 shadow-lg border-0 bg-white/90 backdrop-blur-sm">
+        <Card className="mb-8 shadow-lg border-0 bg-white/90" style={{ zIndex: 1 }}>
           <CardHeader>
             <CardTitle className="text-2xl text-center bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
               Yearly Energetic Outlook
@@ -311,193 +302,91 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                 {/* Birth Card */}
                 <div className="text-center group">
                   <h4 className="font-semibold text-purple-800 text-sm">Birth Card</h4>
-                  <div className="relative">
-                    <div 
-                      className="card-container mx-auto mb-2 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl card-shimmer card-glow mobile-feedback fade-in"
-                      onClick={() => handleCardClick(birthCard, 'birth')}
-                    >
-                      <div className="card-inner">
-                        {/* Card Back */}
-                        <div className="card-face card-face-back">
-                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 relative overflow-hidden">
-                            <div className="absolute inset-y-2 inset-x-[15px] flex flex-col justify-center text-white text-center">
-                              <h5 className="text-lg font-bold mb-1">{cardPositionDescriptions.birth.title}</h5>
-                              <p className="text-[17px] leading-tight mb-1">{cardPositionDescriptions.birth.description}</p>
-                              <p className="text-[17px] italic opacity-90">{cardPositionDescriptions.birth.insights}</p>
-                            </div>
-                          </div>
-                        </div>
-                        {/* Card Front */}
-                        <div className="card-face card-face-front">
-                          <img
-                            src={getCardImage(birthCard) || '/placeholder.svg'}
-                            alt={birthCard}
-                            className="w-full h-full object-contain rounded-lg"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  {birthCard ? (
+                    <FlippableCard
+                      card={birthCard}
+                      type="birth"
+                      label="Birth Card"
+                      personData={{ name: editedName, age: currentAge }}
+                    />
+                  ) : (
+                    <div className="text-gray-500 text-sm">No birth card data</div>
+                  )}
                 </div>
 
                 {/* Long Range */}
                 <div className="text-center group">
                   <h4 className="font-semibold text-blue-800 text-sm">Long Range</h4>
-                  <div className="relative">
-                    <div 
-                      className="card-container mx-auto mb-2 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl card-shimmer card-glow mobile-feedback fade-in"
-                      onClick={() => handleCardClick(yearlyForecast.longRange, 'forecast')}
-                    >
-                      <div className="card-inner">
-                        {/* Card Back */}
-                        <div className="card-face card-face-back">
-                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 relative overflow-hidden">
-                            <div className="absolute inset-y-2 inset-x-[15px] flex flex-col justify-center text-white text-center">
-                              <h5 className="text-lg font-bold mb-1">{cardPositionDescriptions.longRange.title}</h5>
-                              <p className="text-[17px] leading-tight mb-1">{cardPositionDescriptions.longRange.description}</p>
-                              <p className="text-[17px] italic opacity-90">{cardPositionDescriptions.longRange.insights}</p>
-                            </div>
-                          </div>
-                        </div>
-                        {/* Card Front */}
-                        <div className="card-face card-face-front">
-                          <img
-                            src={getCardImage(yearlyForecast.longRange) || '/placeholder.svg'}
-                            alt={yearlyForecast.longRange}
-                            className="w-full h-full object-contain"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  {yearlyForecast.longRange && yearlyForecast.longRange !== '?' ? (
+                    <FlippableCard
+                      card={yearlyForecast.longRange}
+                      type="forecast"
+                      label="Long Range"
+                      personData={{ name: editedName, age: currentAge }}
+                    />
+                  ) : (
+                    <div className="text-gray-500 text-sm">No long range card data</div>
+                  )}
                 </div>
 
                 {/* Pluto */}
                 <div className="text-center group">
                   <h4 className="font-semibold text-red-800 text-sm">Pluto</h4>
-                  <div className="relative">
-                    <div 
-                      className="card-container mx-auto mb-2 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl card-shimmer card-glow mobile-feedback fade-in"
-                      onClick={() => handleCardClick(yearlyForecast.pluto, 'forecast')}
-                    >
-                      <div className="card-inner">
-                        {/* Card Back */}
-                        <div className="card-face card-face-back">
-                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-red-600 via-pink-600 to-purple-600 relative overflow-hidden">
-                            <div className="absolute inset-y-2 inset-x-[15px] flex flex-col justify-center text-white text-center">
-                              <h5 className="text-lg font-bold mb-1">{cardPositionDescriptions.pluto.title}</h5>
-                              <p className="text-[17px] leading-tight mb-1">{cardPositionDescriptions.pluto.description}</p>
-                              <p className="text-[17px] italic opacity-90">{cardPositionDescriptions.pluto.insights}</p>
-                            </div>
-                          </div>
-                        </div>
-                        {/* Card Front */}
-                        <div className="card-face card-face-front">
-                          <img
-                            src={getCardImage(yearlyForecast.pluto) || '/placeholder.svg'}
-                            alt={yearlyForecast.pluto}
-                            className="w-full h-full object-contain"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  {yearlyForecast.pluto && yearlyForecast.pluto !== '?' ? (
+                    <FlippableCard
+                      card={yearlyForecast.pluto}
+                      type="forecast"
+                      label="Pluto"
+                      personData={{ name: editedName, age: currentAge }}
+                    />
+                  ) : (
+                    <div className="text-gray-500 text-sm">No pluto card data</div>
+                  )}
                 </div>
 
                 {/* Result */}
                 <div className="text-center group">
                   <h4 className="font-semibold text-green-800 text-sm">Result</h4>
-                  <div className="relative">
-                    <div 
-                      className="card-container mx-auto mb-2 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl card-shimmer card-glow mobile-feedback fade-in"
-                      onClick={() => handleCardClick(yearlyForecast.result, 'forecast')}
-                    >
-                      <div className="card-inner">
-                        {/* Card Back */}
-                        <div className="card-face card-face-back">
-                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-green-600 via-emerald-600 to-teal-600 relative overflow-hidden">
-                            <div className="absolute inset-y-2 inset-x-[15px] flex flex-col justify-center text-white text-center">
-                              <h5 className="text-lg font-bold mb-1">{cardPositionDescriptions.result.title}</h5>
-                              <p className="text-[17px] leading-tight mb-1">{cardPositionDescriptions.result.description}</p>
-                              <p className="text-[17px] italic opacity-90">{cardPositionDescriptions.result.insights}</p>
-                            </div>
-                          </div>
-                        </div>
-                        {/* Card Front */}
-                        <div className="card-face card-face-front">
-                          <img
-                            src={getCardImage(yearlyForecast.result) || '/placeholder.svg'}
-                            alt={yearlyForecast.result}
-                            className="w-full h-full object-contain"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  {yearlyForecast.result && yearlyForecast.result !== '?' ? (
+                    <FlippableCard
+                      card={yearlyForecast.result}
+                      type="forecast"
+                      label="Result"
+                      personData={{ name: editedName, age: currentAge }}
+                    />
+                  ) : (
+                    <div className="text-gray-500 text-sm">No result card data</div>
+                  )}
                 </div>
 
                 {/* Support */}
                 <div className="text-center group">
                   <h4 className="font-semibold text-yellow-800 text-sm">Support</h4>
-                  <div className="relative">
-                    <div 
-                      className="card-container mx-auto mb-2 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl card-shimmer card-glow mobile-feedback fade-in"
-                      onClick={() => handleCardClick(yearlyForecast.support, 'forecast')}
-                    >
-                      <div className="card-inner">
-                        {/* Card Back */}
-                        <div className="card-face card-face-back">
-                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-yellow-600 via-orange-600 to-red-600 relative overflow-hidden">
-                            <div className="absolute inset-y-2 inset-x-[15px] flex flex-col justify-center text-white text-center">
-                              <h5 className="text-lg font-bold mb-1">{cardPositionDescriptions.support.title}</h5>
-                              <p className="text-[17px] leading-tight mb-1">{cardPositionDescriptions.support.description}</p>
-                              <p className="text-[17px] italic opacity-90">{cardPositionDescriptions.support.insights}</p>
-                            </div>
-                          </div>
-                        </div>
-                        {/* Card Front */}
-                        <div className="card-face card-face-front">
-                          <img
-                            src={getCardImage(yearlyForecast.support) || '/placeholder.svg'}
-                            alt={yearlyForecast.support}
-                            className="w-full h-full object-contain"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  {yearlyForecast.support && yearlyForecast.support !== '?' ? (
+                    <FlippableCard
+                      card={yearlyForecast.support}
+                      type="forecast"
+                      label="Support"
+                      personData={{ name: editedName, age: currentAge }}
+                    />
+                  ) : (
+                    <div className="text-gray-500 text-sm">No support card data</div>
+                  )}
                 </div>
 
                 {/* Development */}
                 <div className="text-center group">
                   <h4 className="font-semibold text-indigo-800 text-sm">Development</h4>
-                  <div className="relative">
-                    <div 
-                      className="card-container mx-auto mb-2 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl card-shimmer card-glow mobile-feedback fade-in"
-                      onClick={() => handleCardClick(yearlyForecast.development, 'forecast')}
-                    >
-                      <div className="card-inner">
-                        {/* Card Back */}
-                        <div className="card-face card-face-back">
-                          <div className="w-full h-full rounded-lg shadow-md bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 relative overflow-hidden">
-                            <div className="absolute inset-y-2 inset-x-[15px] flex flex-col justify-center text-white text-center">
-                              <h5 className="text-lg font-bold mb-1">{cardPositionDescriptions.development.title}</h5>
-                              <p className="text-[17px] leading-tight mb-1">{cardPositionDescriptions.development.description}</p>
-                              <p className="text-[17px] italic opacity-90">{cardPositionDescriptions.development.insights}</p>
-                            </div>
-                          </div>
-                        </div>
-                        {/* Card Front */}
-                        <div className="card-face card-face-front">
-                          <img
-                            src={getCardImage(yearlyForecast.development) || '/placeholder.svg'}
-                            alt={yearlyForecast.development}
-                            className="w-full h-full object-contain"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  {yearlyForecast.development && yearlyForecast.development !== '?' ? (
+                    <FlippableCard
+                      card={yearlyForecast.development}
+                      type="forecast"
+                      label="Development"
+                      personData={{ name: editedName, age: currentAge }}
+                    />
+                  ) : (
+                    <div className="text-gray-500 text-sm">No development card data</div>
+                  )}
                 </div>
               </div>
             )}
@@ -505,7 +394,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
         </Card>
 
         {/* Planetary Period Cards */}
-        <Card className="mb-8 shadow-lg border-0 bg-white/90 backdrop-blur-sm">
+        <Card className="mb-8 shadow-lg border-0 bg-white/90" style={{ zIndex: 1 }}>
           <CardHeader>
             <CardTitle className="text-2xl text-center bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
               Card Ruling Each 52-day Planetary Period
@@ -534,16 +423,21 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                     </h4>
                   </div>
                   <div className="relative">
-                    <img
-                      src={getCardImage(period.card) || '/placeholder.svg'}
-                      alt={period.card}
-                      className={`w-full max-w-20 mx-auto mb-2 rounded-lg shadow-md cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl card-shimmer card-glow mobile-feedback fade-in ${
+                    <div 
+                      className={`${
                         period.planet === currentPlanetaryPeriod
-                          ? 'ring-2 ring-purple-400 shadow-purple-200'
+                          ? 'ring-2 ring-purple-400 shadow-purple-200 rounded-lg p-1'
                           : ''
                       }`}
-                      onClick={() => handleCardClick(period.card, 'forecast')}
-                    />
+                    >
+                      <FlippableCard
+                        card={period.card}
+                        type="forecast"
+                        label={period.planet}
+                        size="small"
+                        personData={{ name: editedName, age: currentAge }}
+                      />
+                    </div>
                     {period.planet === currentPlanetaryPeriod && (
                       <div className="absolute -top-1 -right-1">
                         <Sparkles className="w-4 h-4 text-purple-500 animate-pulse" />
@@ -566,15 +460,6 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
           planetaryPeriods={planetaryPeriods}
         />
 
-        {/* Card Modal */}
-        {selectedCard && (
-          <CardModal
-            card={selectedCard.card}
-            type={selectedCard.type as 'birth' | 'forecast' | 'planetary'}
-            isOpen={!!selectedCard}
-            onClose={() => setSelectedCard(null)}
-          />
-        )}
       </div>
     </div>
   );

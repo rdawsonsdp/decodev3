@@ -70,7 +70,7 @@ export default function NameAndBirthdateForm({
 
   return (
     <div className="max-w-xl mx-auto mt-10 p-6">
-      <Card className="shadow-xl border-0 bg-white/90 backdrop-blur-sm">
+      <Card className="shadow-xl border-0 bg-white/90" style={{ zIndex: 1 }}>
         <CardHeader>
           <CardTitle className="text-black text-center mb-2">
             Enter Your Child's Info

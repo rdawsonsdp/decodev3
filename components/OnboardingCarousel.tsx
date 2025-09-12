@@ -48,7 +48,7 @@ export default function OnboardingCarousel({
   return (
     <div className="min-h-[80vh] w-full flex items-center justify-center p-6">
       <div className="w-full max-w-2xl">
-        <Card className="shadow-xl border-0 bg-white/90 backdrop-blur-md">
+        <Card className="shadow-xl border-0 bg-white/90" style={{ zIndex: 1 }}>
           <CardContent className="p-8">
             <div className="flex items-center gap-3 mb-4">
               <Icon className="w-6 h-6 text-purple-600" />
