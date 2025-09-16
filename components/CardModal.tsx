@@ -10,9 +10,10 @@ interface CardModalProps {
   isOpen: boolean
   onClose: () => void
   personData?: any
+  title?: string
 }
 
-export default function CardModal({ card, type, isOpen, onClose, personData }: CardModalProps) {
+export default function CardModal({ card, type, isOpen, onClose, personData, title }: CardModalProps) {
   const [profile, setProfile] = useState<any>(null)
   const [cardText, setCardText] = useState('')
   const [isLoading, setIsLoading] = useState(false)
@@ -68,6 +69,10 @@ export default function CardModal({ card, type, isOpen, onClose, personData }: C
   if (!isOpen) return null
 
   const getModalTitle = () => {
+    // Prioritize specific title over generic type-based titles
+    if (title) return title;
+    
+    // Fallback to type-based titles
     switch (type) {
       case 'birth':
         return 'Birth Card'

@@ -307,6 +307,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                       card={birthCard}
                       type="birth"
                       label="Birth Card"
+                      title="Birth Card"
                       personData={{ name: editedName, age: currentAge }}
                     />
                   ) : (
@@ -322,6 +323,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                       card={yearlyForecast.longRange}
                       type="forecast"
                       label="Long Range"
+                      title="Long Range"
                       personData={{ name: editedName, age: currentAge }}
                     />
                   ) : (
@@ -337,6 +339,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                       card={yearlyForecast.pluto}
                       type="forecast"
                       label="Pluto"
+                      title="Pluto"
                       personData={{ name: editedName, age: currentAge }}
                     />
                   ) : (
@@ -352,6 +355,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                       card={yearlyForecast.result}
                       type="forecast"
                       label="Result"
+                      title="Result"
                       personData={{ name: editedName, age: currentAge }}
                     />
                   ) : (
@@ -367,6 +371,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                       card={yearlyForecast.support}
                       type="forecast"
                       label="Support"
+                      title="Support"
                       personData={{ name: editedName, age: currentAge }}
                     />
                   ) : (
@@ -382,6 +387,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                       card={yearlyForecast.development}
                       type="forecast"
                       label="Development"
+                      title="Development"
                       personData={{ name: editedName, age: currentAge }}
                     />
                   ) : (
@@ -432,8 +438,9 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                     >
                       <FlippableCard
                         card={period.card}
-                        type="forecast"
+                        type="planetary"
                         label={period.planet}
+                        title={period.planet}
                         size="small"
                         personData={{ name: editedName, age: currentAge }}
                       />

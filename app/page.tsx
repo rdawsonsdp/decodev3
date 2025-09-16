@@ -4,6 +4,7 @@ import { useState } from 'react'
 import NameAndBirthdateForm from '@/components/NameAndBirthdateForm'
 import CorrectedBirthCardSpread from '@/components/CorrectedBirthCardSpread'
 import OnboardingCarousel from '@/components/OnboardingCarousel'
+import ShareButtons from '@/components/ShareButtons'
 
 export default function Home() {
   const [childData, setChildData] = useState<{ name: string; birthdate: string } | null>(null)
@@ -27,6 +28,18 @@ export default function Home() {
         <NameAndBirthdateForm onSubmit={handleFormSubmit} />
       ) : (
         <CorrectedBirthCardSpread childData={childData} onBack={handleBackToForm} />
+      )}
+      
+      {/* Share Buttons - Add at bottom of page */}
+      {childData && (
+        <ShareButtons 
+          title="Decode Your Kid - Birth Card Reading"
+          description={`Discover ${childData.name}'s unique personality and potential through their birth card reading`}
+          cardData={{
+            name: childData.name,
+            birthdate: childData.birthdate
+          }}
+        />
       )}
     </main>
   )

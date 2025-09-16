@@ -11,6 +11,7 @@ interface FlippableCardProps {
   className?: string
   personData?: any
   size?: 'normal' | 'small'
+  title?: string
 }
 
 export default function FlippableCard({ 
@@ -19,7 +20,8 @@ export default function FlippableCard({
   label, 
   className = '', 
   personData,
-  size = 'normal'
+  size = 'normal',
+  title
 }: FlippableCardProps) {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
@@ -84,6 +86,7 @@ export default function FlippableCard({
         card={card}
         type={type}
         personData={personData}
+        title={title}
       />
     </>
   )
