@@ -420,31 +420,24 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                       : ''
                   }`}
                 >
-                  <div className="mb-2" style={{ textAlign: 'center' }}>
-                    <p className="text-xs font-medium text-gray-600 mb-1" style={{ textAlign: 'center' }}>
-                      {formatDate(period.startDate)}
-                    </p>
-                    <h4 className="font-semibold text-sm text-purple-800" style={{ textAlign: 'center' }}>
-                      {period.planet}
-                    </h4>
+                  <p className="text-xs font-medium text-gray-600 mb-1">{formatDate(period.startDate)}</p>
+                  <h4 className="font-semibold text-sm text-purple-800 mb-2">{period.planet}</h4>
+                  <div 
+                    className={`${
+                      period.planet === currentPlanetaryPeriod
+                        ? 'ring-2 ring-purple-400 shadow-purple-200 rounded-lg p-1'
+                        : ''
+                    }`}
+                  >
+                    <FlippableCard
+                      card={period.card}
+                      type="planetary"
+                      label={period.planet}
+                      title={period.planet}
+                      size="small"
+                      personData={{ name: editedName, age: currentAge }}
+                    />
                   </div>
-                  <div className="relative">
-                    <div 
-                      className={`${
-                        period.planet === currentPlanetaryPeriod
-                          ? 'ring-2 ring-purple-400 shadow-purple-200 rounded-lg p-1'
-                          : ''
-                      }`}
-                    >
-                      <FlippableCard
-                        card={period.card}
-                        type="planetary"
-                        label={period.planet}
-                        title={period.planet}
-                        size="small"
-                        personData={{ name: editedName, age: currentAge }}
-                      />
-                    </div>
                     {period.planet === currentPlanetaryPeriod && (
                       <div className="absolute -top-1 -right-1">
                         <Sparkles className="w-4 h-4 text-purple-500 animate-pulse" />
