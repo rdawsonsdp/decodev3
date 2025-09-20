@@ -442,9 +442,18 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                     <img
                       src={getCardImage(period.card) || '/placeholder.svg'}
                       alt={period.card}
-                      className="w-20 h-28 object-contain rounded-lg cursor-pointer"
-                      onClick={() => handleCardClick(period.card, 'planetary')}
+                      className={`w-full max-w-20 mx-auto mb-2 rounded-lg shadow-md cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl card-shimmer card-glow mobile-feedback fade-in ${
+                        period.planet === currentPlanetaryPeriod
+                          ? 'ring-2 ring-purple-400 shadow-purple-200'
+                          : ''
+                      }`}
+                      onClick={() => handleCardClick(period.card, 'forecast')}
                     />
+                    {period.planet === currentPlanetaryPeriod && (
+                      <div className="absolute -top-1 -right-1">
+                        <Sparkles className="w-4 h-4 text-purple-500 animate-pulse" />
+                      </div>
+                    )}
                   </div>
                 </div>
               ))}
