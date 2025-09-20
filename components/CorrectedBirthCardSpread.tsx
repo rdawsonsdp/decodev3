@@ -438,13 +438,11 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                       personData={{ name: editedName, age: currentAge }}
                     />
                   </div>
-                    {period.planet === currentPlanetaryPeriod && (
-                      <div className="absolute -top-1 -right-1">
-                        <Sparkles className="w-4 h-4 text-purple-500 animate-pulse" />
-                      </div>
-                    )}
-                  </div>
-                  
+                  {period.planet === currentPlanetaryPeriod && (
+                    <div className="absolute -top-1 -right-1">
+                      <Sparkles className="w-4 h-4 text-purple-500 animate-pulse" />
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
