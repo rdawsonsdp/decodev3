@@ -420,11 +420,11 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                       : ''
                   }`}
                 >
-                  <div className="mb-2 text-center">
-                    <p className="text-xs font-medium text-gray-600 mb-1">
+                  <div className="mb-2" style={{ textAlign: 'center' }}>
+                    <p className="text-xs font-medium text-gray-600 mb-1" style={{ textAlign: 'center' }}>
                       {formatDate(period.startDate)}
                     </p>
-                    <h4 className="font-semibold text-sm text-purple-800">
+                    <h4 className="font-semibold text-sm text-purple-800" style={{ textAlign: 'center' }}>
                       {period.planet}
                     </h4>
                   </div>
