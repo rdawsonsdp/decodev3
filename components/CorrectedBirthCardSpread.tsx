@@ -420,7 +420,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
                       : ''
                   }`}
                 >
-                  <div className="mb-2">
+                  <div className="mb-2 text-center">
                     <p className="text-xs font-medium text-gray-600 mb-1">
                       {formatDate(period.startDate)}
                     </p>
