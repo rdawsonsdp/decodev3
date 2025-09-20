@@ -412,17 +412,19 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
           <CardContent>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-6">
               {planetaryPeriods.map((period) => (
-                <div key={period.planet} className="text-center group">
-                  <p className="text-xs font-medium text-gray-600 mb-1">{formatDate(period.startDate)}</p>
-                  <h4 className="font-semibold text-sm text-purple-800 mb-2">{period.planet}</h4>
-                  <FlippableCard
-                    card={period.card}
-                    type="planetary"
-                    label={period.planet}
-                    title={period.planet}
-                    size="small"
-                    personData={{ name: editedName, age: currentAge }}
-                  />
+                <div key={period.planet} className="text-center group" style={{ textAlign: 'center' }}>
+                  <p className="text-xs font-medium text-gray-600 mb-1" style={{ textAlign: 'center' }}>{formatDate(period.startDate)}</p>
+                  <h4 className="font-semibold text-sm text-purple-800 mb-2" style={{ textAlign: 'center' }}>{period.planet}</h4>
+                  <div style={{ display: 'flex', justifyContent: 'center' }}>
+                    <FlippableCard
+                      card={period.card}
+                      type="planetary"
+                      label={period.planet}
+                      title={period.planet}
+                      size="small"
+                      personData={{ name: editedName, age: currentAge }}
+                    />
+                  </div>
                 </div>
               ))}
             </div>
