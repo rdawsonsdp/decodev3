@@ -11,6 +11,7 @@ import { getYearlyForecast } from '@/utils/yearlyForecastLookup'
 import { getPlanetaryPeriods } from '@/utils/planetaryPeriodsLookup'
 import { getCardImage } from '@/utils/getCardImage'
 import FlippableCard from './FlippableCard'
+import CardModal from './CardModal'
 import GPTChat from './GPTChat'
 
 interface CorrectedBirthCardSpreadProps {
@@ -32,6 +33,7 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
   const [planetaryPeriods, setPlanetaryPeriods] = useState<any[]>([]);
   const [currentPlanetaryPeriod, setCurrentPlanetaryPeriod] = useState<string>('');
   const [savedProfiles, setSavedProfiles] = useState<{ name: string; birthdate: string }[]>([]);
+  const [selectedCard, setSelectedCard] = useState<{ card: string; type: string } | null>(null);
 
   const cardPositionDescriptions = {
     birth: {
@@ -139,6 +141,14 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
     );
     setSavedProfiles(updated);
     localStorage.setItem('savedReadings', JSON.stringify(updated));
+  };
+
+  const handleCardClick = (card: string, type: string) => {
+    setSelectedCard({ card, type });
+    // Haptic feedback for mobile
+    if (typeof window !== 'undefined' && 'vibrate' in navigator) {
+      navigator.vibrate(30);
+    }
   };
 
   const formatDate = (dateStr: string) => {
@@ -410,19 +420,30 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
             </p>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-4">
               {planetaryPeriods.map((period) => (
-                <div key={period.planet} className="text-center group" style={{ textAlign: 'center' }}>
-                  <p className="text-xs font-medium text-gray-600 mb-1 text-center" style={{ textAlign: 'center' }}>{formatDate(period.startDate)}</p>
-                  <h4 className="font-semibold text-sm text-purple-800 mb-2 text-center" style={{ textAlign: 'center' }}>{period.planet}</h4>
-                  <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <FlippableCard
-                      card={period.card}
-                      type="planetary"
-                      label={period.planet}
-                      title={period.planet}
-                      size="small"
-                      personData={{ name: editedName, age: currentAge }}
+                <div
+                  key={period.planet}
+                  className={`text-center group ${
+                    period.planet === currentPlanetaryPeriod
+                      ? 'ring-2 ring-purple-500 ring-offset-2 rounded-lg p-2'
+                      : ''
+                  }`}
+                >
+                  <div className="mb-2">
+                    <p className="text-xs font-medium text-gray-600 mb-1">
+                      {formatDate(period.startDate)}
+                    </p>
+                    <h4 className="font-semibold text-sm text-purple-800">
+                      {period.planet}
+                    </h4>
+                  </div>
+                  <div className="relative">
+                    <img
+                      src={getCardImage(period.card) || '/placeholder.svg'}
+                      alt={period.card}
+                      className="w-20 h-28 object-contain rounded-lg cursor-pointer"
+                      onClick={() => handleCardClick(period.card, 'planetary')}
                     />
                   </div>
                 </div>
@@ -439,6 +460,16 @@ export default function CorrectedBirthCardSpread({ childData, onBack }: Correcte
           yearlyForecast={yearlyForecast}
           planetaryPeriods={planetaryPeriods}
         />
+
+        {/* Card Modal */}
+        {selectedCard && (
+          <CardModal
+            card={selectedCard.card}
+            type={selectedCard.type as 'birth' | 'forecast' | 'planetary'}
+            isOpen={!!selectedCard}
+            onClose={() => setSelectedCard(null)}
+          />
+        )}
 
       </div>
     </div>

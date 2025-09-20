@@ -479,8 +479,3 @@ div[class*="backdrop-blur"]:not(.modal-overlay) {
   }
 }
 
-/* Force center alignment for planetary period labels */
-.text-center p,
-.text-center h4 {
-  text-align: center !important;
-}
