@@ -32,6 +32,13 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    // Check if Firebase is properly configured
+    if (!auth || !db) {
+      console.warn('Firebase not configured. Running in demo mode.');
+      setLoading(false);
+      return;
+    }
+
     const unsubscribe = onAuthStateChanged(auth, async (firebaseUser: User | null) => {
       if (firebaseUser) {
         const authUser = AuthService.convertToAuthUser(firebaseUser);

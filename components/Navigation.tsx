@@ -28,6 +28,9 @@ export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const router = useRouter();
 
+  // Handle case when Firebase isn't configured yet
+  const isAuthenticated = user && userProfile;
+
   const handleSignOut = async () => {
     try {
       await signOut();
@@ -58,7 +61,7 @@ export default function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {user ? (
+            {isAuthenticated ? (
               <>
                 <Link 
                   href="/" 
@@ -152,7 +155,7 @@ export default function Navigation() {
         {mobileMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-gray-200">
-              {user ? (
+              {isAuthenticated ? (
                 <>
                   <Link
                     href="/"
