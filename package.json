@@ -2,6 +2,9 @@
   "name": "my-v0-project",
   "version": "0.1.0",
   "private": true,
+  "author": "The Cardology Advantage",
+  "license": "UNLICENSED",
+  "copyright": "Copyright © 2025 The Cardology Advantage. All rights reserved.",
   "scripts": {
     "build": "next build",
     "dev": "next dev",

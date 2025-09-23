@@ -5,6 +5,7 @@ import NameAndBirthdateForm from '@/components/NameAndBirthdateForm'
 import CorrectedBirthCardSpread from '@/components/CorrectedBirthCardSpread'
 import OnboardingCarousel from '@/components/OnboardingCarousel'
 import ShareButtons from '@/components/ShareButtons'
+import Footer from '@/components/Footer'
 
 export default function Home() {
   const [childData, setChildData] = useState<{ name: string; birthdate: string } | null>(null)
@@ -41,6 +42,9 @@ export default function Home() {
           }}
         />
       )}
+      
+      {/* Footer with Copyright */}
+      <Footer />
     </main>
   )
 

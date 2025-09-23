@@ -1,3 +1,10 @@
+/**
+ * Copyright © 2025 The Cardology Advantage. All rights reserved.
+ * 
+ * This component provides an interactive flippable card interface for displaying
+ * birth card information with front and back views.
+ */
+
 'use client'
 
 import { useState } from 'react'

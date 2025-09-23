@@ -8,7 +8,9 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Decode Your Kid - Birth Card Readings',
   description: 'Discover your child\'s unique personality through birth card readings',
-    generator: 'v0.dev'
+  generator: 'v0.dev',
+  authors: [{ name: 'The Cardology Advantage' }],
+  copyright: 'Copyright © 2025 The Cardology Advantage. All rights reserved.'
 }
 
 export default function RootLayout({

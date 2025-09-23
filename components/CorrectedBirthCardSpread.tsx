@@ -1,3 +1,10 @@
+/**
+ * Copyright © 2025 The Cardology Advantage. All rights reserved.
+ * 
+ * This component provides the main birth card spread interface for the Decode Your Kid application.
+ * It displays birth cards, yearly forecasts, and planetary periods with interactive features.
+ */
+
 'use client'
 
 import { useState, useEffect } from 'react'
