@@ -47,6 +47,7 @@
     "csv-parse": "latest",
     "date-fns": "4.1.0",
     "embla-carousel-react": "8.5.1",
+    "firebase": "^12.3.0",
     "fs": "latest",
     "geist": "^1.3.1",
     "input-otp": "1.4.1",
